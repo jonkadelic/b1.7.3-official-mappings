@@ -1,0 +1,9 @@
+CLASS ik net/minecraft/client/texturepacks/TexturePackSource
+	FIELD c vanillaPack Li;
+	FIELD e minecraft Lnet/minecraft/client/Minecraft;
+	FIELD f packDir Ljava/io/File;
+	FIELD g skin Ljava/lang/String;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/io/File;)V
+		ARG 1 minecraft
+		ARG 2 minecraftDir
+	METHOD a loadPacks ()V

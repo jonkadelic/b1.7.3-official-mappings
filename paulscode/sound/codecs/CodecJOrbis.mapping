@@ -1,1 +1,2 @@
 CLASS paulscode/sound/codecs/CodecJOrbis paulscode/sound/codecs/CodecJOrbis
+	METHOD openInputStream openInputStream ()Ljava/io/InputStream;

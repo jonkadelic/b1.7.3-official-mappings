@@ -1,0 +1,9 @@
+CLASS vp net/minecraft/client/texturepacks/FileTexturePack
+	FIELD e zipFile Ljava/util/zip/ZipFile;
+	FIELD f icon I
+	FIELD g iconBuffer Ljava/awt/image/BufferedImage;
+	FIELD h file Ljava/io/File;
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 file
+	METHOD b trimString (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 string

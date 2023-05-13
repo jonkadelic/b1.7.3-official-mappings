@@ -1,0 +1,19 @@
+CLASS hc net/minecraft/world/level/storage/SavedDataStorage
+	FIELD a storage Lwt;
+	FIELD b cache Ljava/util/Map;
+	FIELD c loadedData Ljava/util/List;
+	FIELD d idCounts Ljava/util/Map;
+	METHOD <init> (Lwt;)V
+		ARG 1 storage
+	METHOD a save ()V
+	METHOD a save (Lhm;)V
+		ARG 1 savedData
+	METHOD a load (Ljava/lang/Class;Ljava/lang/String;)Lhm;
+		ARG 1 savedDataClass
+		ARG 2 id
+	METHOD a getFreeAuxValueFor (Ljava/lang/String;)I
+		ARG 1 id
+	METHOD a set (Ljava/lang/String;Lhm;)V
+		ARG 1 id
+		ARG 2 savedData
+	METHOD b loadAuxValues ()V

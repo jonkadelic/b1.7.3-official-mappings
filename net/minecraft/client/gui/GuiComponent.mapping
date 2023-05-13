@@ -1,4 +1,5 @@
 CLASS ub net/minecraft/client/gui/GuiComponent
+	FIELD k blitOffset F
 	METHOD a hLine (IIII)V
 	METHOD a fill (IIIII)V
 	METHOD a fillGradient (IIIIII)V

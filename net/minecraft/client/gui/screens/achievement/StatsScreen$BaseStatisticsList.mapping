@@ -1,0 +1,4 @@
+CLASS iv net/minecraft/client/gui/screens/achievement/StatsScreen$BaseStatisticsList
+	FIELD g synthetic Ldv;
+	METHOD <init> (Ldv;)V
+		ARG 1 synthetic

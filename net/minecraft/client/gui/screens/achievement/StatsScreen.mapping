@@ -1,1 +1,70 @@
 CLASS dv net/minecraft/client/gui/screens/achievement/StatsScreen
+	FIELD a lastScreen Lda;
+	FIELD i title Ljava/lang/String;
+	FIELD j itemRenderer Lbb;
+	FIELD l statsList Lsu;
+	FIELD m itemStatsList Lci;
+	FIELD n mobsStatsList Lga;
+	FIELD o stats Lxi;
+	FIELD p activeList Llg;
+	METHOD <init> (Lda;Lxi;)V
+		ARG 1 lastScreen
+		ARG 2 stats
+	METHOD a blitSlotIcon (II)V
+		ARG 1 x
+		ARG 2 y
+	METHOD a synMinecraft0 (Ldv;)Lnet/minecraft/client/Minecraft;
+		ARG 0 synthetic
+	METHOD a synBlitSlot (Ldv;III)V
+		ARG 0 synthetic
+		ARG 1 x
+		ARG 2 y
+		ARG 3 item
+	METHOD a synBlitSlotIcon (Ldv;IIII)V
+		ARG 0 synthetic
+		ARG 1 x
+		ARG 2 y
+		ARG 3 u
+		ARG 4 v
+	METHOD a synFillGradient0 (Ldv;IIIIII)V
+		ARG 0 synthetic
+	METHOD b synFont0 (Ldv;)Lsj;
+		ARG 0 synthetic
+	METHOD b synFillGradient1 (Ldv;IIIIII)V
+		ARG 0 synthetic
+	METHOD c blitSlot (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 item
+	METHOD c blitSlotIcon (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 u
+		ARG 4 v
+	METHOD c synStats (Ldv;)Lxi;
+		ARG 0 synthetic
+	METHOD d synFont1 (Ldv;)Lsj;
+		ARG 0 synthetic
+	METHOD e synFont2 (Ldv;)Lsj;
+		ARG 0 synthetic
+	METHOD f synMinecraft1 (Ldv;)Lnet/minecraft/client/Minecraft;
+		ARG 0 synthetic
+	METHOD g synMinecraft2 (Ldv;)Lnet/minecraft/client/Minecraft;
+		ARG 0 synthetic
+	METHOD h synFont3 (Ldv;)Lsj;
+		ARG 0 synthetic
+	METHOD i synFont4 (Ldv;)Lsj;
+		ARG 0 synthetic
+	METHOD j synFont5 (Ldv;)Lsj;
+		ARG 0 synthetic
+	METHOD k initButtons ()V
+	METHOD k synFont6 (Ldv;)Lsj;
+		ARG 0 synthetic
+	METHOD l synFont7 (Ldv;)Lsj;
+		ARG 0 synthetic
+	METHOD m synFont8 (Ldv;)Lsj;
+		ARG 0 synthetic
+	METHOD n synFont9 (Ldv;)Lsj;
+		ARG 0 synthetic
+	METHOD o synFont10 (Ldv;)Lsj;
+		ARG 0 synthetic

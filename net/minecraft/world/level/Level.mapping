@@ -14,6 +14,7 @@ CLASS fd net/minecraft/world/level/Level
 	FIELD v chunkSource Lcl;
 	FIELD w levelStorage Lwt;
 	FIELD x levelData Lei;
+	FIELD z savedDataStorage Lhc;
 	METHOD <init> (Lfd;Lxa;)V
 		ARG 1 level
 		ARG 2 dimension

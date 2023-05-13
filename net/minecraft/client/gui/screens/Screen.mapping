@@ -13,5 +13,6 @@ CLASS da net/minecraft/client/gui/screens/Screen
 		ARG 1 x
 		ARG 2 z
 		ARG 3 partialTicks
+	METHOD b init ()V
 	METHOD b renderDirtBackground (I)V
 	METHOD h removed ()V

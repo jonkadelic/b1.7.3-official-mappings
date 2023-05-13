@@ -1,0 +1,3 @@
+CLASS pa net/minecraft/client/texturepacks/VanillaPack
+	FIELD e icon I
+	FIELD f iconBuffer Ljava/awt/image/BufferedImage;

@@ -1,0 +1,14 @@
+CLASS u net/minecraft/client/renderer/Lighting
+	FIELD a buffer Ljava/nio/FloatBuffer;
+	METHOD a turnOff ()V
+	METHOD a getBuffer (DDDD)Ljava/nio/FloatBuffer;
+		ARG 0 x
+		ARG 2 y
+		ARG 4 z
+		ARG 6 w
+	METHOD a getBuffer (FFFF)Ljava/nio/FloatBuffer;
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+		ARG 3 w
+	METHOD b turnOn ()V

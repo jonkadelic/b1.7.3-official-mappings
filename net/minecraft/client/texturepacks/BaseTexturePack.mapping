@@ -1,0 +1,14 @@
+CLASS i net/minecraft/client/texturepacks/BaseTexturePack
+	FIELD a title Ljava/lang/String;
+	FIELD b line0 Ljava/lang/String;
+	FIELD c line1 Ljava/lang/String;
+	METHOD a open ()V
+	METHOD a getResource (Ljava/lang/String;)Ljava/io/InputStream;
+		ARG 1 path
+	METHOD a load (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD b close ()V
+	METHOD b loadIcon (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD c bindIcon (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
