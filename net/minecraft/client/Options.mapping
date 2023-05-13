@@ -1,0 +1,53 @@
+CLASS kv net/minecraft/client/Options
+	FIELD A thirdPersonView Z
+	FIELD B renderDebug Z
+	FIELD C lastMpIp Ljava/lang/String;
+	FIELD E smoothCamera Z
+	FIELD I guiScale I
+	FIELD J RENDER_DISTANCE_NAMES [Ljava/lang/String;
+	FIELD K DIFFICULTY_NAMES [Ljava/lang/String;
+	FIELD L GUI_SCALE [Ljava/lang/String;
+	FIELD M FRAMERATE_LIMIT_NAMES [Ljava/lang/String;
+	FIELD N optionsFile Ljava/io/File;
+	FIELD a music F
+	FIELD b sound F
+	FIELD c sensitivity F
+	FIELD d invertYMouse Z
+	FIELD e renderDistance I
+	FIELD f bobView Z
+	FIELD g anaglyph3d Z
+	FIELD h advancedOpengl Z
+	FIELD i fpsLimit I
+	FIELD j fancyGraphics Z
+	FIELD k ao Z
+	FIELD l skin Ljava/lang/String;
+	FIELD m keyUp Lqb;
+	FIELD n keyLeft Lqb;
+	FIELD o keyDown Lqb;
+	FIELD p keyRight Lqb;
+	FIELD q keyJump Lqb;
+	FIELD r keyInventory Lqb;
+	FIELD s keyDrop Lqb;
+	FIELD t keyChat Lqb;
+	FIELD u keyFog Lqb;
+	FIELD v keySneak Lqb;
+	FIELD w keyMappings [Lqb;
+	FIELD x minecraft Lnet/minecraft/client/Minecraft;
+	FIELD y difficulty I
+	FIELD z hideGui Z
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/io/File;)V
+		ARG 1 minecraft
+		ARG 2 optionsFile
+	METHOD a load ()V
+	METHOD a (Lht;)F
+		ARG 1 option
+	METHOD a (Lht;F)V
+		ARG 1 option
+	METHOD a (Lht;I)V
+		ARG 1 option
+	METHOD a readFloat (Ljava/lang/String;)F
+		ARG 1 str
+	METHOD b (Lht;)Z
+		ARG 1 option
+	METHOD c getMessage (Lht;)Ljava/lang/String;
+		ARG 1 option

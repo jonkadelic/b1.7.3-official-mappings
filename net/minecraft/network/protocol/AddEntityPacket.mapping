@@ -1,0 +1,10 @@
+CLASS so net/minecraft/network/protocol/AddEntityPacket
+	FIELD a id I
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e xa I
+	FIELD f ya I
+	FIELD g za I
+	FIELD h type I
+	FIELD i data I

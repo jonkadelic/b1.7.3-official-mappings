@@ -1,0 +1,2 @@
+CLASS kz argo/jdom/JsonNodeTypeHelper
+	FIELD a lookup [I

@@ -1,0 +1,2 @@
+CLASS dc net/minecraft/client/player/LocalPlayer
+	METHOD s getArmorValue ()I

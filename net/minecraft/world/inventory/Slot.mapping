@@ -1,0 +1,24 @@
+CLASS gp net/minecraft/world/inventory/Slot
+	FIELD a index I
+	FIELD b x I
+	FIELD c y I
+	FIELD d slot I
+	FIELD e container Llw;
+	METHOD <init> (Llw;III)V
+		ARG 1 container
+		ARG 2 slot
+		ARG 3 x
+		ARG 4 y
+	METHOD a getItem ()Liz;
+	METHOD a remove (I)Liz;
+		ARG 1 count
+	METHOD a onTake (Liz;)V
+		ARG 1 itemInstance
+	METHOD b hasItem ()Z
+	METHOD b mayPlace (Liz;)Z
+		ARG 1 itemInstance
+	METHOD c setChanged ()V
+	METHOD c set (Liz;)V
+		ARG 1 itemInstance
+	METHOD d getMaxStackSize ()I
+	METHOD e getNoItemIcon ()I

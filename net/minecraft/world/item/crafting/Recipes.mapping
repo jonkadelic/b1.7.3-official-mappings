@@ -1,0 +1,12 @@
+CLASS hk net/minecraft/world/item/crafting/Recipes
+	FIELD a instance Lhk;
+	FIELD b recipes Ljava/util/List;
+	METHOD a addShapedRecipe (Liz;[Ljava/lang/Object;)V
+		ARG 1 itemInstance
+		ARG 2 recipe
+	METHOD a getItemFor (Lmq;)Liz;
+		ARG 1 container
+	METHOD b getRecipes ()Ljava/util/List;
+	METHOD b addShapelessRecipe (Liz;[Ljava/lang/Object;)V
+		ARG 1 itemInstance
+		ARG 2 recipe

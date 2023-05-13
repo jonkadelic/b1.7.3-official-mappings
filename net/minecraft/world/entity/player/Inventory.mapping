@@ -1,0 +1,46 @@
+CLASS ix net/minecraft/world/entity/player/Inventory
+	FIELD a items [Liz;
+	FIELD b armor [Liz;
+	FIELD c selected I
+	FIELD d player Lgs;
+	FIELD e changed Z
+	FIELD f carried Liz;
+	METHOD <init> (Lgs;)V
+		ARG 1 player
+	METHOD a moveToSelectedSlot (IZ)V
+		ARG 1 slot
+	METHOD a add (Liz;)Z
+		ARG 1 itemInstance
+	METHOD a getAttackDamage (Lsn;)I
+		ARG 1 entity
+	METHOD a save (Lsp;)Lsp;
+		ARG 1 tag
+	METHOD a getDestroySpeed (Luu;)F
+		ARG 1 tile
+	METHOD b getSelected ()Liz;
+	METHOD b selectSlot (I)V
+		ARG 1 direction
+	METHOD b setCarried (Liz;)V
+		ARG 1 itemInstance
+	METHOD b load (Lsp;)V
+		ARG 1 tag
+	METHOD b canDestroy (Luu;)Z
+		ARG 1 tile
+	METHOD c (I)Z
+		ARG 1 id
+	METHOD c contains (Liz;)Z
+		ARG 1 itemInstance
+	METHOD d getArmor (I)Liz;
+		ARG 1 armorSlot
+	METHOD d findSlotMatchingItem (Liz;)I
+		ARG 1 itemInstance
+	METHOD e tick ()V
+	METHOD e hurtArmor (I)V
+		ARG 1 damage
+	METHOD e getSlotWithRemainingSpace (Liz;)I
+		ARG 1 itemInstance
+	METHOD f findSlotMatchingItem (I)I
+		ARG 1 id
+	METHOD g dropAll ()V
+	METHOD i getCarried ()Liz;
+	METHOD j getFreeSlot ()I

@@ -1,0 +1,3 @@
+CLASS aa net/minecraft/world/inventory/InventoryMenu
+	METHOD <init> (Lix;Z)V
+		ARG 1 inventory

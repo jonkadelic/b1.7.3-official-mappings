@@ -1,0 +1,7 @@
+CLASS vn argo/jdom/JsonConstants
+	FIELD a NULL Lvn;
+	FIELD b TRUE Lvn;
+	FIELD c FALSE Lvn;
+	FIELD d jsonNodeType Lat;
+	METHOD <init> (Lat;)V
+		ARG 1 jsonNodeType

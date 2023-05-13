@@ -1,0 +1,7 @@
+CLASS os net/minecraft/client/SurvivalMode
+	FIELD c destroyBlockX I
+	FIELD d destroyBlockY I
+	FIELD e destroyBlockZ I
+	FIELD f destroyProgress F
+	FIELD g destroyTicks F
+	FIELD i destroyDelay I

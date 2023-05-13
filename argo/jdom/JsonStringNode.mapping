@@ -1,0 +1,8 @@
+CLASS qa argo/jdom/JsonStringNode
+	FIELD a value Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 value
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
+		ARG 1 that
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 that

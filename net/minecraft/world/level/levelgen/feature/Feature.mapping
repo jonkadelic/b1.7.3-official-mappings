@@ -1,0 +1,7 @@
+CLASS pg net/minecraft/world/level/levelgen/feature/Feature
+	METHOD a place (Lfd;Ljava/util/Random;III)Z
+		ARG 1 level
+		ARG 2 random
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z

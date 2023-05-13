@@ -1,0 +1,6 @@
+CLASS nc argo/jdom/FieldNodeContainer
+	FIELD a builder Lpn;
+	FIELD b adapter Llt;
+	METHOD <init> (Llt;Lpn;)V
+		ARG 1 adapter
+		ARG 2 builder

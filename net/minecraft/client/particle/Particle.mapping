@@ -1,0 +1,16 @@
+CLASS xw net/minecraft/client/particle/Particle
+	FIELD b tex I
+	FIELD c uo F
+	FIELD d vo F
+	FIELD e age I
+	FIELD f lifetime I
+	FIELD g size F
+	FIELD h gravity F
+	FIELD i rCol F
+	FIELD j gCol F
+	FIELD k bCol F
+	FIELD l xOff D
+	FIELD m yOff D
+	FIELD n zOff D
+	METHOD a render (Lnw;FFFFFF)V
+	METHOD c_ getParticleTexture ()I

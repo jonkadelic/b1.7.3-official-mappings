@@ -1,0 +1,4 @@
+CLASS vz net/minecraft/client/gui/components/SliderButton
+	FIELD i value F
+	FIELD j dragged Z
+	FIELD l option Lht;

@@ -1,0 +1,6 @@
+CLASS my argo/jdom/ObjectNodeContainer
+	FIELD a builder Lsx;
+	FIELD b adapter Llt;
+	METHOD <init> (Llt;Lsx;)V
+		ARG 1 adapter
+		ARG 2 builder

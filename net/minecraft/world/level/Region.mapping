@@ -1,0 +1,3 @@
+CLASS ew net/minecraft/world/level/Region
+	METHOD <init> (Lfd;IIIIII)V
+		ARG 1 level

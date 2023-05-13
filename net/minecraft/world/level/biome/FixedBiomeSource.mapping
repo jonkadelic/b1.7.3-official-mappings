@@ -1,0 +1,8 @@
+CLASS hd net/minecraft/world/level/biome/FixedBiomeSource
+	FIELD e biome Lkd;
+	FIELD f temperature D
+	FIELD g downfall D
+	METHOD <init> (Lkd;DD)V
+		ARG 1 biome
+		ARG 2 temperature
+		ARG 4 downfall

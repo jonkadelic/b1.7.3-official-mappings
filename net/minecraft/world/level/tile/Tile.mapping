@@ -1,0 +1,127 @@
+CLASS uu net/minecraft/world/level/tile/Tile
+	FIELD A unbreakable Luu;
+	FIELD B water Luu;
+	FIELD C calmWater Luu;
+	FIELD D lava Luu;
+	FIELD E calmLava Luu;
+	FIELD F sand Luu;
+	FIELD G gravel Luu;
+	FIELD H goldOre Luu;
+	FIELD I ironOre Luu;
+	FIELD J coalOre Luu;
+	FIELD K treeTrunk Luu;
+	FIELD L leaves Lbk;
+	FIELD M sponge Luu;
+	FIELD N glass Luu;
+	FIELD O lapisOre Luu;
+	FIELD P lapisBlock Luu;
+	FIELD Q dispenser_ Luu;
+	FIELD R sandStone Luu;
+	FIELD S musicBlock_ Luu;
+	FIELD T bed Luu;
+	FIELD U goldenRail_ Luu;
+	FIELD V detectorRail_ Luu;
+	FIELD W pistonStickyBase Luu;
+	FIELD X web Luu;
+	FIELD Y tallgrass Lru;
+	FIELD Z deadBush Ljb;
+	FIELD aB farmland Luu;
+	FIELD aF door_wood Luu;
+	FIELD aG ladder Luu;
+	FIELD aI stairs_stone Luu;
+	FIELD aM door_iron Luu;
+	FIELD aO redStoneOre Luu;
+	FIELD aP redStoneOre_lit Luu;
+	FIELD aT topSnow Luu;
+	FIELD aU ice Luu;
+	FIELD aW cactus Luu;
+	FIELD aX clay Luu;
+	FIELD aY reeds Luu;
+	FIELD aa pistonBase Luu;
+	FIELD ab pistonHead_ Lh;
+	FIELD ac cloth Luu;
+	FIELD ad pistonMoving_ Lut;
+	FIELD ae flower Lwb;
+	FIELD af rose Lwb;
+	FIELD ag mushroom1 Lwb;
+	FIELD ah mushroom2 Lwb;
+	FIELD ai goldBlock Luu;
+	FIELD aj ironBlock Luu;
+	FIELD ak stoneSlab Luu;
+	FIELD al stoneSlabHalf Luu;
+	FIELD am redBrick Luu;
+	FIELD an tnt Luu;
+	FIELD aq obsidian Luu;
+	FIELD ar torch Luu;
+	FIELD as fire Lyq;
+	FIELD au stairs_wood Luu;
+	FIELD ax emeraldOre Luu;
+	FIELD ay emeraldBlock Luu;
+	FIELD bA material Lln;
+	FIELD bm tex I
+	FIELD bn id I
+	FIELD bo destroyTime F
+	FIELD bp explosionResistance F
+	FIELD by soundType Lct;
+	FIELD d SOUND_NORMAL Lct;
+	FIELD e SOUND_WOOD Lct;
+	FIELD f SOUND_GRAVEL Lct;
+	FIELD g SOUND_GRASS Lct;
+	FIELD h SOUND_STONE Lct;
+	FIELD i SOUND_METAL Lct;
+	FIELD j SOUND_GLASS Lct;
+	FIELD k SOUND_CLOTH Lct;
+	FIELD l SOUND_SAND Lct;
+	FIELD m tiles [Luu;
+	FIELD n shouldTick [Z
+	FIELD p solid [Z
+	FIELD q lightBlock [I
+	FIELD r isEntityTile [Z
+	FIELD s lightEmission [I
+	FIELD u rock Luu;
+	FIELD v grass Lwp;
+	FIELD w dirt Luu;
+	FIELD x stoneBrick Luu;
+	FIELD y wood Luu;
+	FIELD z sapling Luu;
+	METHOD <init> (IILln;)V
+		ARG 1 id
+		ARG 3 material
+	METHOD <init> (ILln;)V
+		ARG 1 id
+		ARG 2 material
+	METHOD a setLightEmission (F)Luu;
+		ARG 1 lightEmission
+	METHOD a getTexture (I)I
+		ARG 1 data
+	METHOD a getTexture (II)I
+		ARG 1 data
+		ARG 2 direction
+	METHOD a setSoundType (Lct;)Luu;
+		ARG 1 soundType
+	METHOD a tick (Lfd;IIILjava/util/Random;)V
+	METHOD a getTexture (Lxp;IIII)I
+		ARG 1 levelSource
+	METHOD b setExplodeable (F)Luu;
+		ARG 1 explosionResistance
+	METHOD b getColor (I)I
+	METHOD b neighborChanged (Lfd;IIII)V
+	METHOD b getColor (Lxp;III)I
+	METHOD b setTicking (Z)Luu;
+		ARG 1 ticking
+	METHOD c setDestroyTime (F)Luu;
+		ARG 1 destroyTime
+	METHOD d (Lxp;III)F
+		ARG 1 levelSource
+	METHOD d (Lxp;IIII)Z
+		ARG 1 levelSource
+	METHOD e getTickDelay ()I
+	METHOD f getTileAABB (Lfd;III)Leq;
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD g setLightBlock (I)Luu;
+		ARG 1 lightBlock
+	METHOD n getName ()Ljava/lang/String;
+	METHOD o getDescriptionId ()Ljava/lang/String;

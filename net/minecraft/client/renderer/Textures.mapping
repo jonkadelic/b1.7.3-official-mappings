@@ -1,0 +1,10 @@
+CLASS ji net/minecraft/client/renderer/Textures
+	FIELD a MIPMAP Z
+	FIELD g dynamicTextures Ljava/util/List;
+	METHOD a tick ()V
+	METHOD a addDynamicTexture (Law;)V
+		ARG 1 texture
+	METHOD b bind (I)V
+		ARG 1 texture
+	METHOD b loadTexture (Ljava/lang/String;)I
+		ARG 1 path

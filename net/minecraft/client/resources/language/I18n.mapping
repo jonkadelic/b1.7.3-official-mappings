@@ -1,0 +1,7 @@
+CLASS do net/minecraft/client/resources/language/I18n
+	FIELD a locale Lnh;
+	METHOD a get (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 str
+	METHOD a get (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+		ARG 0 str
+		ARG 1 formatParmas

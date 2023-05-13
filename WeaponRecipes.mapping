@@ -1,0 +1,4 @@
+CLASS xc WeaponRecipes
+	METHOD <init> WeaponRecipes ()V
+	METHOD a addRecipes (Lhk;)V
+		ARG 1 recipes

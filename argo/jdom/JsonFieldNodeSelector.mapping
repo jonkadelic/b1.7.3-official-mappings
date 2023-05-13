@@ -1,0 +1,4 @@
+CLASS qi argo/jdom/JsonFieldNodeSelector
+	FIELD a fieldName Lqa;
+	METHOD <init> (Lqa;)V
+		ARG 1 fieldName

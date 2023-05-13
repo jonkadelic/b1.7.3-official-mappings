@@ -1,0 +1,14 @@
+CLASS xk net/minecraft/client/multiplayer/MultiPlayerGameMode
+	FIELD c destroyBlockX I
+	FIELD d destroyBlockY I
+	FIELD e destroyBlockZ I
+	FIELD f destroyProgress F
+	FIELD g destroyTicks F
+	FIELD i destroyDelay I
+	FIELD j isDestroying Z
+	FIELD k connection Lnb;
+	FIELD l carriedIndex I
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnb;)V
+		ARG 1 minecraft
+		ARG 2 connection
+	METHOD e ensureHasSentCarriedItem ()V

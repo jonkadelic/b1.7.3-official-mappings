@@ -1,0 +1,15 @@
+CLASS is net/minecraft/world/item/crafting/ShapedRecipe
+	FIELD a resultId I
+	FIELD b width I
+	FIELD c height I
+	FIELD d ingredients [Liz;
+	FIELD e resultItem Liz;
+	METHOD <init> (II[Liz;Liz;)V
+		ARG 1 width
+		ARG 2 height
+		ARG 3 ingredients
+		ARG 4 result
+	METHOD a matches (Lmq;IIZ)Z
+		ARG 1 craftingContainer
+		ARG 2 x
+		ARG 3 y

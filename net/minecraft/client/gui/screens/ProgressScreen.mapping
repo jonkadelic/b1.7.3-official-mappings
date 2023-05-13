@@ -1,0 +1,10 @@
+CLASS mk net/minecraft/client/gui/screens/ProgressScreen
+	FIELD a title Ljava/lang/String;
+	FIELD b minecraft Lnet/minecraft/client/Minecraft;
+	FIELD c stage Ljava/lang/String;
+	FIELD d timeStamp J
+	FIELD e stop Z
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD a progressStartNoAbort (Ljava/lang/String;)V
+		ARG 1 title

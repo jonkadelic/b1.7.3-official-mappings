@@ -1,0 +1,6 @@
+CLASS yf net/minecraft/world/level/levelgen/RandomLevelSource
+	METHOD <init> (Lfd;J)V
+		ARG 1 level
+	METHOD a buildSurfaces (II[B[Lkd;)V
+	METHOD a prepareHeights (II[B[Lkd;[D)V
+	METHOD a getHeights ([DIIIIII)[D

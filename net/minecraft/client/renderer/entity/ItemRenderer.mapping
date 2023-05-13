@@ -1,0 +1,3 @@
+CLASS bb net/minecraft/client/renderer/entity/ItemRenderer
+	METHOD a renderGuiItem (Lsj;Lji;Liz;II)V
+	METHOD b renderGuiItemDecorations (Lsj;Lji;Liz;II)V

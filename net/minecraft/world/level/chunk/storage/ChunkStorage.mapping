@@ -1,0 +1,13 @@
+CLASS bf net/minecraft/world/level/chunk/storage/ChunkStorage
+	METHOD a tick ()V
+	METHOD a load (Lfd;II)Llm;
+		ARG 1 level
+		ARG 2 x
+		ARG 3 z
+	METHOD a save (Lfd;Llm;)V
+		ARG 1 level
+		ARG 2 levelChunk
+	METHOD b flush ()V
+	METHOD b saveEntities (Lfd;Llm;)V
+		ARG 1 level
+		ARG 2 levelChunk

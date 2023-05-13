@@ -1,0 +1,21 @@
+CLASS xp net/minecraft/world/level/LevelSource
+	METHOD a getTile (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b getTileEntity (III)Low;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD c getBrightness (III)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD e getData (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD f getMaterial (III)Lln;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

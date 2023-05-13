@@ -1,0 +1,9 @@
+CLASS da net/minecraft/client/gui/screens/Screen
+	FIELD b minecraft Lnet/minecraft/client/Minecraft;
+	FIELD c width I
+	FIELD d height I
+	FIELD e buttons Ljava/util/List;
+	FIELD f passEvents Z
+	FIELD g font Lsj;
+	FIELD h particleEngine Ldu;
+	METHOD a render (IIF)V

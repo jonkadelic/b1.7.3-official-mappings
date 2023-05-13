@@ -1,0 +1,15 @@
+CLASS bw net/minecraft/client/renderer/entity/EntityRenderer
+	FIELD a model Lko;
+	FIELD b dispatcher Lth;
+	METHOD a getFont ()Lsj;
+	METHOD a renderFlat (Leq;)V
+		ARG 0 bb
+	METHOD a render (Leq;DDD)V
+		ARG 0 bb
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD a bindTexture (Ljava/lang/String;)V
+	METHOD a render (Lsn;DDDFF)V
+	METHOD a init (Lth;)V
+		ARG 1 dispatcher

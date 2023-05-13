@@ -1,0 +1,5 @@
+CLASS pu argo/jdom/NodeContainer
+	METHOD a addNode (Llb;)V
+		ARG 1 jsonNodeBuilder
+	METHOD a addField (Lpn;)V
+		ARG 1 jsonFieldBuilder

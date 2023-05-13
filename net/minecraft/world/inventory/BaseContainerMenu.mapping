@@ -1,0 +1,26 @@
+CLASS dw net/minecraft/world/inventory/BaseContainerMenu
+	FIELD a changeUid S
+	FIELD b unSynchedPlayers Ljava/util/Set;
+	FIELD d lastSlots Ljava/util/List;
+	FIELD e slots Ljava/util/List;
+	FIELD f containerId I
+	FIELD g containerListeners Ljava/util/List;
+	METHOD a broadcastChanges ()V
+	METHOD a quickMoveStack (I)Liz;
+	METHOD a setData (II)V
+	METHOD a clicked (IIZLgs;)Liz;
+		ARG 3 clickType
+		ARG 4 player
+	METHOD a setItem (ILiz;)V
+	METHOD a addSlot (Lgp;)V
+		ARG 1 slot
+	METHOD a removed (Lgs;)V
+		ARG 1 player
+	METHOD a backup (Lix;)S
+	METHOD a moveItemStackTo (Liz;IIZ)V
+		ARG 1 itemInstance
+	METHOD a slotsChanged (Llw;)V
+		ARG 1 container
+	METHOD b getSlot (I)Lgp;
+	METHOD b stillValid (Lgs;)Z
+		ARG 1 player

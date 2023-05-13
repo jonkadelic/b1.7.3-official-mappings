@@ -1,0 +1,11 @@
+CLASS to net/minecraft/world/level/chunk/storage/DirectoryChunkStorage
+	FIELD a basePath Ljava/io/File;
+	METHOD <init> (Ljava/io/File;Z)V
+		ARG 1 basePath
+	METHOD a save (Lfd;Lnu;)Llm;
+		ARG 0 level
+		ARG 1 chunkTag
+	METHOD a load (Llm;Lfd;Lnu;)V
+		ARG 0 levelChunk
+		ARG 1 level
+		ARG 2 chunkTag

@@ -1,0 +1,7 @@
+CLASS gs net/minecraft/world/entity/player/Player
+	FIELD c inventory Lix;
+	METHOD a drop (Liz;Z)V
+	METHOD a awardStat (Lvr;I)V
+	METHOD b canDestroy (Luu;)Z
+	METHOD c attack (Lsn;)V
+	METHOD d interact (Lsn;)V

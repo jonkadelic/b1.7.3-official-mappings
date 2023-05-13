@@ -1,0 +1,19 @@
+CLASS com/jcraft/jogg/Page com/jcraft/jogg/Page
+	FIELD body body I
+	FIELD body_base body_base [B
+	FIELD body_len body_len I
+	FIELD crc_lookup crc_lookup [I
+	FIELD header header I
+	FIELD header_base header_base [B
+	FIELD header_len header_len I
+	METHOD bos bos ()I
+	METHOD checksum checksum ()V
+	METHOD continued continued ()I
+	METHOD copy copy ()Lcom/jcraft/jogg/Page;
+	METHOD copy copy (Lcom/jcraft/jogg/Page;)Lcom/jcraft/jogg/Page;
+	METHOD crc_entry crc_entry (I)I
+	METHOD eos eos ()I
+	METHOD granulepos granulepos ()J
+	METHOD pageno pageno ()I
+	METHOD serialno serialno ()I
+	METHOD version version ()I

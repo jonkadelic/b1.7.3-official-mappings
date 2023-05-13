@@ -1,0 +1,18 @@
+CLASS uq net/minecraft/client/gui/Gui
+	FIELD d itemRenderer Lbb;
+	FIELD f random Ljava/util/Random;
+	FIELD g minecraft Lnet/minecraft/client/Minecraft;
+	FIELD h tickCount I
+	FIELD i overlayMessageString Ljava/lang/String;
+	FIELD j overlayMessageTime I
+	FIELD l animateOverlayMessageColor Z
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD a tick ()V
+	METHOD a renderVignette (FII)V
+	METHOD a render (FZII)V
+	METHOD a renderPumpkin (II)V
+	METHOD a renderSlot (IIIF)V
+	METHOD b renderPortalOverlay (FII)V
+	METHOD b setNowPlaying (Ljava/lang/String;)V
+		ARG 1 str

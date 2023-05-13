@@ -1,0 +1,9 @@
+CLASS aw net/minecraft/client/renderer/texture/DynamicTexture
+	FIELD a pixels [B
+	FIELD b id I
+	FIELD f atlas I
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD a tick ()V
+	METHOD a bindTexture (Lji;)V
+		ARG 1 textures

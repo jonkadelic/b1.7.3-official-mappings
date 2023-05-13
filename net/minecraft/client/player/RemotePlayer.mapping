@@ -1,0 +1,4 @@
+CLASS tk net/minecraft/client/player/RemotePlayer
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lfd;Lgr;Lnb;)V
+		ARG 1 minecraft
+		ARG 2 level

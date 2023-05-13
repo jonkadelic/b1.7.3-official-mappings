@@ -1,0 +1,17 @@
+CLASS wg argo/saj/JsonListener
+	METHOD a startField (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD b startDocument ()V
+	METHOD b numberValue (Ljava/lang/String;)V
+		ARG 1 value
+	METHOD c endDocument ()V
+	METHOD c stringValue (Ljava/lang/String;)V
+		ARG 1 value
+	METHOD d startArray ()V
+	METHOD e endArray ()V
+	METHOD f startObject ()V
+	METHOD g endObject ()V
+	METHOD h endField ()V
+	METHOD i trueValue ()V
+	METHOD j falseValue ()V
+	METHOD k nullValue ()V

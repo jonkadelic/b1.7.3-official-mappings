@@ -1,0 +1,2 @@
+CLASS un net/minecraft/isom/ZoneRenderer
+	METHOD a render (Lre;)V

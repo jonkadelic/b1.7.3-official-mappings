@@ -1,0 +1,5 @@
+CLASS ok net/minecraft/world/level/ServerChunkCache
+	FIELD b emptyChunk Llm;
+	FIELD e chunkMap Ljava/util/Map;
+	METHOD <init> (Lfd;Lbf;Lcl;)V
+		ARG 1 level

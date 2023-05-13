@@ -1,0 +1,7 @@
+CLASS dt net/minecraft/world/item/crafting/Recipe
+	METHOD a getCraftingSize ()I
+	METHOD a matches (Lmq;)Z
+		ARG 1 container
+	METHOD b getResultItem ()Liz;
+	METHOD b assemble (Lmq;)Liz;
+		ARG 1 container

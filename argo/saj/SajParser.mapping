@@ -1,0 +1,40 @@
+CLASS an argo/saj/SajParser
+	METHOD a parse (Ljava/io/Reader;Lwg;)V
+		ARG 1 in
+		ARG 2 jsonListener
+	METHOD a numberToken (Llj;)Ljava/lang/String;
+		ARG 1 in
+	METHOD a arrayString (Llj;Lwg;)V
+		ARG 1 pushbackReader
+		ARG 2 jsonListener
+	METHOD b nonNegativeNumberToken (Llj;)Ljava/lang/String;
+		ARG 1 in
+	METHOD b objectString (Llj;Lwg;)V
+		ARG 1 pushbackReader
+		ARG 2 jsonListener
+	METHOD c nonZeroDigitToken (Llj;)C
+		ARG 1 in
+	METHOD c aFieldToken (Llj;Lwg;)V
+		ARG 1 pushbackReader
+		ARG 2 jsonListener
+	METHOD d digitToken (Llj;)C
+		ARG 1 in
+	METHOD d aJsonValue (Llj;Lwg;)V
+		ARG 1 pushbackReader
+		ARG 2 jsonListener
+	METHOD e digitString (Llj;)Ljava/lang/String;
+		ARG 1 in
+	METHOD f possibleFractionalComponent (Llj;)Ljava/lang/String;
+		ARG 1 in
+	METHOD g possibleExponent (Llj;)Ljava/lang/String;
+		ARG 1 in
+	METHOD h possibleSign (Llj;)Ljava/lang/String;
+		ARG 1 in
+	METHOD i stringToken (Llj;)Ljava/lang/String;
+		ARG 1 in
+	METHOD j escapedStringChar (Llj;)C
+		ARG 1 in
+	METHOD k hexidecimalNumber (Llj;)I
+		ARG 1 in
+	METHOD l readNextNonWhitespaceChar (Llj;)I
+		ARG 1 in

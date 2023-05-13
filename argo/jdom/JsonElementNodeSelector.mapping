@@ -1,0 +1,4 @@
+CLASS qg argo/jdom/JsonElementNodeSelector
+	FIELD a index I
+	METHOD <init> (I)V
+		ARG 1 index

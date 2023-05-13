@@ -1,0 +1,72 @@
+CLASS ei net/minecraft/world/level/storage/LevelData
+	FIELD a seed J
+	FIELD b xSpawn I
+	FIELD c ySpawn I
+	FIELD d zSpawn I
+	FIELD e gameTime J
+	FIELD f lastPlayed J
+	FIELD g sizeOnDisk J
+	FIELD h loadedPlayerTag Lnu;
+	FIELD i dimension I
+	FIELD j levelName Ljava/lang/String;
+	FIELD k version I
+	FIELD l raining Z
+	FIELD m rainTime I
+	FIELD n thundering Z
+	FIELD o thunderTime I
+	METHOD <init> (JLjava/lang/String;)V
+		ARG 1 seed
+		ARG 3 levelName
+	METHOD <init> (Lei;)V
+		ARG 1 levelData
+	METHOD <init> (Lnu;)V
+		ARG 1 levelTag
+	METHOD a createTag ()Lnu;
+	METHOD a setXSpawn (I)V
+		ARG 1 xSpawn
+	METHOD a setSpawn (III)V
+		ARG 1 xSpawn
+		ARG 2 ySpawn
+		ARG 3 zSpawn
+	METHOD a setTime (J)V
+		ARG 1 gameTime
+	METHOD a setLevelName (Ljava/lang/String;)V
+		ARG 1 levelName
+	METHOD a createTag (Ljava/util/List;)Lnu;
+		ARG 1 playerList
+	METHOD a setLoadedPlayerTag (Lnu;)V
+		ARG 1 loadedPlayerTag
+	METHOD a setTagData (Lnu;Lnu;)V
+		ARG 1 levelTag
+		ARG 2 loadedPlayerTag
+	METHOD a setThundering (Z)V
+		ARG 1 thundering
+	METHOD b getSeed ()J
+	METHOD b setYSpawn (I)V
+		ARG 1 ySpawn
+	METHOD b setSizeOnDisk (J)V
+		ARG 1 sizeOnDisk
+	METHOD b setRaining (Z)V
+		ARG 1 raining
+	METHOD c getXSpawn ()I
+	METHOD c setZSpawn (I)V
+		ARG 1 zSpawn
+	METHOD d getYSpawn ()I
+	METHOD d setVersion (I)V
+		ARG 1 version
+	METHOD e getZSpawn ()I
+	METHOD e setThunderTime (I)V
+		ARG 1 thunderTime
+	METHOD f getTime ()J
+	METHOD f setRainTime (I)V
+		ARG 1 rainTime
+	METHOD g getSizeOnDisk ()J
+	METHOD h getLoadedPlayerTag ()Lnu;
+	METHOD i getDimension ()I
+	METHOD j getLevelName ()Ljava/lang/String;
+	METHOD k getVersion ()I
+	METHOD l getLastPlayed ()J
+	METHOD m getThundering ()Z
+	METHOD n getThunderTime ()I
+	METHOD o getRaining ()Z
+	METHOD p getRainTime ()I

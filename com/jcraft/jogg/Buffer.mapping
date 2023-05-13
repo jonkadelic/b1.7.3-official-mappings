@@ -1,0 +1,12 @@
+CLASS com/jcraft/jogg/Buffer com/jcraft/jogg/Buffer
+	FIELD BUFFER_INCREMENT BUFFER_INCREMENT I
+	FIELD buffer buffer [B
+	FIELD endbit endbit I
+	FIELD endbyte endbyte I
+	FIELD mask mask [I
+	FIELD ptr ptr I
+	FIELD storage storage I
+	METHOD read read ([BI)V
+	METHOD write write (II)V
+	METHOD write write ([B)V
+	METHOD writeinit writeinit ()V

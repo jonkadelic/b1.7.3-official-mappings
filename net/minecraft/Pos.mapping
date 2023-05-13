@@ -1,0 +1,18 @@
+CLASS br net/minecraft/Pos
+	FIELD a x I
+	FIELD b y I
+	FIELD c z I
+	METHOD <init> (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD <init> (Lbr;)V
+		ARG 1 other
+	METHOD a distanceTo (III)D
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
+		ARG 1 other
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other

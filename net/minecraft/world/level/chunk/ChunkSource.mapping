@@ -1,0 +1,18 @@
+CLASS cl net/minecraft/world/level/chunk/ChunkSource
+	METHOD a tick ()Z
+	METHOD a hasChunk (II)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD a postProcess (Lcl;II)V
+		ARG 1 chunkSource
+		ARG 2 x
+		ARG 3 z
+	METHOD a saveAll (ZLyb;)Z
+	METHOD b shouldSave ()Z
+	METHOD b getChunk (II)Llm;
+		ARG 1 x
+		ARG 2 z
+	METHOD c gatherStats ()Ljava/lang/String;
+	METHOD c create (II)Llm;
+		ARG 1 x
+		ARG 2 z

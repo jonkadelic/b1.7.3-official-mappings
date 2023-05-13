@@ -1,0 +1,193 @@
+CLASS gm net/minecraft/world/item/Item
+	FIELD A hatchet_emerald Lgm;
+	FIELD B stick Lgm;
+	FIELD C bowl Lgm;
+	FIELD D mushroomStew Lgm;
+	FIELD E sword_gold Lgm;
+	FIELD F shovel_gold Lgm;
+	FIELD G pickaxe_gold Lgm;
+	FIELD H hatchet_gold Lgm;
+	FIELD I string Lgm;
+	FIELD J feather Lgm;
+	FIELD K sulphur Lgm;
+	FIELD L hoe_wood Lgm;
+	FIELD M hoe_stone Lgm;
+	FIELD N hoe_iron Lgm;
+	FIELD O hoe_emerald Lgm;
+	FIELD P hoe_gold Lgm;
+	FIELD Q seeds Lgm;
+	FIELD R wheat Lgm;
+	FIELD S bread Lgm;
+	FIELD T helmet_cloth Lgm;
+	FIELD U chestplate_cloth Lgm;
+	FIELD V leggings_cloth Lgm;
+	FIELD W boots_cloth Lgm;
+	FIELD X helmet_chain Lgm;
+	FIELD Y chestplate_chain Lgm;
+	FIELD Z leggings_chain Lgm;
+	FIELD aA redStone Lgm;
+	FIELD aB snowBall Lgm;
+	FIELD aC boat Lgm;
+	FIELD aD leather Lgm;
+	FIELD aE milk Lgm;
+	FIELD aF brick Lgm;
+	FIELD aG clay Lgm;
+	FIELD aH reeds Lgm;
+	FIELD a maxDamage I
+	FIELD aI paper Lgm;
+	FIELD aJ book Lgm;
+	FIELD aK slimeball Lgm;
+	FIELD aL minecart_chest Lgm;
+	FIELD aM minecart_furnace Lgm;
+	FIELD aN egg Lgm;
+	FIELD aO compass Lgm;
+	FIELD aP fishingRod Lgm;
+	FIELD aQ clock Lgm;
+	FIELD aR yellowDust Lgm;
+	FIELD aS fish_raw Lgm;
+	FIELD aT fish_cooked Lgm;
+	FIELD aU dye_powder Lgm;
+	FIELD aV bone Lgm;
+	FIELD aW sugar Lgm;
+	FIELD aX cake Lgm;
+	FIELD aY bed Lgm;
+	FIELD aZ diode Lgm;
+	FIELD aa boots_chain Lgm;
+	FIELD ab helmet_iron Lgm;
+	FIELD ac chestplate_iron Lgm;
+	FIELD ad leggings_iron Lgm;
+	FIELD ae boots_iron Lgm;
+	FIELD af helmet_diamond Lgm;
+	FIELD ag chestplate_diamond Lgm;
+	FIELD ah leggings_diamond Lgm;
+	FIELD ai boots_diamond Lgm;
+	FIELD aj helmet_gold Lgm;
+	FIELD ak chestplate_gold Lgm;
+	FIELD al leggings_gold Lgm;
+	FIELD am boots_gold Lgm;
+	FIELD an flint Lgm;
+	FIELD ao porkChop_raw Lgm;
+	FIELD ap porkChop_cooked Lgm;
+	FIELD aq painting Lgm;
+	FIELD ar apple_gold Lgm;
+	FIELD as sign Lgm;
+	FIELD at door_wood Lgm;
+	FIELD au bucket_empty Lgm;
+	FIELD av bucket_water Lgm;
+	FIELD aw bucket_lava Lgm;
+	FIELD ax minecart Lgm;
+	FIELD ay saddle Lgm;
+	FIELD az door_iron Lgm;
+	FIELD b random Ljava/util/Random;
+	FIELD ba cookie Lgm;
+	FIELD bb map Lwr;
+	FIELD bc shears Lbl;
+	FIELD bd record_01 Lgm;
+	FIELD be record_02 Lgm;
+	FIELD bf id I
+	FIELD bg maxStackSize I
+	FIELD bh icon I
+	FIELD bi handEquipped Z
+	FIELD bj stackedByData Z
+	FIELD bk craftingRemainingItem Lgm;
+	FIELD bl descriptionId Ljava/lang/String;
+	FIELD c items [Lgm;
+	FIELD d shovel_iron Lgm;
+	FIELD e pickaxe_iron Lgm;
+	FIELD f hatchet_iron Lgm;
+	FIELD g flintAndSteel Lgm;
+	FIELD h apple Lgm;
+	FIELD i bow Lgm;
+	FIELD j arrow Lgm;
+	FIELD k coal Lgm;
+	FIELD l emerald Lgm;
+	FIELD m ironIngot Lgm;
+	FIELD n goldIngot Lgm;
+	FIELD o sword_iron Lgm;
+	FIELD p sword_wood Lgm;
+	FIELD q shovel_wood Lgm;
+	FIELD r pickaxe_wood Lgm;
+	FIELD s hatchet_wood Lgm;
+	FIELD t sword_stone Lgm;
+	FIELD u shovel_stone Lgm;
+	FIELD v pickaxe_stone Lgm;
+	FIELD w hatchet_stone Lgm;
+	FIELD x sword_emerald Lgm;
+	FIELD y shovel_emerald Lgm;
+	FIELD z pickaxe_emerald Lgm;
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD a getDescriptionId ()Ljava/lang/String;
+	METHOD a getIcon (I)I
+		ARG 1 auxValue
+	METHOD a setIcon (II)Lgm;
+		ARG 1 x
+		ARG 2 y
+	METHOD a setCraftingRemainingItem (Lgm;)Lgm;
+		ARG 1 item
+	METHOD a getDescriptionId (Liz;)Ljava/lang/String;
+		ARG 1 itemInstance
+	METHOD a mineBlock (Liz;IIIILls;)Z
+		ARG 1 itemInstance
+		ARG 2 tileId
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 mob
+	METHOD a use (Liz;Lfd;Lgs;)Liz;
+		ARG 1 itemInstance
+		ARG 2 level
+		ARG 3 player
+	METHOD a inventoryTick (Liz;Lfd;Lsn;IZ)V
+		ARG 1 itemInstance
+		ARG 2 level
+		ARG 3 entity
+	METHOD a useOn (Liz;Lgs;Lfd;IIII)Z
+		ARG 1 itemInstance
+		ARG 2 player
+		ARG 3 level
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 direction
+	METHOD a hurtEnemy (Liz;Lls;)V
+		ARG 1 itemInstance
+		ARG 2 mob
+	METHOD a interactEnemy (Liz;Lls;Lls;)Z
+		ARG 1 itemInstance
+		ARG 2 mobA
+		ARG 3 mobB
+	METHOD a getDestroySpeed (Liz;Luu;)F
+		ARG 1 itemInstance
+		ARG 2 tile
+	METHOD a setDescriptionId (Ljava/lang/String;)Lgm;
+		ARG 1 descriptionId
+	METHOD a getAttackDamage (Lsn;)I
+		ARG 1 entity
+	METHOD a canDestroySpecial (Luu;)Z
+		ARG 1 tile
+	METHOD a setStackedByData (Z)Lgm;
+		ARG 1 stackedByData
+	METHOD b isHandEquipped ()Z
+	METHOD b getLevelDataForAuxValue (I)I
+		ARG 1 auxValue
+	METHOD b getIcon (Liz;)I
+		ARG 1 itemInstance
+	METHOD b onCraftedBy (Liz;Lfd;Lgs;)V
+		ARG 1 itemInstance
+		ARG 2 level
+		ARG 3 player
+	METHOD c isMirroredArt ()Z
+	METHOD c setIcon (I)Lgm;
+		ARG 1 index
+	METHOD d getMaxStackSize ()I
+	METHOD d setMaxStackSize (I)Lgm;
+		ARG 1 maxStackSize
+	METHOD e isStackedByData ()Z
+	METHOD e setMaxDamage (I)Lgm;
+		ARG 1 maxDamage
+	METHOD f getMaxDamage ()I
+	METHOD h handEquipped ()Lgm;
+	METHOD i getCraftingRemainingItem ()Lgm;
+	METHOD j hasCraftingRemainingItem ()Z
+	METHOD k getDescription ()Ljava/lang/String;

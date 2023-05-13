@@ -1,0 +1,6 @@
+CLASS na argo/jdom/ArrayNodeContainer
+	FIELD a builder Led;
+	FIELD b adapter Llt;
+	METHOD <init> (Llt;Led;)V
+		ARG 1 adapter
+		ARG 2 builder

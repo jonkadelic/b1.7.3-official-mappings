@@ -1,0 +1,7 @@
+CLASS yb net/minecraft/util/ProgressListener
+	METHOD a progressStagePercentage (I)V
+		ARG 1 progress
+	METHOD b progressStart (Ljava/lang/String;)V
+		ARG 1 title
+	METHOD d progressStage (Ljava/lang/String;)V
+		ARG 1 title

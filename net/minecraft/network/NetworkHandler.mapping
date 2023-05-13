@@ -1,0 +1,7 @@
+CLASS ti net/minecraft/network/NetworkHandler
+	METHOD a handle (Lnz;)V
+		ARG 1 packet
+	METHOD a handle (Lso;)V
+		ARG 1 packet
+	METHOD c (Lki;)V
+		ARG 1 packet

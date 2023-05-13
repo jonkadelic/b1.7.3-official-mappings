@@ -1,0 +1,60 @@
+CLASS nu com/mojang/nbt/CompoundTag
+	FIELD a tags Ljava/util/Map;
+	METHOD a putByte (Ljava/lang/String;B)V
+		ARG 1 name
+		ARG 2 value
+	METHOD a putDouble (Ljava/lang/String;D)V
+		ARG 1 name
+		ARG 2 value
+	METHOD a putFloat (Ljava/lang/String;F)V
+		ARG 1 name
+		ARG 2 value
+	METHOD a putInt (Ljava/lang/String;I)V
+		ARG 1 name
+		ARG 2 value
+	METHOD a putLong (Ljava/lang/String;J)V
+		ARG 1 name
+		ARG 2 value
+	METHOD a put (Ljava/lang/String;Lij;)V
+		ARG 1 name
+		ARG 2 tag
+	METHOD a putString (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 name
+		ARG 2 str
+	METHOD a putCompound (Ljava/lang/String;Lnu;)V
+		ARG 1 name
+		ARG 2 value
+	METHOD a putShort (Ljava/lang/String;S)V
+		ARG 1 name
+		ARG 2 value
+	METHOD a putBoolean (Ljava/lang/String;Z)V
+		ARG 1 name
+		ARG 2 value
+	METHOD a putByteArray (Ljava/lang/String;[B)V
+		ARG 1 name
+		ARG 2 data
+	METHOD b contains (Ljava/lang/String;)Z
+		ARG 1 name
+	METHOD c getAllValues ()Ljava/util/Collection;
+	METHOD c getByte (Ljava/lang/String;)B
+		ARG 1 name
+	METHOD d getShort (Ljava/lang/String;)S
+		ARG 1 name
+	METHOD e getInt (Ljava/lang/String;)I
+		ARG 1 name
+	METHOD f getLong (Ljava/lang/String;)J
+		ARG 1 name
+	METHOD g getFloat (Ljava/lang/String;)F
+		ARG 1 name
+	METHOD h getDouble (Ljava/lang/String;)D
+		ARG 1 name
+	METHOD i getString (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 name
+	METHOD j getByteArray (Ljava/lang/String;)[B
+		ARG 1 name
+	METHOD k getCompound (Ljava/lang/String;)Lnu;
+		ARG 1 name
+	METHOD l getList (Ljava/lang/String;)Lsp;
+		ARG 1 name
+	METHOD m getBoolean (Ljava/lang/String;)Z
+		ARG 1 name

@@ -1,0 +1,6 @@
+CLASS ow net/minecraft/world/level/tile/entity/TileEntity
+	FIELD d level Lfd;
+	FIELD e x I
+	FIELD f y I
+	FIELD g z I
+	METHOD i setRemoved ()V

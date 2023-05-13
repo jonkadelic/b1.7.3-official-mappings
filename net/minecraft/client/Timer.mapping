@@ -1,0 +1,14 @@
+CLASS py net/minecraft/client/Timer
+	FIELD a ticksPerSecond F
+	FIELD b ticks I
+	FIELD c alpha F
+	FIELD d fps F
+	FIELD e ticks F
+	FIELD f lastTime D
+	FIELD g currentTime J
+	FIELD h msPerTick J
+	FIELD i passedTime J
+	FIELD j averageFrameTime D
+	METHOD <init> (F)V
+		ARG 1 ticksPerSecond
+	METHOD a advanceTime ()V

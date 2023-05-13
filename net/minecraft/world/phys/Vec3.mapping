@@ -1,0 +1,55 @@
+CLASS bt net/minecraft/world/phys/Vec3
+	FIELD a x D
+	FIELD b y D
+	FIELD c z D
+	FIELD d pool Ljava/util/List;
+	FIELD e poolSize I
+	METHOD <init> (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD a clearPool ()V
+	METHOD a newTemp (DDD)Lbt;
+		ARG 0 x
+		ARG 2 y
+		ARG 4 z
+	METHOD a xRot (F)V
+		ARG 1 angle
+	METHOD a vectorTo (Lbt;)Lbt;
+		ARG 1 other
+	METHOD a clipX (Lbt;D)Lbt;
+		ARG 1 other
+		ARG 2 lerpAmount
+	METHOD b resetPoolSize ()V
+	METHOD b fromPool (DDD)Lbt;
+		ARG 0 x
+		ARG 2 y
+		ARG 4 z
+	METHOD b yRot (F)V
+		ARG 1 angle
+	METHOD b cross (Lbt;)Lbt;
+		ARG 1 other
+	METHOD b clipY (Lbt;D)Lbt;
+		ARG 1 other
+		ARG 2 lerpAmount
+	METHOD c normalize ()Lbt;
+	METHOD c add (DDD)Lbt;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD c distanceTo (Lbt;)D
+		ARG 1 other
+	METHOD c clipZ (Lbt;D)Lbt;
+		ARG 1 other
+		ARG 2 lerpAmount
+	METHOD d length ()D
+	METHOD d distanceToSqr (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD d distanceToSqr (Lbt;)D
+		ARG 1 other
+	METHOD e set (DDD)Lbt;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z

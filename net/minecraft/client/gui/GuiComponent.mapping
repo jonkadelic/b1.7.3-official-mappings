@@ -1,0 +1,8 @@
+CLASS ub net/minecraft/client/gui/GuiComponent
+	METHOD a hLine (IIII)V
+	METHOD a fill (IIIII)V
+	METHOD a fillGradient (IIIIII)V
+	METHOD a drawCenteredString (Lsj;Ljava/lang/String;III)V
+	METHOD b vLine (IIII)V
+	METHOD b blit (IIIIII)V
+	METHOD b drawString (Lsj;Ljava/lang/String;III)V

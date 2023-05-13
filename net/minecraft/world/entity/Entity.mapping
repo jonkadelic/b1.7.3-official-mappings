@@ -1,0 +1,143 @@
+CLASS sn net/minecraft/world/entity/Entity
+	FIELD aD id I
+	FIELD aG passenger Lsn;
+	FIELD aH vehicle Lsn;
+	FIELD a entityCounter I
+	FIELD aI level Lfd;
+	FIELD aJ xo D
+	FIELD aK yo D
+	FIELD aL zo D
+	FIELD aM x D
+	FIELD aN y D
+	FIELD aO z D
+	FIELD aP xd D
+	FIELD aQ yd D
+	FIELD aR zd D
+	FIELD aS yRot F
+	FIELD aT xRot F
+	FIELD aU yRotO F
+	FIELD aV xRotO F
+	FIELD aW bb Leq;
+	FIELD aX onGround Z
+	FIELD aY horizontalCollision Z
+	FIELD aZ verticalCollision Z
+	FIELD bC fireImmune Z
+	FIELD bD entityData Lud;
+	FIELD bF inChunk Z
+	FIELD bG xChunk I
+	FIELD bH yChunk I
+	FIELD b nextStep I
+	FIELD bI zChunk I
+	FIELD ba collision Z
+	FIELD bb hurtMarked Z
+	FIELD bc stuck Z
+	FIELD bd slide Z
+	FIELD be removed Z
+	FIELD bf heightOffset F
+	FIELD bg bbWidth F
+	FIELD bh bbHeight F
+	FIELD bi walkDistO F
+	FIELD bj walkDist F
+	FIELD bk fallDistance F
+	FIELD bl xOld D
+	FIELD bm yOld D
+	FIELD bn zOld D
+	FIELD bo ySlideOffset F
+	FIELD bp footSize F
+	FIELD bq noPhysics Z
+	FIELD br pushthrough F
+	FIELD bs random Ljava/util/Random;
+	FIELD bt tickCount I
+	FIELD bu fireImmuneTicks I
+	FIELD bv remainingFireTicks I
+	FIELD bx wasInWater Z
+	FIELD by invulnerableTime I
+	FIELD bz airSupply I
+	FIELD c firstTick Z
+	METHOD <init> (Lfd;)V
+		ARG 1 level
+	METHOD K remove ()V
+	METHOD U baseTick ()V
+	METHOD a shouldRenderAtSqrDistance (D)Z
+		ARG 1 sqrDistance
+	METHOD a lerpMotion (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD a moveRelative (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a shouldRender (Lbt;)Z
+		ARG 1 vec
+	METHOD a setLevel (Lfd;)V
+	METHOD a (Lgs;)Z
+		ARG 1 player
+	METHOD a readAdditionalSaveData (Lnu;)V
+		ARG 1 entityTag
+	METHOD a hurt (Lsn;I)Z
+		ARG 1 attacker
+		ARG 2 damage
+	METHOD ag isInWater ()Z
+	METHOD ah isInLava ()Z
+	METHOD b defineSynchedData ()V
+	METHOD b move (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD b causeFallDamage (F)V
+	METHOD b setSize (FF)V
+		ARG 1 width
+		ARG 2 height
+	METHOD b playerTouch (Lgs;)V
+		ARG 1 player
+	METHOD b addAdditionalSaveData (Lnu;)V
+		ARG 1 entityTag
+	METHOD c setRot (FF)V
+		ARG 1 yRot
+		ARG 2 xRot
+	METHOD c save (Lnu;)Z
+		ARG 1 entityTag
+	METHOD c awardKillScore (Lsn;I)V
+		ARG 1 attacker
+		ARG 2 score
+	METHOD d push (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD d turn (FF)V
+		ARG 1 yRot
+		ARG 2 xRot
+	METHOD d saveWithoutId (Lnu;)V
+		ARG 1 entityTag
+	METHOD e setPos (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD e load (Lnu;)V
+		ARG 1 entityTag
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 object
+	METHOD f isFree (DDD)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD f distanceTo (Lsn;)F
+		ARG 1 other
+	METHOD g distanceToSqr (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD g distanceToSqr (Lsn;)D
+		ARG 1 other
+	METHOD h distanceTo (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD h push (Lsn;)V
+		ARG 1 entity
+	METHOD h_ isShootable ()Z
+	METHOD t_ resetPos ()V
+	METHOD w getHeadHeight ()F
+	METHOD w_ tick ()V
+	METHOD x_ getShadowHeightOffs ()F

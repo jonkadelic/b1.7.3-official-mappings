@@ -1,0 +1,35 @@
+CLASS xv net/minecraft/world/level/biome/BiomeSource
+	FIELD a temperatureCache [D
+	FIELD b downfallCache [D
+	FIELD c edgeCache [D
+	FIELD d biomeCache [Lkd;
+	FIELD e temperatureNoise Lug;
+	FIELD f downfallNoise Lug;
+	FIELD g edgeNoise Lug;
+	METHOD <init> (Lfd;)V
+		ARG 1 level
+	METHOD a getBiome (II)Lkd;
+		ARG 1 x
+		ARG 2 z
+	METHOD a getBiomeBlock (IIII)[Lkd;
+		ARG 1 x
+		ARG 2 z
+		ARG 3 xSize
+		ARG 4 zSize
+	METHOD a getBiome (Lyy;)Lkd;
+		ARG 1 chunkPos
+	METHOD a getTemperatureBlock ([DIIII)[D
+		ARG 1 data
+		ARG 2 x
+		ARG 3 z
+		ARG 4 xSize
+		ARG 5 zSize
+	METHOD a getBiomeBlock ([Lkd;IIII)[Lkd;
+		ARG 1 data
+		ARG 2 x
+		ARG 3 z
+		ARG 4 xSize
+		ARG 5 zSize
+	METHOD b getTemperature (II)D
+		ARG 1 x
+		ARG 2 z

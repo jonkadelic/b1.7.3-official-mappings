@@ -1,0 +1,4 @@
+CLASS oy argo/jdom/JsonObjectNodeHashMap
+	FIELD a parent Lsx;
+	METHOD <init> (Lsx;)V
+		ARG 1 parent

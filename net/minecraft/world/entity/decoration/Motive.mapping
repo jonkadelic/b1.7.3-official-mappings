@@ -1,0 +1,13 @@
+CLASS iq net/minecraft/world/entity/decoration/Motive
+	FIELD A id Ljava/lang/String;
+	FIELD B width I
+	FIELD C height I
+	FIELD D x I
+	FIELD E y I
+	FIELD z longestName I
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;IIII)V
+		ARG 3 id
+		ARG 4 width
+		ARG 5 height
+		ARG 6 x
+		ARG 7 y

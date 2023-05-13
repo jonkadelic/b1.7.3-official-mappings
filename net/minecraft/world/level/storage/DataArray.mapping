@@ -1,0 +1,16 @@
+CLASS wi net/minecraft/world/level/storage/DataArray
+	FIELD a data [B
+	METHOD <init> (I)V
+		ARG 1 size
+	METHOD <init> ([B)V
+		ARG 1 data
+	METHOD a isValid ()Z
+	METHOD a getData (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a setData (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 value

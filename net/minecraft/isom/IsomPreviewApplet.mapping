@@ -1,0 +1,4 @@
+CLASS net/minecraft/isom/IsomPreviewApplet net/minecraft/isom/IsomPreviewApplet
+	FIELD a isomPreview Lbd;
+	METHOD start start ()V
+	METHOD stop stop ()V

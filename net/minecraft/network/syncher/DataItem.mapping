@@ -1,0 +1,16 @@
+CLASS ma net/minecraft/network/syncher/DataItem
+	FIELD a dataType I
+	FIELD b id I
+	FIELD c value Ljava/lang/Object;
+	FIELD d dirty Z
+	METHOD <init> (IILjava/lang/Object;)V
+		ARG 1 dataType
+		ARG 2 id
+		ARG 3 value
+	METHOD a getId ()I
+	METHOD a setValue (Ljava/lang/Object;)V
+		ARG 1 value
+	METHOD a setDirty (Z)V
+		ARG 1 dirty
+	METHOD b getValue ()Ljava/lang/Object;
+	METHOD c getDataType ()I

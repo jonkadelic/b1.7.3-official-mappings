@@ -1,0 +1,5 @@
+CLASS lr net/minecraft/client/player/KeyboardInput
+	FIELD f keys [Z
+	FIELD g options Lkv;
+	METHOD <init> (Lkv;)V
+		ARG 1 options

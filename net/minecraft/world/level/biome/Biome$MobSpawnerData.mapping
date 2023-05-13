@@ -1,0 +1,6 @@
+CLASS bj net/minecraft/world/level/biome/Biome$MobSpawnerData
+	FIELD a mobClass Ljava/lang/Class;
+	FIELD b probability I
+	METHOD <init> (Ljava/lang/Class;I)V
+		ARG 1 mobClass
+		ARG 2 probability

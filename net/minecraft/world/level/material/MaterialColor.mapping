@@ -1,0 +1,21 @@
+CLASS dx net/minecraft/world/level/material/MaterialColor
+	FIELD a materialColors [Ldx;
+	FIELD b none Ldx;
+	FIELD c grass Ldx;
+	FIELD d sand Ldx;
+	FIELD e wool Ldx;
+	FIELD f fire Ldx;
+	FIELD g ice Ldx;
+	FIELD h metal Ldx;
+	FIELD i plant Ldx;
+	FIELD j snow Ldx;
+	FIELD k clay Ldx;
+	FIELD l dirt Ldx;
+	FIELD m stone Ldx;
+	FIELD n water Ldx;
+	FIELD o wood Ldx;
+	FIELD p col I
+	FIELD q id I
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 col

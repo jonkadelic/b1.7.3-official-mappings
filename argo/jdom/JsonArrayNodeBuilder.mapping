@@ -1,0 +1,4 @@
+CLASS ed argo/jdom/JsonArrayNodeBuilder
+	FIELD a elementBuilders Ljava/util/List;
+	METHOD a withElement (Llb;)Led;
+		ARG 1 elementBuilder

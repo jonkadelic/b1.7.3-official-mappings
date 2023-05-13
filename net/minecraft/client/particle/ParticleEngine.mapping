@@ -1,0 +1,31 @@
+CLASS dn net/minecraft/client/particle/ParticleEngine
+	FIELD a level Lfd;
+	FIELD b particles [Ljava/util/List;
+	FIELD c textures Lji;
+	FIELD d random Ljava/util/Random;
+	METHOD <init> (Lfd;Lji;)V
+		ARG 1 fd
+		ARG 2 ji
+	METHOD a tick ()V
+	METHOD a crack (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 direction
+	METHOD a destroy (IIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tileId
+		ARG 5 direction
+	METHOD a setLevel (Lfd;)V
+		ARG 1 level
+	METHOD a render (Lsn;F)V
+		ARG 1 camera
+		ARG 2 partialTick
+	METHOD a add (Lxw;)V
+		ARG 1 particle
+	METHOD b countParticles ()Ljava/lang/String;
+	METHOD b renderLit (Lsn;F)V
+		ARG 1 camera
+		ARG 2 partialTick

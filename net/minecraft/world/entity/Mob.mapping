@@ -1,0 +1,35 @@
+CLASS ls net/minecraft/world/entity/Mob
+	FIELD E invulnerableDuration I
+	FIELD F rot F
+	FIELD G timeOffs F
+	FIELD H yBodyRot F
+	FIELD I yBodyRotO F
+	FIELD J oRun F
+	FIELD K run F
+	FIELD L animStep F
+	FIELD M animStepO F
+	FIELD N hasHair Z
+	FIELD O textureName Ljava/lang/String;
+	FIELD P allowAlpha Z
+	FIELD Q rotOffs F
+	FIELD R modelName Ljava/lang/String;
+	FIELD S bobStrength F
+	FIELD T deathScore I
+	FIELD U renderOffset F
+	FIELD Y health I
+	FIELD Z lastHealth I
+	FIELD aa hurtTime I
+	FIELD ab hurtDuration I
+	FIELD ac hurtDir F
+	FIELD ae attackTime I
+	FIELD ah dead Z
+	METHOD a knockback (Lsn;IDD)V
+		ARG 1 attacker
+		ARG 2 damage
+		ARG 3 x
+		ARG 5 z
+	METHOD a_ travel (FF)V
+	METHOD b die (Lsn;)V
+		ARG 1 attacker
+	METHOD j getDeathLoot ()I
+	METHOD q dropDeathLoot ()V

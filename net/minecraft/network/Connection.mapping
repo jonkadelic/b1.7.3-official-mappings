@@ -1,0 +1,4 @@
+CLASS pf net/minecraft/network/Connection
+	METHOD <init> (Ljava/net/Socket;Ljava/lang/String;Lti;)V
+		ARG 1 socket
+		ARG 3 packetListener

@@ -1,0 +1,19 @@
+CLASS vb net/minecraft/world/level/storage/LevelSummary
+	FIELD a levelId Ljava/lang/String;
+	FIELD b levelName Ljava/lang/String;
+	FIELD c lastPlayed J
+	FIELD d sizeOnDisk J
+	FIELD e requiresConversion Z
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;JJZ)V
+		ARG 1 levelId
+		ARG 2 levelName
+		ARG 3 lastPlayed
+		ARG 5 sizeOnDisk
+		ARG 7 requiresConversion
+	METHOD a getLevelId ()Ljava/lang/String;
+	METHOD b getLevelName ()Ljava/lang/String;
+	METHOD c getSizeOnDisk ()J
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
+		ARG 1 levelSummary
+	METHOD d isRequiresConversion ()Z
+	METHOD e getLastPlayed ()J

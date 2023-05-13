@@ -1,0 +1,15 @@
+CLASS ki net/minecraft/network/Packet
+	FIELD a idToClassMap_ Ljava/util/Map;
+	FIELD b classToIdMap_ Ljava/util/Map;
+	METHOD a getPacketSize ()I
+	METHOD a createPacket (I)Lki;
+		ARG 0 id
+	METHOD a addPacket (IZZLjava/lang/Class;)V
+		ARG 0 id
+		ARG 3 packetClass
+	METHOD a read (Ljava/io/DataInputStream;)V
+		ARG 1 stream
+	METHOD a write (Ljava/io/DataOutputStream;)V
+		ARG 1 stream
+	METHOD a handle (Lti;)V
+		ARG 1 handler

@@ -1,0 +1,8 @@
+CLASS sp com/mojang/nbt/ListTag
+	FIELD a data Ljava/util/List;
+	FIELD b type B
+	METHOD a get (I)Lij;
+		ARG 1 i
+	METHOD a add (Lij;)V
+		ARG 1 ij
+	METHOD c size ()I

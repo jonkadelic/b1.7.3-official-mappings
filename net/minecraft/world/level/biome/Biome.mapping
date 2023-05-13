@@ -1,0 +1,38 @@
+CLASS kd net/minecraft/world/level/biome/Biome
+	FIELD a rainForest Lkd;
+	FIELD b swampland Lkd;
+	FIELD c seasonalForest Lkd;
+	FIELD d forest Lkd;
+	FIELD e savanna Lkd;
+	FIELD f shrubland Lkd;
+	FIELD g taiga Lkd;
+	FIELD h desert Lkd;
+	FIELD i plains Lkd;
+	FIELD j iceDesert Lkd;
+	FIELD k tundra Lkd;
+	FIELD l hell Lkd;
+	FIELD m sky Lkd;
+	FIELD n name Ljava/lang/String;
+	FIELD o color I
+	FIELD r leafColor I
+	FIELD s monsterSpawnList Ljava/util/List;
+	FIELD t creatureSpawnList Ljava/util/List;
+	FIELD u waterCreatureSpawnList Ljava/util/List;
+	FIELD v setSnowCovered Z
+	FIELD x map [Lkd;
+	METHOD a recalc ()V
+	METHOD a getBiome (DD)Lkd;
+		ARG 0 temperature
+		ARG 2 downfall
+	METHOD a _getBiome (FF)Lkd;
+		ARG 0 temperature
+		ARG 1 downfall
+	METHOD a setLeafColor (I)Lkd;
+		ARG 1 leafColor
+	METHOD a setName (Ljava/lang/String;)Lkd;
+		ARG 1 name
+	METHOD a getTreeFeature (Ljava/util/Random;)Lpg;
+		ARG 1 random
+	METHOD b setSnowCovered ()Lkd;
+	METHOD b setColor (I)Lkd;
+	METHOD c isSnowCovered ()Z

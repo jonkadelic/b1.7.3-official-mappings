@@ -1,0 +1,21 @@
+CLASS xa net/minecraft/world/level/dimension/Dimension
+	FIELD a level Lfd;
+	FIELD b biomeSource Lxv;
+	FIELD f brightnessRamp [F
+	FIELD h sunriseCol [F
+	METHOD a init ()V
+	METHOD a getSunriseColor (FF)[F
+	METHOD a getNew (I)Lxa;
+		ARG 0 id
+	METHOD a isValidSpawn (II)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD a getTimeOfDay (JF)F
+	METHOD a init (Lfd;)V
+		ARG 1 level
+	METHOD b createRandomLevelSource ()Lcl;
+	METHOD b getFogColor (FF)Lbt;
+	METHOD c hasGround ()Z
+	METHOD d getCloudHeight ()F
+	METHOD e updateLightRamp ()V
+	METHOD f mayRespawn ()Z

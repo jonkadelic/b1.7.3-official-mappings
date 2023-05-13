@@ -1,0 +1,6 @@
+CLASS nb net/minecraft/client/network/ClientSideNetworkHandler
+	FIELD c random Ljava/util/Random;
+	FIELD e connection Lpf;
+	FIELD f minecraft Lnet/minecraft/client/Minecraft;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/lang/String;I)V
+		ARG 1 minecraft

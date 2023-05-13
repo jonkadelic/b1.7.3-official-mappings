@@ -1,0 +1,53 @@
+CLASS ob net/minecraft/client/GameMode
+	FIELD a minecraft Lnet/minecraft/client/Minecraft;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD a stopDestroyBlock ()V
+	METHOD a render (F)V
+	METHOD a startDestroyBlock (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 direction
+	METHOD a handleInventoryMouseClick (IIIZLgs;)Liz;
+		ARG 5 player
+	METHOD a handleCloseInventory (ILgs;)V
+		ARG 2 player
+	METHOD a initLevel (Lfd;)V
+		ARG 1 level
+	METHOD a initPlayer (Lgs;)V
+		ARG 1 player
+	METHOD a useItem (Lgs;Lfd;Liz;)Z
+		ARG 1 player
+		ARG 2 level
+		ARG 3 itemInstance
+	METHOD a useItemOn (Lgs;Lfd;Liz;IIII)Z
+		ARG 1 player
+		ARG 2 level
+		ARG 3 itemInstance
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+	METHOD a attack (Lgs;Lsn;)V
+		ARG 1 player
+		ARG 2 entity
+	METHOD b getPickRange ()F
+	METHOD b destroyBlock (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 direction
+	METHOD b createPlayer (Lfd;)Lgs;
+		ARG 1 level
+	METHOD b adjustPlayer (Lgs;)V
+		ARG 1 player
+	METHOD b interact (Lgs;Lsn;)V
+		ARG 1 player
+		ARG 2 entity
+	METHOD c tick ()V
+	METHOD c continueDestroyBlock (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 direction
+	METHOD d isSurvivalType ()Z

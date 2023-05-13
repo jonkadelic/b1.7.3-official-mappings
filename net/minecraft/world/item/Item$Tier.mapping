@@ -1,0 +1,14 @@
+CLASS bu net/minecraft/world/item/Item$Tier
+	FIELD f harvestLevel I
+	FIELD g maxUses I
+	FIELD h properMaterialEfficiency F
+	FIELD i attackDamage I
+	METHOD <init> (Ljava/lang/String;IIIFI)V
+		ARG 3 harvestLevel
+		ARG 4 maxUses
+		ARG 5 properMaterialEfficiency
+		ARG 6 attackDamage
+	METHOD a getMaxUses ()I
+	METHOD b getProperMaterialEfficiency ()F
+	METHOD c attackDamage ()I
+	METHOD d harvestLevel ()I

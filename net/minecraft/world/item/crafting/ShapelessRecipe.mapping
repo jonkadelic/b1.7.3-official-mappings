@@ -1,0 +1,6 @@
+CLASS tt net/minecraft/world/item/crafting/ShapelessRecipe
+	FIELD a resultItem Liz;
+	FIELD b ingredients Ljava/util/List;
+	METHOD <init> (Liz;Ljava/util/List;)V
+		ARG 1 itemInstance
+		ARG 2 ingredients

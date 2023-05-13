@@ -1,0 +1,4 @@
+CLASS y argo/jdom/JsonArrayList
+	FIELD a elements Ljava/lang/Iterable;
+	METHOD <init> (Ljava/lang/Iterable;)V
+		ARG 1 elements

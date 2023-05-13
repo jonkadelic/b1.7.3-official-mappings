@@ -1,0 +1,9 @@
+CLASS ke net/minecraft/client/gui/components/Button
+	FIELD a width I
+	FIELD b height I
+	FIELD c x I
+	FIELD d y I
+	FIELD e message Ljava/lang/String;
+	FIELD f id I
+	FIELD g active Z
+	FIELD h visible Z

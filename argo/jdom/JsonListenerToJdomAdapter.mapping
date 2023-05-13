@@ -1,0 +1,8 @@
+CLASS lt argo/jdom/JsonListenerToJdomAdapter
+	FIELD a stack Ljava/util/Stack;
+	FIELD b root Llb;
+	METHOD a getDocument ()Lqe;
+	METHOD a addRootNode (Llb;)V
+		ARG 1 rootNodeBuilder
+	METHOD b addValue (Llb;)V
+		ARG 1 nodeBuilder

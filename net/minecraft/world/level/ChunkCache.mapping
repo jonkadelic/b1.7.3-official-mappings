@@ -1,0 +1,10 @@
+CLASS kx net/minecraft/world/level/ChunkCache
+	FIELD c emptyChunk Llm;
+	FIELD g level Lfd;
+	METHOD a (Llm;)V
+		ARG 1 levelChunk
+	METHOD b save (Llm;)V
+		ARG 1 levelChunk
+	METHOD f load (II)Llm;
+		ARG 1 x
+		ARG 2 z

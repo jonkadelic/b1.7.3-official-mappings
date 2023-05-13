@@ -1,0 +1,10 @@
+CLASS xe argo/saj/InvalidSyntaxException
+	FIELD a column I
+	FIELD b row I
+	METHOD <init> (Ljava/lang/String;Let;)V
+		ARG 1 s
+		ARG 2 thingWithPosition
+	METHOD <init> (Ljava/lang/String;Ljava/lang/Throwable;Let;)V
+		ARG 1 s
+		ARG 2 throwable
+		ARG 3 thingWithPosition

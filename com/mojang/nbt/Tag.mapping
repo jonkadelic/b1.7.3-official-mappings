@@ -1,0 +1,19 @@
+CLASS ij com/mojang/nbt/Tag
+	FIELD a name Ljava/lang/String;
+	METHOD a getId ()B
+	METHOD a newTag (B)Lij;
+		ARG 0 tagType
+	METHOD a writeNamedTag (Lij;Ljava/io/DataOutput;)V
+		ARG 0 tag
+		ARG 1 out
+	METHOD a load (Ljava/io/DataInput;)V
+		ARG 1 dis
+	METHOD a write (Ljava/io/DataOutput;)V
+		ARG 1 dos
+	METHOD a setName (Ljava/lang/String;)Lij;
+		ARG 1 name
+	METHOD b getTagName ()Ljava/lang/String;
+	METHOD b getTagTypeName (B)Ljava/lang/String;
+		ARG 0 tagType
+	METHOD b readNamedTag (Ljava/io/DataInput;)Lij;
+		ARG 0 in

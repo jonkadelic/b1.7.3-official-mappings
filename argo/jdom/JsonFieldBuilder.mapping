@@ -1,0 +1,10 @@
+CLASS pn argo/jdom/JsonFieldBuilder
+	FIELD a keyBuilder Llb;
+	FIELD b valueBuilder Llb;
+	METHOD a aJsonFieldBuilder ()Lpn;
+	METHOD a withKey (Llb;)Lpn;
+		ARG 1 jsonStringNodeBuilder
+	METHOD b buildKey ()Lqa;
+	METHOD b withValue (Llb;)Lpn;
+		ARG 1 jsonNodeBuilder
+	METHOD c buildValue ()Lgu;

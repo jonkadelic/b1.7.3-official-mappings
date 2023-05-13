@@ -1,0 +1,3 @@
+CLASS qn net/minecraft/world/level/levelgen/HellRandomLevelSource
+	METHOD a prepareHeights (II[B)V
+	METHOD a getHeights ([DIIIIII)[D

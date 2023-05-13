@@ -1,0 +1,9 @@
+CLASS gu argo/jdom/JsonNode
+	METHOD a getType ()Lat;
+	METHOD a wrapExceptionsFor (Ljt;Lgu;[Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 value
+		ARG 2 node
+		ARG 3 pathElements
+	METHOD b getText ()Ljava/lang/String;
+	METHOD c getFields ()Ljava/util/Map;
+	METHOD d getElements ()Ljava/util/List;

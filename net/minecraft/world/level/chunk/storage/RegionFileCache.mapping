@@ -1,0 +1,19 @@
+CLASS rj net/minecraft/world/level/chunk/storage/RegionFileCache
+	FIELD a cache Ljava/util/Map;
+	METHOD a clear ()V
+	METHOD a getRegionFile (Ljava/io/File;II)Lqj;
+		ARG 0 filePath
+		ARG 1 x
+		ARG 2 z
+	METHOD b getSizeDelta (Ljava/io/File;II)I
+		ARG 0 filePath
+		ARG 1 x
+		ARG 2 z
+	METHOD c getChunkDataInputStream (Ljava/io/File;II)Ljava/io/DataInputStream;
+		ARG 0 filePath
+		ARG 1 x
+		ARG 2 z
+	METHOD d getChunkDataOutputStream (Ljava/io/File;II)Ljava/io/DataOutputStream;
+		ARG 0 filePath
+		ARG 1 x
+		ARG 2 z

@@ -1,0 +1,19 @@
+CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
+	FIELD R crashed Z
+	FIELD T timer Lpy;
+	FIELD a instance Lnet/minecraft/client/Minecraft;
+	FIELD b reserve [B
+	FIELD c gameMode Lob;
+	FIELD d width I
+	FIELD e height I
+	FIELD f level Lfd;
+	FIELD h player Ldc;
+	FIELD p textures Lji;
+	FIELD q font Lsj;
+	FIELD r screen Lda;
+	FIELD s progressScreen Lmk;
+	FIELD z options Lkv;
+	METHOD a setLevel (Lfd;Ljava/lang/String;Lgs;)V
+		ARG 1 level
+		ARG 3 player
+	METHOD u useFancyGraphics ()Z
