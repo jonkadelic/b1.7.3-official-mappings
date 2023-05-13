@@ -1,0 +1,7 @@
+CLASS ia net/minecraft/world/level/GrassColor
+	FIELD a pixels [I
+	METHOD a get (DD)I
+		ARG 0 x
+		ARG 2 y
+	METHOD a init ([I)V
+		ARG 0 pixels

@@ -1,1 +1,7 @@
 CLASS sm net/minecraft/world/level/tile/RedStoneWireTile
+	METHOD e shouldConnectTo (Lxp;IIII)Z
+		ARG 0 levelSource
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 data

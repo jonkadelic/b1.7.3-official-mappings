@@ -1,1 +1,2 @@
 CLASS ve net/minecraft/world/level/tile/BedTile
+	FIELD a HEAD_DIRECTION_OFFSETS [[I
