@@ -1,0 +1,2 @@
+CLASS fv net/minecraft/world/level/levelgen/feature/LargeFeature
+	METHOD a apply (Lcl;Lfd;II[B)V

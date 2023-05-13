@@ -1,0 +1,31 @@
+CLASS lg net/minecraft/client/gui/components/BaseSelectionList
+	FIELD a minecraft Lnet/minecraft/client/Minecraft;
+	FIELD b width I
+	FIELD c height I
+	FIELD d x1 I
+	FIELD e x0 I
+	FIELD h y0 I
+	FIELD i y1 I
+	FIELD j itemHeight I
+	FIELD p renderSelection Z
+	FIELD q renderHeader Z
+	FIELD r selected I
+	METHOD <init> (Lnet/minecraft/client/Minecraft;IIIII)V
+		ARG 1 minecraft
+		ARG 2 width
+		ARG 3 height
+		ARG 4 y0
+		ARG 5 y1
+		ARG 6 itemHeight
+	METHOD a getNumberOfItems ()I
+	METHOD a render (IIF)V
+	METHOD a renderItem (IIIILnw;)V
+	METHOD a renderHeader (IILnw;)V
+	METHOD a selectItem (IZ)V
+	METHOD a setRenderSelection (Z)V
+		ARG 1 renderSelection
+	METHOD a setRenderHeader (ZI)V
+		ARG 1 renderHeader
+	METHOD b getMaxPosition ()I
+	METHOD b renderDecorations (II)V
+	METHOD c_ isSelectedItem (I)Z

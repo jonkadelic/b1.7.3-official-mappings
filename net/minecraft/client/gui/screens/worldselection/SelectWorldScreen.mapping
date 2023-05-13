@@ -1,1 +1,5 @@
 CLASS rq net/minecraft/client/gui/screens/worldselection/SelectWorldScreen
+	FIELD a lastScreen Lda;
+	FIELD i title Ljava/lang/String;
+	METHOD <init> (Lda;)V
+		ARG 1 lastScreen

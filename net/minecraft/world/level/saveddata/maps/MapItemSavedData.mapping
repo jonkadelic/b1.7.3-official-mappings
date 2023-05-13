@@ -1,0 +1,19 @@
+CLASS iu net/minecraft/world/level/saveddata/maps/MapItemSavedData
+	FIELD b x I
+	FIELD c z I
+	FIELD d dimension B
+	FIELD e scale B
+	FIELD f colors [B
+	FIELD g step I
+	FIELD h carriedBy Ljava/util/List;
+	FIELD i decorations Ljava/util/List;
+	FIELD j carriedByPlayers Ljava/util/Map;
+	METHOD a setDirty (III)V
+		ARG 1 layer
+		ARG 2 x
+		ARG 3 y
+	METHOD a tickCarriedBy (Lgs;Liz;)V
+		ARG 1 player
+		ARG 2 item
+	METHOD a setColors ([B)V
+		ARG 1 colors

@@ -1,0 +1,3 @@
+CLASS su net/minecraft/client/gui/screens/achievement/StatsScreen$1
+	METHOD <init> (Ldv;)V
+		ARG 1 statsScreen

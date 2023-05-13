@@ -2,7 +2,9 @@ CLASS xa net/minecraft/world/level/dimension/Dimension
 	FIELD a level Lfd;
 	FIELD b biomeSource Lxv;
 	FIELD c naturalDimension Z
+	FIELD e hasCeiling Z
 	FIELD f brightnessRamp [F
+	FIELD g type I
 	FIELD h sunriseCol [F
 	METHOD a init ()V
 	METHOD a getSunriseColor (FF)[F

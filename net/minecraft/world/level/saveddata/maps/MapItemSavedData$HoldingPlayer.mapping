@@ -1,0 +1,10 @@
+CLASS si net/minecraft/world/level/saveddata/maps/MapItemSavedData$HoldingPlayer
+	FIELD a player Lgs;
+	FIELD b minDirty [I
+	FIELD c maxDirty [I
+	FIELD d data Liu;
+	FIELD e tick I
+	FIELD f step I
+	METHOD <init> (Liu;Lgs;)V
+		ARG 1 data
+		ARG 2 player

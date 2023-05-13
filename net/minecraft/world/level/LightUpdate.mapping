@@ -1,0 +1,25 @@
+CLASS st net/minecraft/world/level/LightUpdate
+	FIELD a lightLayer Leb;
+	FIELD b x0 I
+	FIELD c y0 I
+	FIELD d z0 I
+	FIELD e x1 I
+	FIELD f y1 I
+	FIELD g z1 I
+	METHOD <init> (Leb;IIIIII)V
+		ARG 1 lightLayer
+		ARG 2 x0
+		ARG 3 y0
+		ARG 4 z0
+		ARG 5 x1
+		ARG 6 y1
+		ARG 7 z1
+	METHOD a expandToContain (IIIIII)Z
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD a update (Lfd;)V
+		ARG 1 level

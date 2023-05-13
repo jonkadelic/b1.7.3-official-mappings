@@ -1,0 +1,12 @@
+CLASS ax net/minecraft/world/level/saveddata/maps/MapItemSavedData$MapDecoration
+	FIELD a type B
+	FIELD b x B
+	FIELD c y B
+	FIELD d rot B
+	FIELD e data Liu;
+	METHOD <init> (Liu;BBBB)V
+		ARG 1 data
+		ARG 2 type
+		ARG 3 x
+		ARG 4 y
+		ARG 5 rot

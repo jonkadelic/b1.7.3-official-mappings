@@ -66,8 +66,10 @@ CLASS fd net/minecraft/world/level/Level
 	METHOD a containsLiquid (Leq;Lln;)Z
 	METHOD a (Lgs;)V
 		ARG 1 player
+	METHOD a getSavedData (Ljava/lang/Class;Ljava/lang/String;)Lhm;
 	METHOD a addParticle (Ljava/lang/String;DDDDDD)V
 	METHOD a playStreamingMusic (Ljava/lang/String;III)V
+	METHOD a setMapData (Ljava/lang/String;Lhm;)V
 	METHOD a addListener (Lpm;)V
 		ARG 1 listener
 	METHOD a getCubes (Lsn;Leq;)Ljava/util/List;

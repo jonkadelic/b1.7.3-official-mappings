@@ -1,0 +1,13 @@
+CLASS hm net/minecraft/world/level/saveddata/SavedData
+	FIELD a id Ljava/lang/String;
+	FIELD b dirty Z
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 id
+	METHOD a setDirty ()V
+	METHOD a load (Lnu;)V
+		ARG 1 tag
+	METHOD a setDirty (Z)V
+		ARG 1 dirty
+	METHOD b isDirty ()Z
+	METHOD b save (Lnu;)V
+		ARG 1 tag
