@@ -1,0 +1,3 @@
+CLASS di net/minecraft/network/protocol/TakeItemEntityPacket
+	FIELD a itemId I
+	FIELD b playerId I

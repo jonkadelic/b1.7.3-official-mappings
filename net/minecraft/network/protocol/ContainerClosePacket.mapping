@@ -1,0 +1,4 @@
+CLASS mn net/minecraft/network/protocol/ContainerClosePacket
+	FIELD a containerId I
+	METHOD <init> (I)V
+		ARG 1 containerId

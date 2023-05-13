@@ -1,0 +1,4 @@
+CLASS mv net/minecraft/network/protocol/ContainerSetDataPacket
+	FIELD a containerId I
+	FIELD b id I
+	FIELD c value I

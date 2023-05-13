@@ -1,0 +1,3 @@
+CLASS wb net/minecraft/world/level/tile/Bush
+	METHOD d mayPlaceOn (I)Z
+		ARG 1 tile

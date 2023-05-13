@@ -1,0 +1,8 @@
+CLASS a net/minecraft/network/protocol/InteractPacket
+	FIELD a playerId I
+	FIELD b entityId I
+	FIELD c action I
+	METHOD <init> (III)V
+		ARG 1 playerId
+		ARG 2 entityId
+		ARG 3 action

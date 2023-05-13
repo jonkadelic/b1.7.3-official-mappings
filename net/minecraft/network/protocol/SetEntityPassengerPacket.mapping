@@ -1,0 +1,3 @@
+CLASS ns net/minecraft/network/protocol/SetEntityPassengerPacket
+	FIELD a vehicle I
+	FIELD b passenger I

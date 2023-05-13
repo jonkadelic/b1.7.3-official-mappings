@@ -1,0 +1,2 @@
+CLASS hg net/minecraft/network/protocol/SetTimePacket
+	FIELD a time J

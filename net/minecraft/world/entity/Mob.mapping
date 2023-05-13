@@ -23,6 +23,7 @@ CLASS ls net/minecraft/world/entity/Mob
 	FIELD ac hurtDir F
 	FIELD ae attackTime I
 	FIELD ah dead Z
+	METHOD N isSleeping ()Z
 	METHOD a knockback (Lsn;IDD)V
 		ARG 1 attacker
 		ARG 2 damage

@@ -1,2 +1,4 @@
 CLASS dc net/minecraft/client/player/LocalPlayer
+	METHOD d_ hurtTo (I)V
+		ARG 1 health
 	METHOD s getArmorValue ()I

@@ -1,0 +1,4 @@
+CLASS gk net/minecraft/world/level/tile/SandTile
+	FIELD a instaFall Z
+	METHOD c_ checkSlide (Lfd;III)Z
+	METHOD h onPlace (Lfd;III)V

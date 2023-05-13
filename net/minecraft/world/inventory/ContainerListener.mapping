@@ -1,1 +1,6 @@
 CLASS ec net/minecraft/world/inventory/ContainerListener
+	METHOD a setContainerData (Ldw;II)V
+		ARG 1 menu
+	METHOD a slotChanged (Ldw;ILiz;)V
+		ARG 1 menu
+		ARG 3 item

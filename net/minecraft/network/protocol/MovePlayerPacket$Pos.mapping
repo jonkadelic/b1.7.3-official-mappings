@@ -1,0 +1,7 @@
+CLASS af net/minecraft/network/protocol/MovePlayerPacket$Pos
+	METHOD <init> (DDDDZ)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 yo
+		ARG 7 z
+		ARG 9 onGround

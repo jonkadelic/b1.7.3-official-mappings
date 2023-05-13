@@ -1,0 +1,6 @@
+CLASS cd net/minecraft/world/inventory/ChestMenu
+	FIELD a container Llw;
+	FIELD b containerRows I
+	METHOD <init> (Llw;Llw;)V
+		ARG 1 inventory
+		ARG 2 container

@@ -1,0 +1,6 @@
+CLASS rm net/minecraft/network/protocol/ExplosionPacket
+	FIELD a x D
+	FIELD b y D
+	FIELD c z D
+	FIELD d power F
+	FIELD e toBlow Ljava/util/Set;

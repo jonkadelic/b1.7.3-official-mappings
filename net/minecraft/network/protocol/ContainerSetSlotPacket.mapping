@@ -1,0 +1,4 @@
+CLASS hq net/minecraft/network/protocol/ContainerSetSlotPacket
+	FIELD a containerId I
+	FIELD b slot I
+	FIELD c instance Liz;

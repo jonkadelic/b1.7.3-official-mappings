@@ -1,0 +1,5 @@
+CLASS s net/minecraft/network/protocol/SetEquippedItemPacket
+	FIELD a entity I
+	FIELD b slot I
+	FIELD c item I
+	FIELD d data I

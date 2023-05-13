@@ -6,4 +6,11 @@ CLASS da net/minecraft/client/gui/screens/Screen
 	FIELD f passEvents Z
 	FIELD g font Lsj;
 	FIELD h particleEngine Ldu;
+	METHOD a keyPressed (CI)V
+		ARG 1 character
+		ARG 2 keyCode
 	METHOD a render (IIF)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 partialTicks
+	METHOD b renderDirtBackground (I)V

@@ -1,0 +1,4 @@
+CLASS yr net/minecraft/network/protocol/DisconnectPacket
+	FIELD a reason Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 reason

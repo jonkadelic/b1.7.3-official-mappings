@@ -1,0 +1,4 @@
+CLASS rc net/minecraft/network/protocol/SetSpawnPacket
+	FIELD a x I
+	FIELD b y I
+	FIELD c z I

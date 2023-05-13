@@ -31,6 +31,7 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 2 levelName
 		ARG 3 dimension
 		ARG 4 seed
+	METHOD a playSound (DDDLjava/lang/String;FF)V
 	METHOD a getSkyDarken (F)I
 	METHOD a getTopTile (II)I
 		ARG 1 x
@@ -53,6 +54,7 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD a setSpawnPos (Lbr;)V
 	METHOD a getBrightness (Leb;III)I
 	METHOD a (Leb;IIII)V
 		ARG 1 lightLayer
@@ -64,6 +66,8 @@ CLASS fd net/minecraft/world/level/Level
 	METHOD a containsLiquid (Leq;Lln;)Z
 	METHOD a (Lgs;)V
 		ARG 1 player
+	METHOD a addParticle (Ljava/lang/String;DDDDDD)V
+	METHOD a playStreamingMusic (Ljava/lang/String;III)V
 	METHOD a addListener (Lpm;)V
 		ARG 1 listener
 	METHOD a getCubes (Lsn;Leq;)Ljava/util/List;
@@ -94,6 +98,7 @@ CLASS fd net/minecraft/world/level/Level
 	METHOD b removeListener (Lpm;)V
 		ARG 1 listener
 	METHOD b addEntity (Lsn;)Z
+		ARG 1 entity
 	METHOD b getEntities (Lsn;Leq;)Ljava/util/List;
 	METHOD c setInitialSpawn ()V
 	METHOD c getChunk (II)Llm;
@@ -108,6 +113,12 @@ CLASS fd net/minecraft/world/level/Level
 	METHOD d getFogColor (F)Lbt;
 	METHOD d getHeightmap (II)I
 	METHOD d isEmptyTile (III)Z
+	METHOD d tileEvent (IIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 b0
+		ARG 5 b1
 	METHOD e getSunAngle (F)F
 	METHOD e getTopSolidBlock (II)I
 		ARG 1 x
@@ -127,6 +138,7 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 3 z
 		ARG 4 id
 	METHOD g tileUpdated (IIII)V
+	METHOD h setRainLevel (F)V
 	METHOD i hasChunkAt (III)Z
 		ARG 1 x
 		ARG 2 y
@@ -137,6 +149,7 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 3 z
 		ARG 4 tileId
 	METHOD k updateSkyBrightness ()V
+	METHOD l tick ()V
 	METHOD l neighborChanged (IIII)V
 		ARG 1 x
 		ARG 2 y
@@ -151,3 +164,4 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 	METHOD u getSharedSpawnPos ()Lbr;
+	METHOD x getLevelData ()Lei;

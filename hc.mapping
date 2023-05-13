@@ -1,0 +1,4 @@
+CLASS hc
+	FIELD a storage Lwt;
+	METHOD <init> (Lwt;)V
+		ARG 1 storage

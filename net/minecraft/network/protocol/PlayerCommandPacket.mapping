@@ -1,0 +1,6 @@
+CLASS ts net/minecraft/network/protocol/PlayerCommandPacket
+	FIELD a entityId I
+	FIELD b action I
+	METHOD <init> (Lsn;I)V
+		ARG 1 entity
+		ARG 2 action

@@ -1,1 +1,22 @@
 CLASS qv net/minecraft/world/entity/decoration/Painting
+	FIELD a direction I
+	FIELD b xTile I
+	FIELD c yTile I
+	FIELD d zTile I
+	FIELD e motive Liq;
+	FIELD f checkInterval I
+	METHOD <init> (Lfd;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 direction
+	METHOD <init> (Lfd;IIIILjava/lang/String;)V
+		ARG 1 level
+		ARG 2 xTile
+		ARG 3 yTile
+		ARG 4 zTile
+		ARG 5 direction
+		ARG 6 motive
+	METHOD b setDirection (I)V
+		ARG 1 direction

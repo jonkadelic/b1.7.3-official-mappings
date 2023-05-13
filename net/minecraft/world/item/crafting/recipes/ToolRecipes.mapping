@@ -1,0 +1,3 @@
+CLASS ha net/minecraft/world/item/crafting/recipes/ToolRecipes
+	METHOD a addRecipes (Lhk;)V
+		ARG 1 recipes

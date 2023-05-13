@@ -1,0 +1,4 @@
+CLASS iw net/minecraft/network/protocol/OpenScreenPacket
+	FIELD a containerId I
+	FIELD b type I
+	FIELD c title Ljava/lang/String;

@@ -1,0 +1,8 @@
+CLASS fa net/minecraft/network/protocol/AddGlobalEntityPacket
+	FIELD a id I
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e type I
+	METHOD <init> (Lsn;)V
+		ARG 1 entity

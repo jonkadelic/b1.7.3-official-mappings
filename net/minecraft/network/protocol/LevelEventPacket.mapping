@@ -1,0 +1,6 @@
+CLASS fn net/minecraft/network/protocol/LevelEventPacket
+	FIELD a type I
+	FIELD b data I
+	FIELD c x I
+	FIELD d y I
+	FIELD e z I

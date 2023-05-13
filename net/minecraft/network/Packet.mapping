@@ -1,6 +1,6 @@
 CLASS ki net/minecraft/network/Packet
-	FIELD a idToClassMap_ Ljava/util/Map;
-	FIELD b classToIdMap_ Ljava/util/Map;
+	FIELD a idToClassMap Ljava/util/Map;
+	FIELD b classToIdMap Ljava/util/Map;
 	METHOD a getPacketSize ()I
 	METHOD a createPacket (I)Lki;
 		ARG 0 id

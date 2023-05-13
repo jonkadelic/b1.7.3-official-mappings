@@ -1,0 +1,3 @@
+CLASS jy net/minecraft/world/item/crafting/recipes/StructureRecipes
+	METHOD a addRecipes (Lhk;)V
+		ARG 1 recipes

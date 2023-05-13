@@ -58,6 +58,8 @@ CLASS sn net/minecraft/world/entity/Entity
 		ARG 1 level
 	METHOD K remove ()V
 	METHOD U baseTick ()V
+	METHOD W isAlive ()Z
+	METHOD a handleEntityEvent (B)V
 	METHOD a shouldRenderAtSqrDistance (D)Z
 		ARG 1 sqrDistance
 	METHOD a lerpMotion (DDD)V
@@ -78,6 +80,7 @@ CLASS sn net/minecraft/world/entity/Entity
 	METHOD a hurt (Lsn;I)Z
 		ARG 1 attacker
 		ARG 2 damage
+	METHOD ad getEntityData ()Lud;
 	METHOD ag isInWater ()Z
 	METHOD ah isInLava ()Z
 	METHOD b defineSynchedData ()V
@@ -96,6 +99,7 @@ CLASS sn net/minecraft/world/entity/Entity
 	METHOD c setRot (FF)V
 		ARG 1 yRot
 		ARG 2 xRot
+	METHOD c setItemSlot (III)V
 	METHOD c save (Lnu;)Z
 		ARG 1 entityTag
 	METHOD c awardKillScore (Lsn;I)V
@@ -137,6 +141,7 @@ CLASS sn net/minecraft/world/entity/Entity
 	METHOD h push (Lsn;)V
 		ARG 1 entity
 	METHOD h_ isShootable ()Z
+	METHOD i startRiding (Lsn;)V
 	METHOD t_ resetPos ()V
 	METHOD w getHeadHeight ()F
 	METHOD w_ tick ()V

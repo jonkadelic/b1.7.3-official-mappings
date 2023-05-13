@@ -1,0 +1,12 @@
+CLASS gj net/minecraft/network/protocol/SetEntityMotionPacket
+	FIELD a id I
+	FIELD b xd I
+	FIELD c yd I
+	FIELD d zd I
+	METHOD <init> (IDDD)V
+		ARG 1 id
+		ARG 2 xd
+		ARG 4 yd
+		ARG 6 zd
+	METHOD <init> (Lsn;)V
+		ARG 1 entity

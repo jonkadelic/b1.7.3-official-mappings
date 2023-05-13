@@ -15,32 +15,47 @@ CLASS uu net/minecraft/world/level/tile/Tile
 	FIELD N glass Luu;
 	FIELD O lapisOre Luu;
 	FIELD P lapisBlock Luu;
-	FIELD Q dispenser_ Luu;
+	FIELD Q trap Luu;
 	FIELD R sandStone Luu;
-	FIELD S musicBlock_ Luu;
+	FIELD S musicBlock Luu;
 	FIELD T bed Luu;
-	FIELD U goldenRail_ Luu;
-	FIELD V detectorRail_ Luu;
+	FIELD U goldenRail Luu;
+	FIELD V detectorRail Luu;
 	FIELD W pistonStickyBase Luu;
 	FIELD X web Luu;
 	FIELD Y tallgrass Lru;
 	FIELD Z deadBush Ljb;
+	FIELD aA crops Luu;
 	FIELD aB farmland Luu;
+	FIELD aC furnace Luu;
+	FIELD aD furnace_lit Luu;
+	FIELD aE sign Luu;
 	FIELD aF door_wood Luu;
 	FIELD aG ladder Luu;
+	FIELD aH rail Luu;
 	FIELD aI stairs_stone Luu;
+	FIELD aJ wallSign Luu;
+	FIELD aK lever Luu;
+	FIELD aL stonePressurePlate Luu;
+	FIELD a descriptionId Ljava/lang/String;
 	FIELD aM door_iron Luu;
+	FIELD aN woodPressurePlate Luu;
 	FIELD aO redStoneOre Luu;
 	FIELD aP redStoneOre_lit Luu;
+	FIELD aQ redStoneTorch Luu;
+	FIELD aR redStoneTorch_lit Luu;
+	FIELD aS button Luu;
 	FIELD aT topSnow Luu;
 	FIELD aU ice Luu;
+	FIELD aV snow Luu;
 	FIELD aW cactus Luu;
 	FIELD aX clay Luu;
 	FIELD aY reeds Luu;
+	FIELD aZ recordPlayer Luu;
 	FIELD aa pistonBase Luu;
-	FIELD ab pistonHead_ Lh;
+	FIELD ab pistonHead Lh;
 	FIELD ac cloth Luu;
-	FIELD ad pistonMoving_ Lut;
+	FIELD ad movingPiston Lut;
 	FIELD ae flower Lwb;
 	FIELD af rose Lwb;
 	FIELD ag mushroom1 Lwb;
@@ -51,17 +66,41 @@ CLASS uu net/minecraft/world/level/tile/Tile
 	FIELD al stoneSlabHalf Luu;
 	FIELD am redBrick Luu;
 	FIELD an tnt Luu;
+	FIELD ao bookshelf Luu;
+	FIELD ap mossStone Luu;
 	FIELD aq obsidian Luu;
 	FIELD ar torch Luu;
 	FIELD as fire Lyq;
+	FIELD at mobSpawner Luu;
 	FIELD au stairs_wood Luu;
+	FIELD av chest Luu;
+	FIELD aw redStoneWire Luu;
 	FIELD ax emeraldOre Luu;
 	FIELD ay emeraldBlock Luu;
+	FIELD az workBench Luu;
 	FIELD bA material Lln;
+	FIELD ba fence Luu;
+	FIELD bb pumpkin Luu;
+	FIELD bc hellRock Luu;
+	FIELD bd hellSand Luu;
+	FIELD be lightGem Luu;
+	FIELD bf portal Lak;
+	FIELD bg litPumpkin Luu;
+	FIELD bh cake Luu;
+	FIELD bi diode Luu;
+	FIELD bj diode_lit Luu;
+	FIELD bk lockedChest Luu;
+	FIELD bl trapdoor Luu;
 	FIELD bm tex I
 	FIELD bn id I
 	FIELD bo destroyTime F
 	FIELD bp explosionResistance F
+	FIELD bs x0 D
+	FIELD bt y0 D
+	FIELD bu z0 D
+	FIELD bv x1 D
+	FIELD bw y1 D
+	FIELD bx z1 D
 	FIELD by soundType Lct;
 	FIELD d SOUND_NORMAL Lct;
 	FIELD e SOUND_WOOD Lct;
@@ -92,30 +131,64 @@ CLASS uu net/minecraft/world/level/tile/Tile
 		ARG 2 material
 	METHOD a setLightEmission (F)Luu;
 		ARG 1 lightEmission
+	METHOD a setShape (FFFFFF)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
 	METHOD a getTexture (I)I
-		ARG 1 data
+		ARG 1 face
 	METHOD a getTexture (II)I
-		ARG 1 data
-		ARG 2 direction
+		ARG 1 face
+		ARG 2 data
+	METHOD a getResource (ILjava/util/Random;)I
 	METHOD a setSoundType (Lct;)Luu;
 		ARG 1 soundType
+	METHOD a addAABBs (Lfd;IIILeq;Ljava/util/ArrayList;)V
 	METHOD a tick (Lfd;IIILjava/util/Random;)V
+	METHOD a entityInside (Lfd;IIILsn;)V
+	METHOD a setDescriptionId (Ljava/lang/String;)Luu;
+		ARG 1 id
 	METHOD a getTexture (Lxp;IIII)I
 		ARG 1 levelSource
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
+	METHOD b getRenderShape ()I
 	METHOD b setExplodeable (F)Luu;
 		ARG 1 explosionResistance
 	METHOD b getColor (I)I
 	METHOD b neighborChanged (Lfd;IIII)V
 	METHOD b getColor (Lxp;III)I
+	METHOD b shouldRenderFace (Lxp;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
 	METHOD b setTicking (Z)Luu;
 		ARG 1 ticking
+	METHOD b_ getRenderLayer ()I
+	METHOD c isSolidRender ()Z
 	METHOD c setDestroyTime (F)Luu;
 		ARG 1 destroyTime
-	METHOD d (Lxp;III)F
-		ARG 1 levelSource
+	METHOD d isCubeShaped ()Z
+	METHOD d getBrightness (Lxp;III)F
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD d (Lxp;IIII)Z
 		ARG 1 levelSource
 	METHOD e getTickDelay ()I
+	METHOD e getAABB (Lfd;III)Leq;
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD f getTileAABB (Lfd;III)Leq;
 		ARG 1 level
 		ARG 2 x
@@ -123,5 +196,7 @@ CLASS uu net/minecraft/world/level/tile/Tile
 		ARG 4 z
 	METHOD g setLightBlock (I)Luu;
 		ARG 1 lightBlock
+	METHOD l setUnbreakable ()Luu;
+	METHOD m getDestroyTime ()F
 	METHOD n getName ()Ljava/lang/String;
 	METHOD o getDescriptionId ()Ljava/lang/String;

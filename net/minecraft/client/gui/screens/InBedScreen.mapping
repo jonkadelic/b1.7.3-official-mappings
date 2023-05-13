@@ -1,1 +1,2 @@
 CLASS gh net/minecraft/client/gui/screens/InBedScreen
+	METHOD k sendWakeUp ()V

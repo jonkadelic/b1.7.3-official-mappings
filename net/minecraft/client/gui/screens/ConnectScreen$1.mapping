@@ -1,0 +1,7 @@
+CLASS wz net/minecraft/client/gui/screens/ConnectScreen$1
+	FIELD a minecraft Lnet/minecraft/client/Minecraft;
+	FIELD d connectScreen Lvx;
+	METHOD <init> (Lvx;Lnet/minecraft/client/Minecraft;Ljava/lang/String;I)V
+		ARG 1 connectScreen
+		ARG 2 minecraft
+	METHOD run run ()V

@@ -1,0 +1,9 @@
+CLASS rg net/minecraft/network/protocol/TeleportEntityPacket
+	FIELD a id I
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e yRot B
+	FIELD f xRot B
+	METHOD <init> (Lsn;)V
+		ARG 1 entity

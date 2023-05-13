@@ -1,0 +1,3 @@
+CLASS jf net/minecraft/network/protocol/EntityEventPacket
+	FIELD a entityId I
+	FIELD b eventType B

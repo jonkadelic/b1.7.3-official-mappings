@@ -1,0 +1,61 @@
+CLASS cv net/minecraft/client/renderer/TileRenderer
+	FIELD c levelSource Lxp;
+	METHOD <init> (Lxp;)V
+		ARG 1 levelSource
+	METHOD a tesselateRailInWorld (Lpc;III)Z
+	METHOD a tesselateTorch (Luu;DDDDD)V
+	METHOD a tesselateCrossTexture (Luu;IDDD)V
+	METHOD a tesselateInWorldNoCulling (Luu;III)V
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a tesselateBlockInWorldWithAmbienceOcclusion (Luu;IIIFFF)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 r
+		ARG 6 g
+		ARG 7 b
+	METHOD a tesselateInWorld (Luu;IIII)V
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD b tesselateRowTexture (Luu;IDDD)V
+	METHOD b tesselateInWorld (Luu;III)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD b tesselateBlockInWorld (Luu;IIIFFF)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 r
+		ARG 6 g
+		ARG 7 b
+	METHOD b tesselatePistonBaseInWorld (Luu;IIIZ)Z
+	METHOD c tesselateTorchInWorld (Luu;III)Z
+	METHOD c tesselateCactusInWorld (Luu;IIIFFF)Z
+	METHOD c tesselatePistonHeadInWorld (Luu;IIIZ)Z
+	METHOD e tesselateLeverInWorld (Luu;III)Z
+	METHOD f tesselateFireInWorld (Luu;III)Z
+	METHOD g tesselateWireInWorld (Luu;III)Z
+	METHOD h tesselateLadderInWorld (Luu;III)Z
+	METHOD i tesselateCrossInWorld (Luu;III)Z
+	METHOD j tesselateRowInWorld (Luu;III)Z
+	METHOD k tesselateWaterInWorld (Luu;III)Z
+	METHOD l tesselateBlockInWorld (Luu;III)Z
+		ARG 1 tile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD m tesselateCactusInWorld (Luu;III)Z
+	METHOD n tesselateFenceInWorld (Luu;III)Z
+	METHOD o tesselateStairsInWorld (Luu;III)Z
+	METHOD p tesselateDoorInWorld (Luu;III)Z
+	METHOD q tesselateBedInWorld (Luu;III)Z
+	METHOD r tesselateDiodeInWorld (Luu;III)Z

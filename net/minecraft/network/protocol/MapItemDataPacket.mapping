@@ -1,0 +1,4 @@
+CLASS ai net/minecraft/network/protocol/MapItemDataPacket
+	FIELD a mapId S
+	FIELD b scale S
+	FIELD c mapColors [B

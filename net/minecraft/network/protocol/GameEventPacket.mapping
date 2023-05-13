@@ -1,0 +1,3 @@
+CLASS ca net/minecraft/network/protocol/GameEventPacket
+	FIELD a EVENT_LANGUAGE_ID [Ljava/lang/String;
+	FIELD b event I

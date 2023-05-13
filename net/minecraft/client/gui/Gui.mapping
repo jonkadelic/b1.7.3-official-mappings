@@ -13,6 +13,7 @@ CLASS uq net/minecraft/client/gui/Gui
 	METHOD a render (FZII)V
 	METHOD a renderPumpkin (II)V
 	METHOD a renderSlot (IIIF)V
+	METHOD a handleChat (Ljava/lang/String;)V
 	METHOD b renderPortalOverlay (FII)V
 	METHOD b setNowPlaying (Ljava/lang/String;)V
 		ARG 1 str

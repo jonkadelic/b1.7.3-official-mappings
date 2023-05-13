@@ -1,7 +1,17 @@
 CLASS gs net/minecraft/world/entity/player/Player
+	FIELD a sleepTimer I
 	FIELD c inventory Lix;
+	FIELD l username Ljava/lang/String;
+	FIELD m dimension I
+	FIELD u sleeping Z
 	METHOD a drop (Liz;Z)V
 	METHOD a awardStat (Lvr;I)V
+	METHOD b startSleepInBed (III)Lcw;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b displayClientMessage (Ljava/lang/String;)V
 	METHOD b canDestroy (Luu;)Z
 	METHOD c attack (Lsn;)V
 	METHOD d interact (Lsn;)V
+	METHOD r clientSideCloseContainer ()V

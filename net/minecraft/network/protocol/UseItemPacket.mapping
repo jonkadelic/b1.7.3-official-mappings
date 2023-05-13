@@ -1,0 +1,12 @@
+CLASS gx net/minecraft/network/protocol/UseItemPacket
+	FIELD a x I
+	FIELD b y I
+	FIELD c z I
+	FIELD d direction I
+	FIELD e item Liz;
+	METHOD <init> (IIIILiz;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 direction
+		ARG 5 item

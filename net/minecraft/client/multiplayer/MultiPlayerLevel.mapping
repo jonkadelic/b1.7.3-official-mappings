@@ -1,1 +1,12 @@
 CLASS mm net/minecraft/client/multiplayer/MultiPlayerLevel
+	FIELD D connection Lnb;
+	FIELD H globalEntities Ljava/util/Set;
+	METHOD <init> (Lnb;JI)V
+		ARG 1 connection
+		ARG 4 dimensionType
+	METHOD f (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+		ARG 5 data

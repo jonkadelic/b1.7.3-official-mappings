@@ -1,4 +1,6 @@
 CLASS yf net/minecraft/world/level/levelgen/RandomLevelSource
+	FIELD j random Ljava/util/Random;
+	FIELD p level Lfd;
 	METHOD <init> (Lfd;J)V
 		ARG 1 level
 	METHOD a buildSurfaces (II[B[Lkd;)V

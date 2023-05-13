@@ -1,0 +1,4 @@
+CLASS ux net/minecraft/network/protocol/SetEntityDataPacket
+	FIELD a id I
+	FIELD b packedItems Ljava/util/List;
+	METHOD b getUnpackedData ()Ljava/util/List;

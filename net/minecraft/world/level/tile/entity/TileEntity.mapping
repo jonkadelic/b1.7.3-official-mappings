@@ -1,6 +1,28 @@
 CLASS ow net/minecraft/world/level/tile/entity/TileEntity
+	FIELD a idClassMap Ljava/util/Map;
+	FIELD b classIdMap Ljava/util/Map;
 	FIELD d level Lfd;
 	FIELD e x I
 	FIELD f y I
 	FIELD g z I
+	FIELD h removed Z
+	METHOD a distanceToSqr (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD a setId (Ljava/lang/Class;Ljava/lang/String;)V
+		ARG 0 clazz
+		ARG 1 id
+	METHOD a load (Lnu;)V
+		ARG 1 tag
+	METHOD b save (Lnu;)V
+		ARG 1 tag
+	METHOD c loadStatic (Lnu;)Low;
+		ARG 0 tag
+	METHOD e getData ()I
+	METHOD f getTile ()Luu;
+	METHOD g isRemoved ()Z
 	METHOD i setRemoved ()V
+	METHOD j clearRemoved ()V
+	METHOD n_ tick ()V
+	METHOD y_ setChanged ()V

@@ -1,0 +1,4 @@
+CLASS xc net/minecraft/world/item/crafting/recipes/WeaponRecipes
+	METHOD <init> WeaponRecipes ()V
+	METHOD a addRecipes (Lhk;)V
+		ARG 1 recipes

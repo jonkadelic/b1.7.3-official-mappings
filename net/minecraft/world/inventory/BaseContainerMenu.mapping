@@ -7,9 +7,12 @@ CLASS dw net/minecraft/world/inventory/BaseContainerMenu
 	FIELD g containerListeners Ljava/util/List;
 	METHOD a broadcastChanges ()V
 	METHOD a quickMoveStack (I)Liz;
+		ARG 1 slot
 	METHOD a setData (II)V
 	METHOD a clicked (IIZLgs;)Liz;
-		ARG 3 clickType
+		ARG 1 slot
+		ARG 2 clickType
+		ARG 3 shiftHeld
 		ARG 4 player
 	METHOD a setItem (ILiz;)V
 	METHOD a addSlot (Lgp;)V
@@ -22,5 +25,6 @@ CLASS dw net/minecraft/world/inventory/BaseContainerMenu
 	METHOD a slotsChanged (Llw;)V
 		ARG 1 container
 	METHOD b getSlot (I)Lgp;
+		ARG 1 slot
 	METHOD b stillValid (Lgs;)Z
 		ARG 1 player

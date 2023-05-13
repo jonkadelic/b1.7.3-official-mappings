@@ -1,0 +1,11 @@
+CLASS mf net/minecraft/network/protocol/AddPlayerPacket
+	FIELD a entityId I
+	FIELD b username Ljava/lang/String;
+	FIELD c x I
+	FIELD d y I
+	FIELD e z I
+	FIELD f yRot B
+	FIELD g xRot B
+	FIELD h selectedItemId I
+	METHOD <init> (Lgs;)V
+		ARG 1 player

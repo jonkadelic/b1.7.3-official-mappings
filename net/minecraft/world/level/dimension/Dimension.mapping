@@ -1,6 +1,7 @@
 CLASS xa net/minecraft/world/level/dimension/Dimension
 	FIELD a level Lfd;
 	FIELD b biomeSource Lxv;
+	FIELD c naturalDimension Z
 	FIELD f brightnessRamp [F
 	FIELD h sunriseCol [F
 	METHOD a init ()V

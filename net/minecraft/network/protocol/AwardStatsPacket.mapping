@@ -1,0 +1,3 @@
+CLASS of net/minecraft/network/protocol/AwardStatsPacket
+	FIELD a id I
+	FIELD b value I

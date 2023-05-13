@@ -1,0 +1,13 @@
+CLASS nd net/minecraft/network/protocol/AddItemEntityPacket
+	FIELD a entityId I
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e xd B
+	FIELD f yd B
+	FIELD g zd B
+	FIELD h itemId I
+	FIELD i count I
+	FIELD l auxValue I
+	METHOD <init> (Lhl;)V
+		ARG 1 entity

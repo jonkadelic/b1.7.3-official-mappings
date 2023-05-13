@@ -1,0 +1,2 @@
+CLASS wl net/minecraft/world/inventory/ResultContainer
+	FIELD a itemInstances [Liz;

@@ -1,0 +1,12 @@
+CLASS ct net/minecraft/world/level/tile/Tile$SoundType
+	FIELD a soundPath Ljava/lang/String;
+	FIELD b volume F
+	FIELD c pitch F
+	METHOD <init> (Ljava/lang/String;FF)V
+		ARG 1 soundPath
+		ARG 2 volume
+		ARG 3 pitch
+	METHOD a getStepSound ()Ljava/lang/String;
+	METHOD b getVolume ()F
+	METHOD c getPitch ()F
+	METHOD d getBreakSound ()Ljava/lang/String;

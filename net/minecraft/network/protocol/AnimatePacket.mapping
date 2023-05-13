@@ -1,0 +1,6 @@
+CLASS nm net/minecraft/network/protocol/AnimatePacket
+	FIELD a id I
+	FIELD b action I
+	METHOD <init> (Lsn;I)V
+		ARG 1 entity
+		ARG 2 action

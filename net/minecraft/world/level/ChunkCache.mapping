@@ -1,5 +1,8 @@
 CLASS kx net/minecraft/world/level/ChunkCache
 	FIELD c emptyChunk Llm;
+	FIELD d source Lcl;
+	FIELD e storage Lbf;
+	FIELD f chunks [Llm;
 	FIELD g level Lfd;
 	METHOD a (Llm;)V
 		ARG 1 levelChunk

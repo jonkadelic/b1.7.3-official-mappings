@@ -1,0 +1,5 @@
+CLASS jz net/minecraft/network/protocol/SleepInBedPacket
+	FIELD a entityId I
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I

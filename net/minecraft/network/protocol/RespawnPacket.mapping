@@ -1,0 +1,4 @@
+CLASS ox net/minecraft/network/protocol/RespawnPacket
+	FIELD a dimension B
+	METHOD <init> (B)V
+		ARG 1 dimension

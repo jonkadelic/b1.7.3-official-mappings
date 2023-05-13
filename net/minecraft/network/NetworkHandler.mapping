@@ -1,7 +1,104 @@
 CLASS ti net/minecraft/network/NetworkHandler
+	METHOD a handle (La;)V
+		ARG 1 packet
+	METHOD a handle (Lai;)V
+		ARG 1 packet
+	METHOD a handle (Lca;)V
+		ARG 1 packet
+	METHOD a handle (Ldi;)V
+		ARG 1 packet
+	METHOD a handle (Lef;)V
+		ARG 1 packet
+	METHOD a handle (Leu;)V
+		ARG 1 packet
+	METHOD a handle (Lfa;)V
+		ARG 1 packet
+	METHOD a handle (Lfn;)V
+		ARG 1 packet
+	METHOD a handle (Lgj;)V
+		ARG 1 packet
+	METHOD a handle (Lgx;)V
+		ARG 1 packet
+	METHOD a handle (Lhg;)V
+		ARG 1 packet
+	METHOD a handle (Lho;)V
+		ARG 1 packet
+	METHOD a handle (Lhq;)V
+		ARG 1 packet
+	METHOD a handle (Lig;)V
+		ARG 1 packet
+	METHOD a handle (Liw;)V
+		ARG 1 packet
+	METHOD a onDisconnect (Ljava/lang/String;[Ljava/lang/Object;)V
+	METHOD a handle (Ljf;)V
+		ARG 1 packet
+	METHOD a handle (Ljm;)V
+		ARG 1 packet
+	METHOD a handle (Ljv;)V
+		ARG 1 packet
+	METHOD a handle (Ljz;)V
+		ARG 1 packet
+	METHOD a handle (Lkb;)V
+		ARG 1 packet
+	METHOD a handle (Lmf;)V
+		ARG 1 packet
+	METHOD a handle (Lmn;)V
+		ARG 1 packet
+	METHOD a handle (Lmp;)V
+		ARG 1 packet
+	METHOD a handle (Lmv;)V
+		ARG 1 packet
+	METHOD a handle (Lnd;)V
+		ARG 1 packet
+	METHOD a handle (Lnm;)V
+		ARG 1 packet
+	METHOD a handle (Lns;)V
+		ARG 1 packet
 	METHOD a handle (Lnz;)V
+		ARG 1 packet
+	METHOD a handle (Lof;)V
+		ARG 1 packet
+	METHOD a handle (Loj;)V
+		ARG 1 packet
+	METHOD a handle (Lox;)V
+		ARG 1 packet
+	METHOD a handle (Lpe;)V
+		ARG 1 packet
+	METHOD a handle (Lql;)V
+		ARG 1 packet
+	METHOD a handle (Lqs;)V
+		ARG 1 packet
+	METHOD a handle (Lrc;)V
+		ARG 1 packet
+	METHOD a handle (Lrg;)V
+		ARG 1 packet
+	METHOD a handle (Lrm;)V
+		ARG 1 packet
+	METHOD a handle (Lrv;)V
+		ARG 1 packet
+	METHOD a handle (Ls;)V
+		ARG 1 packet
+	METHOD a handle (Lse;)V
 		ARG 1 packet
 	METHOD a handle (Lso;)V
 		ARG 1 packet
-	METHOD c (Lki;)V
+	METHOD a handle (Lts;)V
+		ARG 1 packet
+	METHOD a handle (Ltv;)V
+		ARG 1 packet
+	METHOD a handle (Luh;)V
+		ARG 1 packet
+	METHOD a handle (Lui;)V
+		ARG 1 packet
+	METHOD a handle (Lux;)V
+		ARG 1 packet
+	METHOD a handle (Lvt;)V
+		ARG 1 packet
+	METHOD a handle (Lvw;)V
+		ARG 1 packet
+	METHOD a handle (Lwu;)V
+		ARG 1 packet
+	METHOD a handle (Lyr;)V
+		ARG 1 packet
+	METHOD c handle (Lki;)V
 		ARG 1 packet

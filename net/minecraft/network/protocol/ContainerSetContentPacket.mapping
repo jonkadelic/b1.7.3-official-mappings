@@ -1,0 +1,3 @@
+CLASS kb net/minecraft/network/protocol/ContainerSetContentPacket
+	FIELD a containerId I
+	FIELD b items [Liz;

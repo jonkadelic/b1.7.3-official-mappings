@@ -1,0 +1,8 @@
+CLASS uh net/minecraft/network/protocol/MoveEntityPacket
+	FIELD a entityId I
+	FIELD b xa B
+	FIELD c ya B
+	FIELD d za B
+	FIELD e yRot B
+	FIELD f xRot B
+	FIELD g hasRot Z

@@ -12,8 +12,11 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	FIELD q font Lsj;
 	FIELD r screen Lda;
 	FIELD s progressScreen Lmk;
+	FIELD v gui Luq;
 	FIELD z options Lkv;
 	METHOD a setLevel (Lfd;Ljava/lang/String;Lgs;)V
 		ARG 1 level
 		ARG 3 player
+	METHOD a (ZI)V
+		ARG 2 dimension
 	METHOD u useFancyGraphics ()Z

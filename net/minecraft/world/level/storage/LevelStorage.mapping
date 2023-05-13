@@ -4,7 +4,7 @@ CLASS wt net/minecraft/world/level/storage/LevelStorage
 	METHOD a saveLevelData (Lei;Ljava/util/List;)V
 		ARG 1 levelData
 		ARG 2 playerList
-	METHOD a getPlayerDataFile_ (Ljava/lang/String;)Ljava/io/File;
+	METHOD a getPlayerDataFile (Ljava/lang/String;)Ljava/io/File;
 		ARG 1 playerName
 	METHOD a createChunkStorage (Lxa;)Lbf;
 		ARG 1 dim

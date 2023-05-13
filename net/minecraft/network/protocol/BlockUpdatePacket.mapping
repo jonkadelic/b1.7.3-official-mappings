@@ -1,0 +1,6 @@
+CLASS tv net/minecraft/network/protocol/BlockUpdatePacket
+	FIELD a x I
+	FIELD b y I
+	FIELD c z I
+	FIELD d tile I
+	FIELD e data I

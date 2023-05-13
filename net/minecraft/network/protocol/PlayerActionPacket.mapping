@@ -1,0 +1,12 @@
+CLASS jv net/minecraft/network/protocol/PlayerActionPacket
+	FIELD a x I
+	FIELD b y I
+	FIELD c z I
+	FIELD d direction I
+	FIELD e action I
+	METHOD <init> (IIIII)V
+		ARG 1 action
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 direction
