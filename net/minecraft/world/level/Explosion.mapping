@@ -1,0 +1,20 @@
+CLASS qx net/minecraft/world/level/Explosion
+	FIELD a fire Z
+	FIELD b x D
+	FIELD c y D
+	FIELD d z D
+	FIELD e source Lsn;
+	FIELD f radius F
+	FIELD g toBlow Ljava/util/Set;
+	FIELD h random Ljava/util/Random;
+	FIELD i level Lfd;
+	METHOD <init> (Lfd;Lsn;DDDF)V
+		ARG 1 level
+		ARG 2 source
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
+		ARG 9 radius
+	METHOD a explode ()V
+	METHOD a finalizeExplosion (Z)V
+		ARG 1 makeParticles

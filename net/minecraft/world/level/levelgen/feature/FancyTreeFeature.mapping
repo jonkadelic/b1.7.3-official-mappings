@@ -1,1 +1,143 @@
 CLASS ih net/minecraft/world/level/levelgen/feature/FancyTreeFeature
+	FIELD a axisConversionArray [B
+		COMMENT The axisConversionArray, when given a primary index, allows easy
+		COMMENT access to the indices of the other two axies. Access the data at the
+		COMMENT primary index location to get the horizontal secondary axis.
+		COMMENT Access the data at the primary location plus three to get the
+		COMMENT remaining, tertiary, axis.
+		COMMENT All directions are specified by an index, 0, 1, or 2 which
+		COMMENT correspond to x, y, and z.
+		COMMENT The axisConversionArray is used in several places
+		COMMENT notably the crossection and taperedLimb methods.
+		COMMENT Example:
+		COMMENT If the primary axis is z, then the primary index is 2.
+		COMMENT The secondary index is axisConversionArray[2] which is 0,
+		COMMENT the index for the x axis.
+		COMMENT The remaining axis is axisConversionArray[2 + 3] which is 1,
+		COMMENT the index for the y axis.
+		COMMENT Using this method, the secondary axis will always be horizontal (x or z),
+		COMMENT and the tertiary always vertical (y), if possible.
+	FIELD b rnd Ljava/util/Random;
+		COMMENT Set up the pseudorandom number generator
+	FIELD c thisLevel Lfd;
+		COMMENT Make fields to hold the level data and the random seed
+	FIELD d origin [I
+		COMMENT Field to hold the tree origin, x y and z.
+	FIELD e height I
+		COMMENT Field to hold the tree height.
+	FIELD f trunkHeight I
+		COMMENT Other important tree information.
+	FIELD g trunkHeightScale D
+	FIELD h branchDensity D
+	FIELD i branchSlope D
+	FIELD j widthScale D
+	FIELD k foliageDensity D
+	FIELD l trunkWidth I
+	FIELD m heightVariance I
+	FIELD n foliageHeight I
+	FIELD o foliageCoords [[I
+		COMMENT The foliage coordinates are a list of [x,y,z,y of branch base] values for each cluster
+	METHOD a prepare ()V
+		COMMENT Initialize the instance variables.
+		COMMENT Populate the list of foliage cluster locations.
+		COMMENT Designed to be overridden in child classes to change basic
+		COMMENT tree properties (trunk width, branch angle, foliage density, etc..).
+	METHOD a (DDD)V
+		COMMENT all of the parameters should be from 0.0 to 1.0
+		COMMENT heightInit scales the maximum overall height of the tree (still
+		COMMENT randomizes height within the possible range) widthInit scales the
+		COMMENT maximum overall width of the tree (keep this above 0.3 or so)
+		COMMENT foliageDensityInit scales how many foliage clusters are created.
+		COMMENT
+		COMMENT Note, you can call "place" without calling "init".
+		COMMENT This is the same as calling init(1.0,1.0,1.0) and then calling place.
+	METHOD a treeShape (I)F
+		COMMENT Take the y position relative to the base of the tree.
+		COMMENT Return the distance the foliage should be from the trunk axis.
+		COMMENT Return a negative number if foliage should not be created at this
+		COMMENT height.  This method is intended for overriding in child classes,
+		COMMENT allowing different shaped trees.  This method should return a
+		COMMENT consistent value for each y (don't randomize).
+		ARG 1 y
+	METHOD a foliageCluster (III)V
+		COMMENT Generate a cluster of foliage, with the base at x, y, z.
+		COMMENT The shape of the cluster is derived from foliageShape
+		COMMENT crossection is called to make each level.
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a crossection (IIIFBI)V
+		COMMENT Create a circular cross section.
+		COMMENT
+		COMMENT Used to nearly everything in the foliage, branches, and trunk.
+		COMMENT This is a good target for performance optimization.
+		COMMENT
+		COMMENT Passed values:
+		COMMENT x,y,z is the center location of the cross section
+		COMMENT radius is the radius of the section from the center
+		COMMENT direction is the direction the cross section is pointed, 0 for x, 1
+		COMMENT for y, 2 for z material is the index number for the material to use
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 radius
+		ARG 5 direction
+		ARG 6 material
+	METHOD a (Lfd;Ljava/util/Random;III)Z
+		COMMENT Note to Markus.
+		COMMENT currently the following fields are set randomly. If you like, make
+		COMMENT them parameters passed into "place".
+		COMMENT
+		COMMENT height: so the map generator can intelligently set the height of the
+		COMMENT tree, and make forests with large trees in the middle and smaller
+		COMMENT ones on the edges.
+	METHOD a checkLine ([I[I)I
+		COMMENT Check from coordinates start to end (both inclusive) for blocks
+		COMMENT other than air and foliage If a block other than air and foliage is
+		COMMENT found, return the number of steps taken.
+		COMMENT If no block other than air and foliage is found, return -1.
+		COMMENT Examples:
+		COMMENT If the third block searched is stone, return 2
+		COMMENT If the first block searched is lava, return 0
+		ARG 1 start
+		ARG 2 end
+	METHOD a limb ([I[II)V
+		COMMENT Create a limb from the start position to the end position.
+		COMMENT Used for creating the branches and trunk.
+		ARG 1 start
+		ARG 2 end
+		ARG 3 material
+	METHOD b makeFoliage ()V
+		COMMENT Create the tree foliage.
+		COMMENT Call foliageCluster at the correct locations
+	METHOD b foliageShape (I)F
+		COMMENT Take the y position relative to the base of the foliage cluster.
+		COMMENT Return the radius of the cluster at this y
+		COMMENT Return a negative number if no foliage should be created at this
+		COMMENT level this method is intended for overriding in child classes,
+		COMMENT allowing foliage of different sizes and shapes.
+		ARG 1 y
+	METHOD c makeTrunk ()V
+		COMMENT Create the trunk of the tree.
+	METHOD c trimBranches (I)Z
+		COMMENT For larger trees, randomly "prune" the branches so there
+		COMMENT aren't too many.
+		COMMENT Return true if the branch should be created.
+		COMMENT This method is intended for overriding in child classes, allowing
+		COMMENT decent amounts of branches on very large trees.
+		COMMENT Can also be used to disable branches on some tree types, or
+		COMMENT make branches more sparse.
+		ARG 1 localY
+	METHOD d makeBranches ()V
+		COMMENT Create the tree branches.
+		COMMENT Call trimBranches for each branch to see if you should create it.
+		COMMENT Call taperedLimb to the correct locations
+	METHOD e checkLocation ()Z
+		COMMENT Return true if the tree can be placed here.
+		COMMENT Return false if the tree can not be placed here.
+		COMMENT Examine the square under the trunk. Is it grass or dirt?
+		COMMENT If not, return false
+		COMMENT Examine center column for how tall the tree can be.
+		COMMENT If the checked height is shorter than height, but taller
+		COMMENT than 4, set the tree to the maximum height allowed.
+		COMMENT If the space is too short, return false.
