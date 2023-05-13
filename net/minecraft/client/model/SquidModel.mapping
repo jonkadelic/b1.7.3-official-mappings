@@ -1,1 +1,3 @@
 CLASS wn net/minecraft/client/model/SquidModel
+	FIELD a body Lps;
+	FIELD b tentacles [Lps;

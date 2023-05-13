@@ -1,5 +1,12 @@
 CLASS qq net/minecraft/client/Window
-	FIELD d guiScaledWidth I
-	FIELD e guiScaledHeight I
-	METHOD a getGuiScaledWidth ()I
-	METHOD b getGuiScaledHeight ()I
+	FIELD a guiScaledWidth D
+	FIELD b guiScaledHeight D
+	FIELD c guiScale I
+	FIELD d width I
+	FIELD e height I
+	METHOD <init> (Lkv;II)V
+		ARG 1 options
+		ARG 2 width
+		ARG 3 height
+	METHOD a getScreenWidth ()I
+	METHOD b getScreenHeight ()I

@@ -19,7 +19,7 @@ CLASS kv net/minecraft/client/Options
 	FIELD h advancedOpengl Z
 	FIELD i fpsLimit I
 	FIELD j fancyGraphics Z
-	FIELD k ao Z
+	FIELD k ambientOcclusion Z
 	FIELD l skin Ljava/lang/String;
 	FIELD m keyUp Lqb;
 	FIELD n keyLeft Lqb;

@@ -1,0 +1,2 @@
+CLASS hy net/minecraft/client/renderer/tileentity/PistonHeadRenderer
+	FIELD b tileRenderer Lcv;

@@ -1,1 +1,10 @@
 CLASS fh net/minecraft/client/model/HumanoidModel
+	FIELD a head Lps;
+	FIELD b hat Lps;
+	FIELD c body Lps;
+	FIELD d rightArm Lps;
+	FIELD e leftArm Lps;
+	FIELD f rightLeg Lps;
+	FIELD g leftLeg Lps;
+	FIELD h ear Lps;
+	FIELD i cloak Lps;

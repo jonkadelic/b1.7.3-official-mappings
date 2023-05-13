@@ -1,0 +1,10 @@
+CLASS il net/minecraft/client/model/CreeperModel
+	FIELD a head Lps;
+	FIELD b hair Lps;
+	FIELD c body Lps;
+	FIELD d leg0 Lps;
+	FIELD e leg1 Lps;
+	FIELD f leg2 Lps;
+	FIELD g leg3 Lps;
+	METHOD <init> (F)V
+		ARG 1 scale

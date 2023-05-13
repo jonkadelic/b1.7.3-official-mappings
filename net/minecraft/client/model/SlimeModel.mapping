@@ -1,1 +1,5 @@
 CLASS no net/minecraft/client/model/SlimeModel
+	FIELD a cube Lps;
+	FIELD b eye0 Lps;
+	FIELD c eye1 Lps;
+	FIELD d mouth Lps;

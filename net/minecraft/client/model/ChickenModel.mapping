@@ -1,1 +1,9 @@
 CLASS td net/minecraft/client/model/ChickenModel
+	FIELD a head Lps;
+	FIELD b body Lps;
+	FIELD c leg0 Lps;
+	FIELD d leg1 Lps;
+	FIELD e wing0 Lps;
+	FIELD f wing1 Lps;
+	FIELD g beak Lps;
+	FIELD h redThing Lps;

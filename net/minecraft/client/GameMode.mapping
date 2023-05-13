@@ -1,5 +1,6 @@
 CLASS ob net/minecraft/client/GameMode
 	FIELD a minecraft Lnet/minecraft/client/Minecraft;
+	FIELD b instantBreakBlocks Z
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
 	METHOD a stopDestroyBlock ()V

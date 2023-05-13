@@ -1,0 +1,10 @@
+CLASS vy net/minecraft/client/MouseHandler
+	FIELD a x I
+	FIELD b y I
+	FIELD c component Ljava/awt/Component;
+	FIELD d cursor Lorg/lwjgl/input/Cursor;
+	METHOD <init> (Ljava/awt/Component;)V
+		ARG 1 component
+	METHOD a grabMouse ()V
+	METHOD b releaseMouse ()V
+	METHOD c tick ()V

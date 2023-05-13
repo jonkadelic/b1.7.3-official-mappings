@@ -2,5 +2,7 @@ CLASS ko net/minecraft/client/model/Model
 	FIELD m attackTime F
 	FIELD n riding Z
 	METHOD a render (FFFFFF)V
+		ARG 6 partialTicks
 	METHOD a prepareMobModel (Lls;FFF)V
 	METHOD b setupAnim (FFFFFF)V
+		ARG 6 partialTicks

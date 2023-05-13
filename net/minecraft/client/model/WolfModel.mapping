@@ -1,1 +1,12 @@
 CLASS o net/minecraft/client/model/WolfModel
+	FIELD a head Lps;
+	FIELD b body Lps;
+	FIELD c leg0 Lps;
+	FIELD d leg1 Lps;
+	FIELD e leg2 Lps;
+	FIELD f leg3 Lps;
+	FIELD g ear0 Lps;
+	FIELD h ear1 Lps;
+	FIELD i snout Lps;
+	FIELD j tail Lps;
+	FIELD k upperBody Lps;

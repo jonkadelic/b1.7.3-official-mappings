@@ -1,1 +1,11 @@
 CLASS ps net/minecraft/client/model/geom/Cube
+	FIELD a x F
+	FIELD b y F
+	FIELD c z F
+	FIELD d xRot F
+	FIELD e yRot F
+	FIELD f zRot F
+	METHOD a render (F)V
+	METHOD a setPos (FFF)V
+	METHOD a addBox (FFFIII)V
+	METHOD a addBox (FFFIIIF)V

@@ -1,0 +1,2 @@
+CLASS ez net/minecraft/client/model/BoatModel
+	FIELD a cubes [Lps;

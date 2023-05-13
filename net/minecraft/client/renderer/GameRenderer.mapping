@@ -2,5 +2,7 @@ CLASS px net/minecraft/client/renderer/GameRenderer
 	FIELD J random Ljava/util/Random;
 	FIELD a anaglyph3d Z
 	FIELD j minecraft Lnet/minecraft/client/Minecraft;
+	FIELD n xSmooth Lcu;
+	FIELD o ySmooth Lcu;
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft

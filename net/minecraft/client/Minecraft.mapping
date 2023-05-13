@@ -1,22 +1,88 @@
 CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
+	FIELD A applet Lnet/minecraft/client/MinecraftApplet;
+	FIELD C mouseHandler Lvy;
+	FIELD J running Z
+	FIELD K fpsString Ljava/lang/String;
+	FIELD M lastTime J
+	FIELD N mouseGrabbed Z
+	FIELD O windowActive Z
+	FIELD Q fullscreen Z
 	FIELD R crashed Z
 	FIELD T timer Lpy;
+	FIELD W missTime I
 	FIELD a instance Lnet/minecraft/client/Minecraft;
+	FIELD aa levelSource Lnl;
+	FIELD ad waterTex Lvs;
+	FIELD ae lavaTex Lcg;
+	FIELD ag frames I
 	FIELD b reserve [B
 	FIELD c gameMode Lob;
 	FIELD d width I
 	FIELD e height I
 	FIELD f level Lfd;
+	FIELD g levelRenderer Ln;
 	FIELD h player Ldc;
+	FIELD i cameraEntity Lls;
+	FIELD j particleEngine Ldn;
+	FIELD k user Lgr;
+	FIELD m parent Ljava/awt/Canvas;
+	FIELD n appletMode Z
+	FIELD o pause Z
 	FIELD p textures Lji;
 	FIELD q font Lsj;
 	FIELD r screen Lda;
 	FIELD s progressScreen Lmk;
+	FIELD t gameRenderer Lpx;
 	FIELD v gui Luq;
+	FIELD w noRender Z
+	FIELD y hitResult Lvf;
 	FIELD z options Lkv;
+	METHOD <init> (Ljava/awt/Component;Ljava/awt/Canvas;Lnet/minecraft/client/MinecraftApplet;IIZ)V
+		ARG 2 parent
+		ARG 3 applet
+		ARG 4 width
+		ARG 5 height
+		ARG 6 fullscreen
+	METHOD A pickBlock ()V
+	METHOD a init ()V
+	METHOD a handleMouseClick (I)V
+		ARG 1 button
+	METHOD a handleMouseDown (IZ)V
+		ARG 1 button
+	METHOD a setScreen (Lda;)V
+		ARG 1 screen
+	METHOD a setLevel (Lfd;)V
+		ARG 1 level
+	METHOD a setLevel (Lfd;Ljava/lang/String;)V
+		ARG 1 level
+		ARG 2 loadingString
 	METHOD a setLevel (Lfd;Ljava/lang/String;Lgs;)V
 		ARG 1 level
+		ARG 2 loadingString
 		ARG 3 player
+	METHOD a server (Ljava/lang/String;I)V
+		ARG 1 server
+		ARG 2 port
+	METHOD a selectLevel (Ljava/lang/String;Ljava/lang/String;J)V
+	METHOD a crash (Lmh;)V
+		ARG 1 crashReport
 	METHOD a (ZI)V
 		ARG 2 dimension
+	METHOD b (Lmh;)V
+		ARG 1 crashReport
+	METHOD c getLevelSource ()Lnl;
+	METHOD c checkGlError (Ljava/lang/String;)V
+	METHOD d destroy ()V
+	METHOD f stop ()V
+	METHOD g grabMouse ()V
+	METHOD h releaseMouse ()V
+	METHOD i pauseGame ()V
+	METHOD k tick ()V
+	METHOD main main ([Ljava/lang/String;)V
+		ARG 0 args
+	METHOD run run ()V
+	METHOD s getConnection ()Lnb;
+	METHOD t renderNames ()Z
 	METHOD u useFancyGraphics ()Z
+	METHOD v useAmbientOcclusion ()Z
+	METHOD x renderLoadingOverlay ()V

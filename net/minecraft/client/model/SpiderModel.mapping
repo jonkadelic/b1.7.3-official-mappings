@@ -1,1 +1,12 @@
 CLASS sc net/minecraft/client/model/SpiderModel
+	FIELD a head Lps;
+	FIELD b body0 Lps;
+	FIELD c body1 Lps;
+	FIELD d leg0 Lps;
+	FIELD e leg1 Lps;
+	FIELD f leg2 Lps;
+	FIELD g leg3 Lps;
+	FIELD h leg4 Lps;
+	FIELD i leg5 Lps;
+	FIELD j leg6 Lps;
+	FIELD k leg7 Lps;
