@@ -1,1 +1,13 @@
 CLASS cj net/minecraft/stats/StatsSyncher
+	FIELD d statsCounter Lxi;
+	FIELD e unsentStatsFile Ljava/io/File;
+	FIELD f statsFile Ljava/io/File;
+	FIELD g unsentStatsFileTemp Ljava/io/File;
+	FIELD h statsFileTemp Ljava/io/File;
+	FIELD i unsentStatsFileOld Ljava/io/File;
+	FIELD j statsFileOld Ljava/io/File;
+	FIELD k user Lgr;
+	METHOD <init> (Lgr;Lxi;Ljava/io/File;)V
+		ARG 1 user
+		ARG 2 statsCounter
+		ARG 3 statsDir

@@ -1,0 +1,32 @@
+CLASS jx net/minecraft/util/IdHashMap
+	FIELD a entries [Lwm;
+	FIELD b count I
+	FIELD c threshold I
+	FIELD d growFactor F
+	FIELD e versionStamp I
+	METHOD a clear ()V
+	METHOD a get (I)Ljava/lang/Object;
+		ARG 1 id
+	METHOD a getEntryIndex (II)I
+		ARG 0 hash
+		ARG 1 numEntries
+	METHOD a insert (IILjava/lang/Object;I)V
+		ARG 1 entryIndex
+		ARG 2 hash
+		ARG 3 value
+		ARG 4 entry
+	METHOD a add (ILjava/lang/Object;)V
+		ARG 1 key
+		ARG 2 item
+	METHOD a copy ([Lwm;)V
+		ARG 1 otherEntries
+	METHOD b remove (I)Ljava/lang/Object;
+		ARG 1 id
+	METHOD c removeEntry (I)Lwm;
+		ARG 1 id
+	METHOD d synGetHash (I)I
+		ARG 0 id
+	METHOD e getHash (I)I
+		ARG 0 id
+	METHOD f grow (I)V
+		ARG 1 newSize

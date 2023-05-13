@@ -1,0 +1,13 @@
+CLASS iy net/minecraft/client/gui/MapRenderer
+	FIELD a texData [I
+	FIELD b tex I
+	FIELD c options Lkv;
+	FIELD d font Lsj;
+	METHOD <init> (Lsj;Lkv;Lji;)V
+		ARG 1 font
+		ARG 2 options
+		ARG 3 textures
+	METHOD a draw (Lgs;Lji;Liu;)V
+		ARG 1 player
+		ARG 2 textures
+		ARG 3 data

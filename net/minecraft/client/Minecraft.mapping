@@ -1,6 +1,7 @@
 CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	FIELD A applet Lnet/minecraft/client/MinecraftApplet;
 	FIELD C mouseHandler Lvy;
+	FIELD I statsCounter Lxi;
 	FIELD J running Z
 	FIELD K fpsString Ljava/lang/String;
 	FIELD M lastTime J
@@ -10,6 +11,7 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	FIELD R crashed Z
 	FIELD T timer Lpy;
 	FIELD W missTime I
+	FIELD Z statsFile Ljava/io/File;
 	FIELD a instance Lnet/minecraft/client/Minecraft;
 	FIELD aa levelSource Lnl;
 	FIELD ad waterTex Lvs;
@@ -78,6 +80,7 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	METHOD h releaseMouse ()V
 	METHOD i pauseGame ()V
 	METHOD k tick ()V
+	METHOD m changeDimension ()V
 	METHOD main main ([Ljava/lang/String;)V
 		ARG 0 args
 	METHOD run run ()V

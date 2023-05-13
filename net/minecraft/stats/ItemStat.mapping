@@ -1,0 +1,7 @@
+CLASS tw net/minecraft/stats/ItemStat
+	FIELD a itemId I
+	METHOD <init> (ILjava/lang/String;I)V
+		ARG 1 statId
+		ARG 2 name
+		ARG 3 itemId
+	METHOD a getItemId ()I

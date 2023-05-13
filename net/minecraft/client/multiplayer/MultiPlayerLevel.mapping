@@ -1,10 +1,20 @@
 CLASS mm net/minecraft/client/multiplayer/MultiPlayerLevel
 	FIELD D connection Lnb;
-	FIELD H globalEntities Ljava/util/Set;
+	FIELD E multiPlayerChunkSource Luv;
 	METHOD <init> (Lnb;JI)V
 		ARG 1 connection
 		ARG 4 dimensionType
-	METHOD f (IIIII)Z
+	METHOD a putEntity (ILsn;)V
+		ARG 1 id
+		ARG 2 entity
+	METHOD c clearResetRegion (IIIIII)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD f addToTickNextTick (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

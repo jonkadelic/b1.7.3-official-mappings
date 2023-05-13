@@ -23,7 +23,7 @@ CLASS nw net/minecraft/client/renderer/Tesselator
 	FIELD w tesselating Z
 	METHOD <init> (I)V
 		ARG 1 bufferSize
-	METHOD a flush ()V
+	METHOD a end ()V
 	METHOD a tex (DD)V
 		ARG 1 u
 		ARG 3 v

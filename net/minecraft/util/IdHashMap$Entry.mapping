@@ -1,0 +1,14 @@
+CLASS wm net/minecraft/util/IdHashMap$Entry
+	FIELD a hash I
+	FIELD b value Ljava/lang/Object;
+	FIELD c next Lwm;
+	FIELD d entryIndex I
+	METHOD <init> (IILjava/lang/Object;Lwm;)V
+		ARG 1 entryIndex
+		ARG 2 hash
+		ARG 3 value
+		ARG 4 next
+	METHOD a getHash ()I
+	METHOD b getValue ()Ljava/lang/Object;
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 that

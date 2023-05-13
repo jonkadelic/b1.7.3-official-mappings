@@ -1,0 +1,15 @@
+CLASS lf net/minecraft/world/level/pathfinder/BinaryHeap
+	FIELD a heap [Ld;
+	FIELD b size I
+	METHOD a clear ()V
+	METHOD a upHeap (I)V
+		ARG 1 index
+	METHOD a insert (Ld;)Ld;
+		ARG 1 node
+	METHOD a changeCost (Ld;F)V
+		ARG 1 node
+		ARG 2 cost
+	METHOD b pop ()Ld;
+	METHOD b downHeap (I)V
+		ARG 1 index
+	METHOD c isEmpty ()Z

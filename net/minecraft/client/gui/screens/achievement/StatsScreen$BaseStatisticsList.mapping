@@ -1,4 +1,8 @@
 CLASS iv net/minecraft/client/gui/screens/achievement/StatsScreen$BaseStatisticsList
+	FIELD b headerPressed I
+	FIELD c statList Ljava/util/List;
+	FIELD d statSorter Ljava/util/Comparator;
 	FIELD g synthetic Ldv;
 	METHOD <init> (Ldv;)V
 		ARG 1 synthetic
+	METHOD a renderStat (Ltw;IIZ)V

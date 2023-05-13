@@ -57,6 +57,7 @@ CLASS sn net/minecraft/world/entity/Entity
 	METHOD <init> (Lfd;)V
 		ARG 1 level
 	METHOD K remove ()V
+	METHOD L isInWall ()Z
 	METHOD U baseTick ()V
 	METHOD W isAlive ()Z
 	METHOD a handleEntityEvent (B)V
@@ -75,6 +76,7 @@ CLASS sn net/minecraft/world/entity/Entity
 	METHOD a setLevel (Lfd;)V
 	METHOD a (Lgs;)Z
 		ARG 1 player
+	METHOD a isInWater (Lln;)Z
 	METHOD a readAdditionalSaveData (Lnu;)V
 		ARG 1 entityTag
 	METHOD a hurt (Lsn;I)Z
@@ -83,6 +85,7 @@ CLASS sn net/minecraft/world/entity/Entity
 	METHOD ad getEntityData ()Lud;
 	METHOD ag isInWater ()Z
 	METHOD ah isInLava ()Z
+	METHOD ak isOnFire ()Z
 	METHOD b defineSynchedData ()V
 	METHOD b move (DDD)V
 		ARG 1 x

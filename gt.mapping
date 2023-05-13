@@ -1,0 +1,3 @@
+CLASS gt
+	METHOD a format (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 string

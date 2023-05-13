@@ -1,6 +1,8 @@
 CLASS fd net/minecraft/world/level/Level
 	FIELD B isClientSide Z
 	FIELD H cloudColor J
+	FIELD b loadedEntities Ljava/util/List;
+	FIELD d players Ljava/util/List;
 	FIELD f skyDarken I
 	FIELD g randValue I
 	FIELD h addend I
@@ -112,6 +114,8 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 id
+	METHOD c onEntityAdded (Lsn;)V
+		ARG 1 entity
 	METHOD d validateSpawn ()V
 	METHOD d getFogColor (F)Lbt;
 	METHOD d getHeightmap (II)I
@@ -122,6 +126,8 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 3 z
 		ARG 4 b0
 		ARG 5 b1
+	METHOD d onEntityRemoved (Lsn;)V
+		ARG 1 entity
 	METHOD e getSunAngle (F)F
 	METHOD e getTopSolidBlock (II)I
 		ARG 1 x
@@ -131,6 +137,8 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 data
+	METHOD e removeEntity (Lsn;)V
+		ARG 1 entity
 	METHOD f isDay ()Z
 	METHOD f hasChunk (II)Z
 		ARG 1 x
@@ -166,5 +174,7 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD q disconnect ()V
 	METHOD u getSharedSpawnPos ()Lbr;
+	METHOD w getChunkSource ()Lcl;
 	METHOD x getLevelData ()Lei;

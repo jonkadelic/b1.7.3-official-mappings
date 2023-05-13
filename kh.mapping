@@ -1,0 +1,4 @@
+CLASS kh
+	FIELD a synthetic Lnet/minecraft/client/Minecraft;
+	METHOD <init> synthetic (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 synthetic

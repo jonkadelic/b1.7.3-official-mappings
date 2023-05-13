@@ -2,4 +2,3 @@ CLASS ii net/minecraft/world/entity/PathfinderMob
 	FIELD e holdGround Z
 	METHOD a (Lsn;F)V
 		ARG 1 target
-		ARG 2 d

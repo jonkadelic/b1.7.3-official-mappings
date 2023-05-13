@@ -1,0 +1,24 @@
+CLASS d net/minecraft/world/level/pathfinder/Node
+	FIELD a x I
+	FIELD b y I
+	FIELD c z I
+	FIELD d heapIdx I
+	FIELD e g F
+	FIELD f h F
+	FIELD g f F
+	FIELD h cameFrom Ld;
+	FIELD i closed Z
+	FIELD j hash I
+	METHOD <init> (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a inOpenSet ()Z
+	METHOD a createHash (III)I
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD a distanceTo (Ld;)F
+		ARG 1 other
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 that

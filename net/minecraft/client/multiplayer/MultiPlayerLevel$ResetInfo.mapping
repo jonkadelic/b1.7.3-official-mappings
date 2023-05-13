@@ -1,0 +1,4 @@
+CLASS tm net/minecraft/client/multiplayer/MultiPlayerLevel$ResetInfo
+	FIELD g synthetic Lmm;
+	METHOD <init> (Lmm;IIIII)V
+		ARG 1 synthetic

@@ -1,0 +1,5 @@
+CLASS vk net/minecraft/stats/StatsSyncher$1
+	FIELD a synthetic Lcj;
+	METHOD <init> (Lcj;)V
+		ARG 1 synthetic
+	METHOD run run ()V

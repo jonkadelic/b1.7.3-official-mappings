@@ -1,6 +1,6 @@
 CLASS nb net/minecraft/client/network/ClientSideNetworkHandler
 	FIELD a sessionId Ljava/lang/String;
-	FIELD b playerInfo Lhc;
+	FIELD b savedDataStorage Lhc;
 	FIELD c random Ljava/util/Random;
 	FIELD e connection Lpf;
 	FIELD f minecraft Lnet/minecraft/client/Minecraft;

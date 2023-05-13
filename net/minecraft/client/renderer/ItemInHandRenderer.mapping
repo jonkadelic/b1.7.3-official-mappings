@@ -1,0 +1,24 @@
+CLASS ra net/minecraft/client/renderer/ItemInHandRenderer
+	FIELD a minecraft Lnet/minecraft/client/Minecraft;
+	FIELD b itemInstance Liz;
+	FIELD c handHeight F
+	FIELD d oHandHeight F
+	FIELD e tileRenderer Lcv;
+	FIELD f mapRenderer Liy;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD a tick ()V
+	METHOD a render (F)V
+		ARG 1 partialTick
+	METHOD a renderTex (FI)V
+		ARG 1 partialTicks
+		ARG 2 tex
+	METHOD a renderItem (Lls;Liz;)V
+		ARG 1 mob
+		ARG 2 itemInstance
+	METHOD b renderScreenEffect (F)V
+		ARG 1 partialTick
+	METHOD c renderWater (F)V
+		ARG 1 partialTicks
+	METHOD d renderFire (F)V
+		ARG 1 partialTicks
