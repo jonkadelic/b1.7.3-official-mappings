@@ -1,4 +1,5 @@
 CLASS xp net/minecraft/world/level/LevelSource
+	METHOD a getBiomeSource ()Lxv;
 	METHOD a getTile (III)I
 		ARG 1 x
 		ARG 2 y
@@ -16,6 +17,10 @@ CLASS xp net/minecraft/world/level/LevelSource
 		ARG 2 y
 		ARG 3 z
 	METHOD f getMaterial (III)Lln;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD h isSolidTile (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

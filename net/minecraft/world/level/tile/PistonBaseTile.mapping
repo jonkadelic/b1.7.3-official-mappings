@@ -1,1 +1,48 @@
 CLASS jq net/minecraft/world/level/tile/PistonBaseTile
+	FIELD a isSticky Z
+	FIELD b extending Z
+	METHOD <init> (IIZ)V
+		ARG 1 id
+		ARG 2 tex
+		ARG 3 isSticky
+	METHOD a isPushable (ILfd;IIIZ)Z
+		ARG 0 tile
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 allowDestroy
+	METHOD c getPlaceDirection (Lfd;IIILgs;)I
+		ARG 0 level
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 player
+	METHOD d getFacingValue (I)I
+		ARG 0 data
+	METHOD e getExtendedValue (I)Z
+		ARG 0 data
+	METHOD f getNeighborSignal (Lfd;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 direction
+	METHOD h checkIfExtend (Lfd;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD h canExtend (Lfd;IIII)Z
+		ARG 0 level
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 direction
+	METHOD i getHeadTexture ()I
+	METHOD i moveBlocks (Lfd;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 direction

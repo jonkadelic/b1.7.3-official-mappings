@@ -1,0 +1,4 @@
+CLASS hw net/minecraft/world/level/WaterColor
+	FIELD a pixels [I
+	METHOD a init ([I)V
+		ARG 0 pixels

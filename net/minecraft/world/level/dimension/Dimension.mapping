@@ -14,6 +14,7 @@ CLASS xa net/minecraft/world/level/dimension/Dimension
 		ARG 1 x
 		ARG 2 z
 	METHOD a getTimeOfDay (JF)F
+		ARG 3 partialTick
 	METHOD a init (Lfd;)V
 		ARG 1 level
 	METHOD b createRandomLevelSource ()Lcl;

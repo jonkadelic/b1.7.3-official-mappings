@@ -1,1 +1,12 @@
 CLASS bv net/minecraft/world/level/tile/PressurePlateTile
+	FIELD a sensitivity Lrt;
+	METHOD <init> (IILrt;Lln;)V
+		ARG 1 id
+		ARG 2 tex
+		ARG 3 sensitivity
+		ARG 4 material
+	METHOD h update (Lfd;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

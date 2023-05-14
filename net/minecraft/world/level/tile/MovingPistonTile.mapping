@@ -1,1 +1,7 @@
 CLASS ut net/minecraft/world/level/tile/MovingPistonTile
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD a (IIIZZ)Low;
+		ARG 0 id
+		ARG 1 data
+		ARG 2 direction

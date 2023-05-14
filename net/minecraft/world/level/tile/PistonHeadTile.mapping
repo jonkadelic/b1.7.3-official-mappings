@@ -1,1 +1,10 @@
 CLASS h net/minecraft/world/level/tile/PistonHeadTile
+	FIELD a faceTex I
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 tex
+	METHOD a clearFaceTex ()V
+	METHOD a_ setFaceTex (I)V
+		ARG 1 tex
+	METHOD c getDirection (I)I
+		ARG 0 data

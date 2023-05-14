@@ -1,0 +1,5 @@
+CLASS wj net/minecraft/core/Facing
+	FIELD a OPPOSITE_FACING [I
+	FIELD b STEP_X [I
+	FIELD c STEP_Y [I
+	FIELD d STEP_Z [I

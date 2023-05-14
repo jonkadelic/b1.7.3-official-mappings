@@ -1,7 +1,8 @@
 CLASS fd net/minecraft/world/level/Level
 	FIELD B isClientSide Z
+	FIELD E tickNextTickList Ljava/util/TreeSet;
+	FIELD F tickNextTickSet Ljava/util/Set;
 	FIELD H cloudColor J
-	FIELD b loadedEntities Ljava/util/List;
 	FIELD d players Ljava/util/List;
 	FIELD f skyDarken I
 	FIELD g randValue I
@@ -34,6 +35,8 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 2 levelName
 		ARG 3 dimension
 		ARG 4 seed
+	METHOD E prepareWeather ()V
+	METHOD F stopWeather ()V
 	METHOD a playSound (DDDLjava/lang/String;FF)V
 	METHOD a getSkyDarken (F)I
 	METHOD a getTopTile (II)I
@@ -53,6 +56,11 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 5 y1
 		ARG 6 z1
 	METHOD a mayPlace (IIIIZI)Z
+	METHOD a setTileEntity (IIILow;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tileEntity
 	METHOD a getRawBrightness (IIIZ)I
 		ARG 1 x
 		ARG 2 y
@@ -77,8 +85,13 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 1 listener
 	METHOD a getCubes (Lsn;Leq;)Ljava/util/List;
 	METHOD a playSound (Lsn;Ljava/lang/String;FF)V
+	METHOD a tick (Lsn;Z)V
+		ARG 1 entity
+	METHOD a tickPendingTicks (Z)Z
+		ARG 1 tickImmediately
 	METHOD b createChunkSource ()Lcl;
 	METHOD b getTimeOfDay (F)F
+		ARG 1 partialTick
 	METHOD b getChunkAt (II)Llm;
 		ARG 1 x
 		ARG 2 z
@@ -114,12 +127,24 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 id
+	METHOD c addToTickNextTick (IIIII)V
+		ARG 1 type
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 delay
 	METHOD c onEntityAdded (Lsn;)V
 		ARG 1 entity
 	METHOD d validateSpawn ()V
 	METHOD d getFogColor (F)Lbt;
+		ARG 1 partialTick
 	METHOD d getHeightmap (II)I
 	METHOD d isEmptyTile (III)Z
+	METHOD d setData (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 data
 	METHOD d tileEvent (IIIII)V
 		ARG 1 x
 		ARG 2 y
@@ -129,6 +154,7 @@ CLASS fd net/minecraft/world/level/Level
 	METHOD d onEntityRemoved (Lsn;)V
 		ARG 1 entity
 	METHOD e getSunAngle (F)F
+		ARG 1 partialTick
 	METHOD e getTopSolidBlock (II)I
 		ARG 1 x
 		ARG 2 z
@@ -148,6 +174,9 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 id
+	METHOD f tick (Lsn;)V
+		ARG 1 entity
+	METHOD g tickEntities ()V
 	METHOD g tileUpdated (IIII)V
 	METHOD h setRainLevel (F)V
 	METHOD i hasChunkAt (III)Z
@@ -160,20 +189,24 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 3 z
 		ARG 4 tileId
 	METHOD k updateSkyBrightness ()V
+	METHOD k hasSignal (IIII)Z
 	METHOD l tick ()V
 	METHOD l neighborChanged (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 id
+	METHOD m tickWeather ()V
 	METHOD m (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD n tickTiles ()V
 	METHOD n getRawBrightness (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD p removeTileEntity (III)V
 	METHOD q disconnect ()V
 	METHOD u getSharedSpawnPos ()Lbr;
 	METHOD w getChunkSource ()Lcl;

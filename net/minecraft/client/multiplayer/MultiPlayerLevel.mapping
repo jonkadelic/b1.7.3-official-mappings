@@ -14,7 +14,7 @@ CLASS mm net/minecraft/client/multiplayer/MultiPlayerLevel
 		ARG 4 x1
 		ARG 5 y1
 		ARG 6 z1
-	METHOD f addToTickNextTick (IIIII)Z
+	METHOD f (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

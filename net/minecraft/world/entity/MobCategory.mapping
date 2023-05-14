@@ -1,0 +1,14 @@
+CLASS lk net/minecraft/world/entity/MobCategory
+	FIELD d mobClass Ljava/lang/Class;
+	FIELD e max I
+	FIELD f spawnMaterial Lln;
+	FIELD g isFriendly Z
+	METHOD <init> (Ljava/lang/String;ILjava/lang/Class;ILln;Z)V
+		ARG 3 material
+		ARG 4 max
+		ARG 5 spawnMaterial
+		ARG 6 isFriendly
+	METHOD a getClass ()Ljava/lang/Class;
+	METHOD b getMaxInstancesPerChunk ()I
+	METHOD c getSpawnMaterial ()Lln;
+	METHOD d isFriendly ()Z

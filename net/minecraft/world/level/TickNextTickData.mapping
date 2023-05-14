@@ -1,0 +1,19 @@
+CLASS qy net/minecraft/world/level/TickNextTickData
+	FIELD a type I
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e delay J
+	FIELD f counter J
+	FIELD g c J
+	METHOD <init> (IIII)V
+		ARG 1 type
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a setDelay (J)Lqy;
+		ARG 1 delay
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
+		ARG 1 that
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 that

@@ -1,1 +1,31 @@
 CLASS uk net/minecraft/world/level/tile/entity/PistonTileEntity
+	FIELD a id I
+	FIELD b data I
+	FIELD c direction I
+	FIELD i extending Z
+	FIELD j isSourcePiston Z
+	FIELD k progress F
+	FIELD l progressO F
+	FIELD m pushingEntities Ljava/util/List;
+	METHOD <init> (IIIZZ)V
+		ARG 1 id
+		ARG 2 data
+		ARG 3 direction
+		ARG 4 extending
+		ARG 5 isSourcePiston
+	METHOD a getId ()I
+	METHOD a getProgress (F)F
+		ARG 1 partialTick
+	METHOD a moveCollidedEntities (FF)V
+		ARG 1 progress
+		ARG 2 lastProgress
+	METHOD b isExtending ()Z
+	METHOD b getXOff (F)F
+		ARG 1 partialTick
+	METHOD c getYOff (F)F
+		ARG 1 partialTick
+	METHOD d getDirection ()I
+	METHOD d getZOff (F)F
+		ARG 1 partialTick
+	METHOD k isSourcePiston ()Z
+	METHOD l finalTick ()V

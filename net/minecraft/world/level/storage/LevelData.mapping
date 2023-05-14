@@ -66,7 +66,7 @@ CLASS ei net/minecraft/world/level/storage/LevelData
 	METHOD j getLevelName ()Ljava/lang/String;
 	METHOD k getVersion ()I
 	METHOD l getLastPlayed ()J
-	METHOD m getThundering ()Z
+	METHOD m isThundering ()Z
 	METHOD n getThunderTime ()I
-	METHOD o getRaining ()Z
+	METHOD o isRaining ()Z
 	METHOD p getRainTime ()I

@@ -125,6 +125,7 @@ CLASS uu net/minecraft/world/level/tile/Tile
 	FIELD z sapling Luu;
 	METHOD <init> (IILln;)V
 		ARG 1 id
+		ARG 2 tex
 		ARG 3 material
 	METHOD <init> (ILln;)V
 		ARG 1 id
@@ -146,11 +147,69 @@ CLASS uu net/minecraft/world/level/tile/Tile
 	METHOD a getResource (ILjava/util/Random;)I
 	METHOD a setSoundType (Lct;)Luu;
 		ARG 1 soundType
+	METHOD a canSurvive (Lfd;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a mayPlace (Lfd;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD a triggerEvent (Lfd;IIIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 event
+		ARG 6 direction
+	METHOD a clip (Lfd;IIILbt;Lbt;)Lvf;
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 current
+		ARG 6 next
 	METHOD a addAABBs (Lfd;IIILeq;Ljava/util/ArrayList;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 bb
+		ARG 6 bbList
+	METHOD a use (Lfd;IIILgs;)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 user
 	METHOD a tick (Lfd;IIILjava/util/Random;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random
+	METHOD a setPlacedBy (Lfd;IIILls;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 placer
 	METHOD a entityInside (Lfd;IIILsn;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
 	METHOD a setDescriptionId (Ljava/lang/String;)Luu;
 		ARG 1 id
+	METHOD a updateShape (Lxp;III)V
+		ARG 1 levelSource
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD a getTexture (Lxp;IIII)I
 		ARG 1 levelSource
 		ARG 2 x
@@ -161,8 +220,28 @@ CLASS uu net/minecraft/world/level/tile/Tile
 	METHOD b setExplodeable (F)Luu;
 		ARG 1 explosionResistance
 	METHOD b getColor (I)I
+	METHOD b onRemove (Lfd;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD b neighborChanged (Lfd;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 direction
+	METHOD b animateTick (Lfd;IIILjava/util/Random;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random
 	METHOD b getColor (Lxp;III)I
+		ARG 1 levelSource
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD b shouldRenderFace (Lxp;IIII)Z
 		ARG 1 level
 		ARG 2 x
@@ -175,7 +254,24 @@ CLASS uu net/minecraft/world/level/tile/Tile
 	METHOD c isSolidRender ()Z
 	METHOD c setDestroyTime (F)Luu;
 		ARG 1 destroyTime
+	METHOD c onPlace (Lfd;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD c getSignal (Lxp;IIII)Z
+		ARG 1 levelSource
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 direction
 	METHOD d isCubeShaped ()Z
+	METHOD d getDirectSignal (Lfd;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 direction
 	METHOD d getBrightness (Lxp;III)F
 		ARG 1 level
 		ARG 2 x
@@ -189,13 +285,23 @@ CLASS uu net/minecraft/world/level/tile/Tile
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD e setPlacedOnFace (Lfd;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+	METHOD f isSignalSource ()Z
 	METHOD f getTileAABB (Lfd;III)Leq;
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD g updateDefaultShape ()V
 	METHOD g setLightBlock (I)Luu;
 		ARG 1 lightBlock
+	METHOD h getPushReaction ()I
+	METHOD j id ()Luu;
 	METHOD l setUnbreakable ()Luu;
 	METHOD m getDestroyTime ()F
 	METHOD n getName ()Ljava/lang/String;
