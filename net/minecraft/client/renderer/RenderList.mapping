@@ -1,0 +1,25 @@
+CLASS tg net/minecraft/client/renderer/RenderList
+	FIELD a x I
+	FIELD b y I
+	FIELD c z I
+	FIELD d xOff F
+	FIELD e yOff F
+	FIELD f zOff F
+	FIELD g lists Ljava/nio/IntBuffer;
+	FIELD h ready Z
+	FIELD i isFlipped Z
+	METHOD a render ()V
+	METHOD a add (I)V
+		ARG 1 list
+	METHOD a isAt (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a init (IIIDDD)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 xOff
+		ARG 6 yOff
+		ARG 8 zOff
+	METHOD b clear ()V

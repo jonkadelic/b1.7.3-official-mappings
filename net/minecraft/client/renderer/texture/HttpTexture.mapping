@@ -1,0 +1,6 @@
+CLASS ek net/minecraft/client/renderer/texture/HttpTexture
+	FIELD a image Ljava/awt/image/BufferedImage;
+	FIELD b entitiesUsing I
+	METHOD <init> (Ljava/lang/String;Lnf;)V
+		ARG 1 urlString
+		ARG 2 processor

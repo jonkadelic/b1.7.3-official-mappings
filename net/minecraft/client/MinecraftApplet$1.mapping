@@ -1,0 +1,6 @@
+CLASS r net/minecraft/client/MinecraftApplet$1
+	FIELD a s Lnet/minecraft/client/MinecraftApplet;
+	METHOD <init> (Lnet/minecraft/client/MinecraftApplet;)V
+		ARG 1 s
+	METHOD addNotify addNotify ()V
+	METHOD removeNotify removeNotify ()V

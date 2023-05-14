@@ -1,5 +1,5 @@
 CLASS pm net/minecraft/world/level/LevelListener
-	METHOD a tileBrightnessChanged (III)V
+	METHOD a tileChanged (III)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

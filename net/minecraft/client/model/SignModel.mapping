@@ -1,0 +1,4 @@
+CLASS rf net/minecraft/client/model/SignModel
+	FIELD a sign Lps;
+	FIELD b stick Lps;
+	METHOD a render ()V

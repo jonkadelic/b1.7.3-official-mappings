@@ -1,0 +1,9 @@
+CLASS tj net/minecraft/client/renderer/texture/HttpTexture$1
+	FIELD a sUrl Ljava/lang/String;
+	FIELD b sProcessor Lnf;
+	FIELD c sTexture Lek;
+	METHOD <init> (Lek;Ljava/lang/String;Lnf;)V
+		ARG 1 sTexture
+		ARG 2 sString
+		ARG 3 sProcessor
+	METHOD run run ()V

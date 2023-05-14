@@ -1,0 +1,39 @@
+CLASS dk net/minecraft/client/renderer/chunk/RenderChunk
+	FIELD C lists I
+	FIELD D tesselator Lnw;
+	FIELD E isBuilt Z
+	FIELD a level Lfd;
+	FIELD b updates I
+	FIELD c x I
+	FIELD d y I
+	FIELD e z I
+	FIELD f xSize I
+	FIELD g ySize I
+	FIELD h zSize I
+	FIELD l xClip I
+	FIELD m yClip I
+	FIELD n zClip I
+	FIELD o isVisible Z
+	FIELD u dirty Z
+	FIELD v bb Leq;
+	METHOD <init> (Lfd;Ljava/util/List;IIIII)V
+		ARG 1 level
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 size
+		ARG 7 lists
+	METHOD a rebuild ()V
+	METHOD a getList (I)I
+		ARG 1 layer
+	METHOD a setPos (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a distanceToSqr (Lsn;)F
+		ARG 1 entity
+	METHOD a cull (Lyn;)V
+		ARG 1 culler
+	METHOD b reset ()V
+	METHOD f setDirty ()V
+	METHOD g translateToPos ()V

@@ -1,6 +1,6 @@
 CLASS nl net/minecraft/world/level/storage/LevelStorageSource
 	METHOD a getName ()Ljava/lang/String;
-	METHOD a requiresConversion (Ljava/lang/String;)Z
+	METHOD a isConvertible (Ljava/lang/String;)Z
 		ARG 1 path
 	METHOD a renameLevel (Ljava/lang/String;Ljava/lang/String;)V
 		ARG 1 path

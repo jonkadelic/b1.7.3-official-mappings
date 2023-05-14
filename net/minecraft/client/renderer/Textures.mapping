@@ -4,7 +4,12 @@ CLASS ji net/minecraft/client/renderer/Textures
 	METHOD a tick ()V
 	METHOD a addDynamicTexture (Law;)V
 		ARG 1 texture
+	METHOD a (Ljava/lang/String;Lnf;)Lek;
+		ARG 1 path
+		ARG 2 processor
 	METHOD b bind (I)V
 		ARG 1 texture
 	METHOD b loadTexture (Ljava/lang/String;)I
+		ARG 1 path
+	METHOD c (Ljava/lang/String;)V
 		ARG 1 path

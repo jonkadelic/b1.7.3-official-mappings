@@ -1,8 +1,8 @@
 CLASS ig net/minecraft/network/protocol/MovePlayerPacket
 	FIELD a x D
-	FIELD b y D
+	FIELD b yBB D
 	FIELD c z D
-	FIELD d yo D
+	FIELD d y D
 	FIELD e yRot F
 	FIELD f xRot F
 	FIELD g onGround Z

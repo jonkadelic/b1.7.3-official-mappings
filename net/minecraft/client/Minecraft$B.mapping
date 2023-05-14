@@ -1,0 +1,5 @@
+CLASS kj net/minecraft/client/Minecraft$B
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/lang/Thread;)V
+		ARG 1 minecraft
+		ARG 2 thread
+	METHOD windowClosing windowClosing (Ljava/awt/event/WindowEvent;)V

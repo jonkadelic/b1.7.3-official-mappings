@@ -1,0 +1,2 @@
+CLASS pc net/minecraft/world/level/tile/BaseRailTile
+	METHOD h isRail (Lfd;III)Z

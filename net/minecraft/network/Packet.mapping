@@ -1,15 +1,35 @@
 CLASS ki net/minecraft/network/Packet
 	FIELD a idToClassMap Ljava/util/Map;
 	FIELD b classToIdMap Ljava/util/Map;
+	FIELD c clientboundPacketIds Ljava/util/Set;
+	FIELD d serverboundPacketIds Ljava/util/Set;
+	FIELD e idSizeTrackerMap Ljava/util/HashMap;
+	FIELD f packetsReceived I
+	FIELD j creationTime J
 	METHOD a getPacketSize ()I
 	METHOD a createPacket (I)Lki;
 		ARG 0 id
 	METHOD a addPacket (IZZLjava/lang/Class;)V
 		ARG 0 id
+		ARG 1 clientbound
+		ARG 2 serverbound
 		ARG 3 packetClass
 	METHOD a read (Ljava/io/DataInputStream;)V
 		ARG 1 stream
+	METHOD a readString (Ljava/io/DataInputStream;I)Ljava/lang/String;
+		ARG 0 dis
+		ARG 1 maxLength
+	METHOD a readPacket (Ljava/io/DataInputStream;Z)Lki;
+		ARG 0 dis
+		ARG 1 clientbound
 	METHOD a write (Ljava/io/DataOutputStream;)V
 		ARG 1 stream
+	METHOD a writeString (Ljava/lang/String;Ljava/io/DataOutputStream;)V
+		ARG 0 string
+		ARG 1 dos
+	METHOD a writePacket (Lki;Ljava/io/DataOutputStream;)V
+		ARG 0 packet
+		ARG 1 dos
 	METHOD a handle (Lti;)V
 		ARG 1 handler
+	METHOD c getId ()I

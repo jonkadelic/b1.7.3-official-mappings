@@ -4,6 +4,10 @@ CLASS mm net/minecraft/client/multiplayer/MultiPlayerLevel
 	METHOD <init> (Lnb;JI)V
 		ARG 1 connection
 		ARG 4 dimensionType
+	METHOD a (IIZ)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 allocate
 	METHOD a putEntity (ILsn;)V
 		ARG 1 id
 		ARG 2 entity

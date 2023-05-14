@@ -6,11 +6,14 @@ CLASS gs net/minecraft/world/entity/player/Player
 	FIELD u sleeping Z
 	METHOD a drop (Liz;Z)V
 	METHOD a awardStat (Lvr;I)V
+		ARG 1 stat
+		ARG 2 amount
 	METHOD b startSleepInBed (III)Lcw;
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 	METHOD b displayClientMessage (Ljava/lang/String;)V
+		ARG 1 message
 	METHOD b canDestroy (Luu;)Z
 	METHOD c attack (Lsn;)V
 	METHOD d interact (Lsn;)V

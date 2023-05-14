@@ -1,0 +1,7 @@
+CLASS ql net/minecraft/network/protocol/InputPacket
+	FIELD a leftImpulse F
+	FIELD b forwardImpulse F
+	FIELD c jumping Z
+	FIELD d sneakKeyDown Z
+	FIELD e xRot F
+	FIELD f yRot F

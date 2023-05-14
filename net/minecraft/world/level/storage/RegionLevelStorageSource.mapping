@@ -1,9 +1,14 @@
 CLASS hi net/minecraft/world/level/storage/RegionLevelStorageSource
-	METHOD a convertFile (Ljava/io/File;Ljava/util/ArrayList;IILyb;)V
-		ARG 1 file
-		ARG 3 filesConverted
-		ARG 4 filesToConvert
-		ARG 5 progressListener
+	METHOD a convertRegions (Ljava/io/File;Ljava/util/ArrayList;IILyb;)V
+		ARG 1 baseFolder
+		ARG 2 regionFiles
+		ARG 3 currentCount
+		ARG 4 totalCount
+		ARG 5 progress
 	METHOD a addRegionFiles (Ljava/io/File;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
-	METHOD a (Ljava/util/ArrayList;IILyb;)V
+		ARG 1 baseFolder
+		ARG 2 regionFiles
+	METHOD a delete (Ljava/util/ArrayList;IILyb;)V
+		ARG 2 filesConverted
+		ARG 3 filesToConvert
 		ARG 4 progressListener

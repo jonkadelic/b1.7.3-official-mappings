@@ -1,0 +1,9 @@
+CLASS jo net/minecraft/client/renderer/DistanceChunkSorter
+	FIELD a x D
+	FIELD b y D
+	FIELD c z D
+	METHOD <init> (Lsn;)V
+		ARG 1 camera
+	METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I
+		ARG 1 a
+		ARG 2 b

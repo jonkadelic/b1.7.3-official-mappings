@@ -4,6 +4,7 @@ CLASS net/minecraft/client/MinecraftApplet net/minecraft/client/MinecraftApplet
 	FIELD c thread Ljava/lang/Thread;
 	METHOD a startGameThread ()V
 	METHOD b stopGameThread ()V
+	METHOD c cleanup ()V
 	METHOD destroy destroy ()V
 	METHOD init init ()V
 	METHOD start start ()V

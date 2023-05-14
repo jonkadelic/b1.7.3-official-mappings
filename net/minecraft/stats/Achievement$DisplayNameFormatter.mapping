@@ -1,3 +1,3 @@
-CLASS gt
+CLASS gt net/minecraft/stats/Achievement$DisplayNameFormatter
 	METHOD a format (Ljava/lang/String;)Ljava/lang/String;
 		ARG 1 string

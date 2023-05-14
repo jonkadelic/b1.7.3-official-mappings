@@ -86,6 +86,7 @@ CLASS sn net/minecraft/world/entity/Entity
 	METHOD ag isInWater ()Z
 	METHOD ah isInLava ()Z
 	METHOD ak isOnFire ()Z
+	METHOD al isPassenger ()Z
 	METHOD b defineSynchedData ()V
 	METHOD b move (DDD)V
 		ARG 1 x
@@ -95,6 +96,9 @@ CLASS sn net/minecraft/world/entity/Entity
 	METHOD b setSize (FF)V
 		ARG 1 width
 		ARG 2 height
+	METHOD b setSharedFlag (IZ)V
+		ARG 1 id
+		ARG 2 value
 	METHOD b playerTouch (Lgs;)V
 		ARG 1 player
 	METHOD b addAdditionalSaveData (Lnu;)V
@@ -115,6 +119,8 @@ CLASS sn net/minecraft/world/entity/Entity
 	METHOD d turn (FF)V
 		ARG 1 yRot
 		ARG 2 xRot
+	METHOD d getSharedFlag (I)Z
+		ARG 1 id
 	METHOD d saveWithoutId (Lnu;)V
 		ARG 1 entityTag
 	METHOD e setPos (DDD)V
@@ -145,6 +151,7 @@ CLASS sn net/minecraft/world/entity/Entity
 		ARG 1 entity
 	METHOD h_ isShootable ()Z
 	METHOD i startRiding (Lsn;)V
+	METHOD t isSneaking ()Z
 	METHOD t_ resetPos ()V
 	METHOD w getHeadHeight ()F
 	METHOD w_ tick ()V

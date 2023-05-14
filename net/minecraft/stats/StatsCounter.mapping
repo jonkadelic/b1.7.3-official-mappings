@@ -1,1 +1,3 @@
 CLASS xi net/minecraft/stats/StatsCounter
+	METHOD a earnedAchievement (Lny;)Z
+		ARG 1 achievement

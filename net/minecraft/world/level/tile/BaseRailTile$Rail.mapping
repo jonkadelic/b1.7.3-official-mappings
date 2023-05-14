@@ -1,0 +1,41 @@
+CLASS vo net/minecraft/world/level/tile/BaseRailTile$Rail
+	FIELD a s Lpc;
+	FIELD b level Lfd;
+	FIELD c x I
+	FIELD d y I
+	FIELD e z I
+	FIELD f isStraight Z
+	FIELD g connections Ljava/util/List;
+	METHOD <init> (Lpc;Lfd;III)V
+		ARG 1 synthetic
+		ARG 2 level
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+	METHOD a removeSoftConnections ()V
+	METHOD a updateConnections (I)V
+		ARG 1 direction
+	METHOD a hasRail (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a synCountPotentialConnections (Lvo;)I
+		ARG 0 synthetic
+	METHOD a getRail (Lwf;)Lvo;
+		ARG 1 pos
+	METHOD a place (ZZ)V
+	METHOD b countPotentialConnections ()I
+	METHOD b hasConnection (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b connectsTo (Lvo;)Z
+		ARG 1 other
+	METHOD c hasNeighborRail (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD c canConnectTo (Lvo;)Z
+		ARG 1 other
+	METHOD d connectTo (Lvo;)V
+		ARG 1 other

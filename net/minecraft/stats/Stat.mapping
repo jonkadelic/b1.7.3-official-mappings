@@ -4,7 +4,7 @@ CLASS vr net/minecraft/stats/Stat
 	FIELD c decimalFormat Ljava/text/DecimalFormat;
 	FIELD e id I
 	FIELD f name Ljava/lang/String;
-	FIELD g isSynched Z
+	FIELD g clientOnly Z
 	FIELD i defaultFormatter Lwk;
 	FIELD j timeFormatter Lwk;
 	FIELD k distanceFormatter Lwk;
@@ -17,7 +17,8 @@ CLASS vr net/minecraft/stats/Stat
 		ARG 3 formatter
 	METHOD a format (I)Ljava/lang/String;
 		ARG 1 value
+	METHOD d isAchievement ()Z
 	METHOD g register ()Lvr;
-	METHOD h setSynched ()Lvr;
-	METHOD i getNumberFormat ()Ljava/text/NumberFormat;
-	METHOD j getDecimalFormat ()Ljava/text/DecimalFormat;
+	METHOD h setClientOnly ()Lvr;
+	METHOD i synGetNumberFormat ()Ljava/text/NumberFormat;
+	METHOD j synGetDecimalFormat ()Ljava/text/DecimalFormat;

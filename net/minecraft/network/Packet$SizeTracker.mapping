@@ -1,0 +1,7 @@
+CLASS nv net/minecraft/network/Packet$SizeTracker
+	FIELD a numPackets I
+	FIELD b totalSize J
+	METHOD <init> (Lgw;)V
+		ARG 1 statistics
+	METHOD a receivePacket (I)V
+		ARG 1 packetSize

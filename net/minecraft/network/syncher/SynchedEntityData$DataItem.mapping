@@ -1,4 +1,4 @@
-CLASS ma net/minecraft/network/syncher/DataItem
+CLASS ma net/minecraft/network/syncher/SynchedEntityData$DataItem
 	FIELD a dataType I
 	FIELD b id I
 	FIELD c value Ljava/lang/Object;

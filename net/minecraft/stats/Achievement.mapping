@@ -1,6 +1,7 @@
 CLASS ny net/minecraft/stats/Achievement
 	FIELD d itemInstance Liz;
 	FIELD l displayName Ljava/lang/String;
+	FIELD m displayNameFormatter Lgt;
 	METHOD <init> (ILjava/lang/String;IILgm;Lny;)V
 		ARG 2 translationKey
 		ARG 5 item

@@ -113,9 +113,10 @@ CLASS uu net/minecraft/world/level/tile/Tile
 	FIELD l SOUND_SAND Lct;
 	FIELD m tiles [Luu;
 	FIELD n shouldTick [Z
-	FIELD p solid [Z
+	FIELD o solid [Z
+	FIELD p isEntityTile [Z
 	FIELD q lightBlock [I
-	FIELD r isEntityTile [Z
+	FIELD r translucent [Z
 	FIELD s lightEmission [I
 	FIELD u rock Luu;
 	FIELD v grass Lwp;
@@ -301,7 +302,6 @@ CLASS uu net/minecraft/world/level/tile/Tile
 	METHOD g setLightBlock (I)Luu;
 		ARG 1 lightBlock
 	METHOD h getPushReaction ()I
-	METHOD j id ()Luu;
 	METHOD l setUnbreakable ()Luu;
 	METHOD m getDestroyTime ()F
 	METHOD n getName ()Ljava/lang/String;

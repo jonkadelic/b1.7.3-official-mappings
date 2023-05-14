@@ -1,4 +1,6 @@
 CLASS dc net/minecraft/client/player/LocalPlayer
+	FIELD a input Luo;
+	FIELD b minecraft Lnet/minecraft/client/Minecraft;
 	METHOD d_ hurtTo (I)V
 		ARG 1 health
 	METHOD s getArmorValue ()I

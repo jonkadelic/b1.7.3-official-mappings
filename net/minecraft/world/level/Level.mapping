@@ -104,8 +104,15 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-		ARG 4 tileId
+		ARG 4 tile
 		ARG 5 data
+	METHOD b setTilesDirty (IIIIII)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
 	METHOD b setBrightness (Leb;IIII)V
 		ARG 1 lightLayer
 		ARG 2 x
@@ -173,12 +180,21 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-		ARG 4 id
+		ARG 4 tile
 	METHOD f tick (Lsn;)V
 		ARG 1 entity
 	METHOD g tickEntities ()V
 	METHOD g tileUpdated (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
 	METHOD h setRainLevel (F)V
+	METHOD h lightColumnChanged (IIII)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 y0
+		ARG 4 y1
 	METHOD i hasChunkAt (III)Z
 		ARG 1 x
 		ARG 2 y
@@ -187,15 +203,27 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-		ARG 4 tileId
+		ARG 4 tile
+	METHOD j sendTileUpdated (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD k updateSkyBrightness ()V
+	METHOD k setTileDirty (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD k hasSignal (IIII)Z
 	METHOD l tick ()V
+	METHOD l (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD l neighborChanged (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-		ARG 4 id
+		ARG 4 tile
 	METHOD m tickWeather ()V
 	METHOD m (III)I
 		ARG 1 x
@@ -203,6 +231,10 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 3 z
 	METHOD n tickTiles ()V
 	METHOD n getRawBrightness (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD o isSkyLit (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

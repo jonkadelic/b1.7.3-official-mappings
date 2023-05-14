@@ -1,1 +1,10 @@
 CLASS uv net/minecraft/client/multiplayer/MultiplayerChunkCache
+	FIELD a emptyChunk Llm;
+	FIELD b posToChunkMap Ljava/util/Map;
+	FIELD c chunkList Ljava/util/List;
+	FIELD d level Lfd;
+	METHOD <init> (Lfd;)V
+		ARG 1 level
+	METHOD d deallocate (II)V
+		ARG 1 x
+		ARG 2 z

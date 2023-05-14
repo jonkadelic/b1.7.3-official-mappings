@@ -13,6 +13,6 @@ CLASS cl net/minecraft/world/level/chunk/ChunkSource
 		ARG 1 x
 		ARG 2 z
 	METHOD c gatherStats ()Ljava/lang/String;
-	METHOD c create (II)Llm;
+	METHOD c allocate (II)Llm;
 		ARG 1 x
 		ARG 2 z
