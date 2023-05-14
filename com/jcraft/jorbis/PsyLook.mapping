@@ -1,1 +1,9 @@
 CLASS com/jcraft/jorbis/PsyLook com/jcraft/jorbis/PsyLook
+	FIELD ath ath [F
+	FIELD n n I
+	FIELD noisecurves noisecurves [[[F
+	FIELD octave octave [I
+	FIELD peakatt peakatt [[F
+	FIELD tonecurves tonecurves [[[F
+	FIELD vi vi Lcom/jcraft/jorbis/PsyInfo;
+	METHOD init init (Lcom/jcraft/jorbis/PsyInfo;II)V

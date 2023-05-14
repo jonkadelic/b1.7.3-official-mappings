@@ -1,0 +1,4 @@
+CLASS yo net/minecraft/client/sounds/SoundEngine
+	FIELD a soundSystem Lpaulscode/sound/SoundSystem;
+	FIELD f options Lkv;
+	METHOD d loadLibrary ()V

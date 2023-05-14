@@ -1,1 +1,18 @@
 CLASS db net/minecraft/world/level/tile/RedstoneTorchTile
+	FIELD a lit Z
+	FIELD b recentToggles Ljava/util/List;
+	METHOD <init> (IIZ)V
+		ARG 1 id
+		ARG 2 tex
+		ARG 3 lit
+	METHOD a isToggledTooFrequently (Lfd;IIIZ)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 addToggle
+	METHOD h hasNeighborSignal (Lfd;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

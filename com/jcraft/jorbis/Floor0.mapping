@@ -1,1 +1,27 @@
 CLASS com/jcraft/jorbis/Floor0 com/jcraft/jorbis/Floor0
+	FIELD lsp lsp [F
+	METHOD fromdB fromdB (F)F
+	METHOD inverse inverse (Lcom/jcraft/jorbis/Block;Ljava/lang/Object;[F)I
+	METHOD lpc_to_curve lpc_to_curve ([F[FFLcom/jcraft/jorbis/Floor0$LookFloor0;Ljava/lang/String;I)V
+	METHOD lsp_to_lpc lsp_to_lpc ([F[FI)V
+	METHOD state state (Ljava/lang/Object;)Ljava/lang/Object;
+	METHOD toBARK toBARK (F)F
+	CLASS InfoFloor0 InfoFloor0
+		FIELD ampbits ampbits I
+		FIELD ampdB ampdB I
+		FIELD barkmap barkmap I
+		FIELD books books [I
+		FIELD numbooks numbooks I
+		FIELD order order I
+		FIELD rate rate I
+	CLASS LookFloor0 LookFloor0
+		FIELD linearmap linearmap [I
+		FIELD ln ln I
+		FIELD lpclook lpclook Lcom/jcraft/jorbis/Lpc;
+		FIELD m m I
+		FIELD n n I
+		FIELD vi vi Lcom/jcraft/jorbis/Floor0$InfoFloor0;
+	CLASS EchstateFloor0 EchstateFloor0
+		FIELD codewords codewords [I
+		FIELD curve curve [F
+		FIELD frameno frameno J

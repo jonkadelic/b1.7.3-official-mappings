@@ -1,1 +1,7 @@
 CLASS paulscode/sound/SoundSystemLogger paulscode/sound/SoundSystemLogger
+	METHOD errorCheck errorCheck (ZLjava/lang/String;Ljava/lang/String;I)Z
+	METHOD errorMessage errorMessage (Ljava/lang/String;Ljava/lang/String;I)V
+	METHOD importantMessage importantMessage (Ljava/lang/String;I)V
+	METHOD message message (Ljava/lang/String;I)V
+	METHOD printExceptionMessage printExceptionMessage (Ljava/lang/Exception;I)V
+	METHOD printStackTrace printStackTrace (Ljava/lang/Exception;I)V

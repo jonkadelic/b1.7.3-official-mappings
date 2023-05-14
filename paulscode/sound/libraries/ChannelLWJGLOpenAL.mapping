@@ -1,1 +1,8 @@
 CLASS paulscode/sound/libraries/ChannelLWJGLOpenAL paulscode/sound/libraries/ChannelLWJGLOpenAL
+	FIELD ALSource ALSource Ljava/nio/IntBuffer;
+	FIELD ALformat ALformat I
+	FIELD bufferBuffer bufferBuffer Ljava/nio/ByteBuffer;
+	FIELD sampleRate sampleRate I
+	METHOD attachBuffer attachBuffer (Ljava/nio/IntBuffer;)Z
+	METHOD checkALError checkALError ()Z
+	METHOD setFormat setFormat (II)V

@@ -1,1 +1,19 @@
 CLASS com/jcraft/jorbis/Block com/jcraft/jorbis/Block
+	FIELD W W I
+	FIELD eofflag eofflag I
+	FIELD floor_bits floor_bits I
+	FIELD glue_bits glue_bits I
+	FIELD granulepos granulepos J
+	FIELD lW lW I
+	FIELD mode mode I
+	FIELD nW nW I
+	FIELD opb opb Lcom/jcraft/jogg/Buffer;
+	FIELD pcm pcm [[F
+	FIELD pcmend pcmend I
+	FIELD res_bits res_bits I
+	FIELD sequence sequence J
+	FIELD time_bits time_bits I
+	FIELD vd vd Lcom/jcraft/jorbis/DspState;
+	METHOD clear clear ()I
+	METHOD init init (Lcom/jcraft/jorbis/DspState;)V
+	METHOD synthesis synthesis (Lcom/jcraft/jogg/Packet;)I

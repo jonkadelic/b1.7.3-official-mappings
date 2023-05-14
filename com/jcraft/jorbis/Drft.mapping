@@ -1,1 +1,24 @@
 CLASS com/jcraft/jorbis/Drft com/jcraft/jorbis/Drft
+	FIELD hsqt2 hsqt2 F
+	FIELD n n I
+	FIELD ntryh ntryh [I
+	FIELD splitcache splitcache [I
+	FIELD sqrt2 sqrt2 F
+	FIELD taui taui F
+	FIELD taur taur F
+	FIELD tpi tpi F
+	FIELD trigcache trigcache [F
+	METHOD backward backward ([F)V
+	METHOD clear clear ()V
+	METHOD dradb2 dradb2 (II[F[F[FI)V
+	METHOD dradb3 dradb3 (II[F[F[FI[FI)V
+	METHOD dradb4 dradb4 (II[F[F[FI[FI[FI)V
+	METHOD dradbg dradbg (IIII[F[F[F[F[F[FI)V
+	METHOD dradf2 dradf2 (II[F[F[FI)V
+	METHOD dradf4 dradf4 (II[F[F[FI[FI[FI)V
+	METHOD dradfg dradfg (IIII[F[F[F[F[F[FI)V
+	METHOD drftb1 drftb1 (I[F[F[FI[I)V
+	METHOD drftf1 drftf1 (I[F[F[F[I)V
+	METHOD drfti1 drfti1 (I[FI[I)V
+	METHOD fdrffti fdrffti (I[F[I)V
+	METHOD init init (I)V

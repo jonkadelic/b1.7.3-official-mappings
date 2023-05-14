@@ -1,1 +1,8 @@
 CLASS com/jcraft/jorbis/FuncMapping com/jcraft/jorbis/FuncMapping
+	FIELD mapping_P mapping_P [Lcom/jcraft/jorbis/FuncMapping;
+	METHOD free_info free_info (Ljava/lang/Object;)V
+	METHOD free_look free_look (Ljava/lang/Object;)V
+	METHOD inverse inverse (Lcom/jcraft/jorbis/Block;Ljava/lang/Object;)I
+	METHOD look look (Lcom/jcraft/jorbis/DspState;Lcom/jcraft/jorbis/InfoMode;Ljava/lang/Object;)Ljava/lang/Object;
+	METHOD pack pack (Lcom/jcraft/jorbis/Info;Ljava/lang/Object;Lcom/jcraft/jogg/Buffer;)V
+	METHOD unpack unpack (Lcom/jcraft/jorbis/Info;Lcom/jcraft/jogg/Buffer;)Ljava/lang/Object;

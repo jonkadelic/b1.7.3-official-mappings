@@ -1,1 +1,8 @@
 CLASS com/jcraft/jorbis/FuncTime com/jcraft/jorbis/FuncTime
+	FIELD time_P time_P [Lcom/jcraft/jorbis/FuncTime;
+	METHOD free_info free_info (Ljava/lang/Object;)V
+	METHOD free_look free_look (Ljava/lang/Object;)V
+	METHOD inverse inverse (Lcom/jcraft/jorbis/Block;Ljava/lang/Object;[F[F)I
+	METHOD look look (Lcom/jcraft/jorbis/DspState;Lcom/jcraft/jorbis/InfoMode;Ljava/lang/Object;)Ljava/lang/Object;
+	METHOD pack pack (Ljava/lang/Object;Lcom/jcraft/jogg/Buffer;)V
+	METHOD unpack unpack (Lcom/jcraft/jorbis/Info;Lcom/jcraft/jogg/Buffer;)Ljava/lang/Object;

@@ -1,1 +1,25 @@
 CLASS com/jcraft/jorbis/Mapping0 com/jcraft/jorbis/Mapping0
+	FIELD floormemo floormemo [Ljava/lang/Object;
+	FIELD nonzero nonzero [I
+	FIELD pcmbundle pcmbundle [[F
+	FIELD seq seq I
+	FIELD zerobundle zerobundle [I
+	CLASS InfoMapping0 InfoMapping0
+		FIELD chmuxlist chmuxlist [I
+		FIELD coupling_ang coupling_ang [I
+		FIELD coupling_mag coupling_mag [I
+		FIELD coupling_steps coupling_steps I
+		FIELD floorsubmap floorsubmap [I
+		FIELD residuesubmap residuesubmap [I
+		FIELD submaps submaps I
+		FIELD timesubmap timesubmap [I
+		METHOD free free ()V
+	CLASS LookMapping0 LookMapping0
+		FIELD ch ch I
+		FIELD floor_func floor_func [Lcom/jcraft/jorbis/FuncFloor;
+		FIELD floor_look floor_look [Ljava/lang/Object;
+		FIELD mode mode Lcom/jcraft/jorbis/InfoMode;
+		FIELD residue_func residue_func [Lcom/jcraft/jorbis/FuncResidue;
+		FIELD residue_look residue_look [Ljava/lang/Object;
+		FIELD time_func time_func [Lcom/jcraft/jorbis/FuncTime;
+		FIELD time_look time_look [Ljava/lang/Object;

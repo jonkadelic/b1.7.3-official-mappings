@@ -1,1 +1,8 @@
 CLASS com/jcraft/jogg/Packet com/jcraft/jogg/Packet
+	FIELD b_o_s b_o_s I
+	FIELD bytes bytes I
+	FIELD e_o_s e_o_s I
+	FIELD granulepos granulepos J
+	FIELD packet packet I
+	FIELD packet_base packet_base [B
+	FIELD packetno packetno J

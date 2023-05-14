@@ -1,2 +1,37 @@
 CLASS paulscode/sound/codecs/CodecJOrbis paulscode/sound/codecs/CodecJOrbis
+	FIELD GET GET Z
+	FIELD LITTLE_ENDIAN LITTLE_ENDIAN Z
+	FIELD SET SET Z
+	FIELD XXX XXX Z
+	FIELD audioFormat audioFormat Ljavax/sound/sampled/AudioFormat;
+	FIELD bufferSize bufferSize I
+	FIELD buffer buffer [B
+	FIELD convertedBufferSize convertedBufferSize I
+	FIELD count count I
+	FIELD endOfStream endOfStream Z
+	FIELD index index I
+	FIELD initialized initialized Z
+	FIELD inputStream inputStream Ljava/io/InputStream;
+	FIELD joggPacket joggPacket Lcom/jcraft/jogg/Packet;
+	FIELD joggPage joggPage Lcom/jcraft/jogg/Page;
+	FIELD joggStreamState joggStreamState Lcom/jcraft/jogg/StreamState;
+	FIELD joggSyncState joggSyncState Lcom/jcraft/jogg/SyncState;
+	FIELD jorbisBlock jorbisBlock Lcom/jcraft/jorbis/Block;
+	FIELD jorbisComment jorbisComment Lcom/jcraft/jorbis/Comment;
+	FIELD jorbisDspState jorbisDspState Lcom/jcraft/jorbis/DspState;
+	FIELD jorbisInfo jorbisInfo Lcom/jcraft/jorbis/Info;
+	FIELD logger logger Lpaulscode/sound/SoundSystemLogger;
+	FIELD pcmIndex pcmIndex [I
+	FIELD pcmInfo pcmInfo [[[F
+	FIELD urlConnection urlConnection Ljava/net/URLConnection;
+	FIELD url url Ljava/net/URL;
+	METHOD appendByteArrays appendByteArrays ([B[B)[B
+	METHOD decodeCurrentPacket decodeCurrentPacket ()[B
+	METHOD endOfStream endOfStream (ZZ)Z
+	METHOD errorMessage errorMessage (Ljava/lang/String;)V
+	METHOD initialized initialized (ZZ)Z
 	METHOD openInputStream openInputStream ()Ljava/io/InputStream;
+	METHOD printStackTrace printStackTrace (Ljava/lang/Exception;)V
+	METHOD readBytes readBytes ()[B
+	METHOD readHeader readHeader ()Z
+	METHOD trimArray trimArray ([BI)[B

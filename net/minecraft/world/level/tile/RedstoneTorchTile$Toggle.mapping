@@ -1,0 +1,10 @@
+CLASS xu net/minecraft/world/level/tile/RedstoneTorchTile$Toggle
+	FIELD a x I
+	FIELD b y I
+	FIELD c z I
+	FIELD d when J
+	METHOD <init> (IIIJ)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 when

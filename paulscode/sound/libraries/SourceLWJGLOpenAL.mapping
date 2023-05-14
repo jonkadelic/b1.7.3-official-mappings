@@ -1,1 +1,12 @@
 CLASS paulscode/sound/libraries/SourceLWJGLOpenAL paulscode/sound/libraries/SourceLWJGLOpenAL
+	FIELD channelOpenAL channelOpenAL Lpaulscode/sound/libraries/ChannelLWJGLOpenAL;
+	FIELD listenerPosition listenerPosition Ljava/nio/FloatBuffer;
+	FIELD myBuffer myBuffer Ljava/nio/IntBuffer;
+	FIELD sourcePosition sourcePosition Ljava/nio/FloatBuffer;
+	FIELD sourceVelocity sourceVelocity Ljava/nio/FloatBuffer;
+	METHOD calculateDistance calculateDistance ()V
+	METHOD calculateGain calculateGain ()V
+	METHOD changeSource changeSource (Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;ZZZLjava/lang/String;Lpaulscode/sound/FilenameURL;Lpaulscode/sound/SoundBuffer;FFFIFZ)V
+	METHOD checkALError checkALError ()Z
+	METHOD checkPitch checkPitch ()V
+	METHOD resetALInformation resetALInformation ()V

@@ -1,1 +1,23 @@
 CLASS com/jcraft/jorbis/Residue0 com/jcraft/jorbis/Residue0
+	FIELD _01inverse_partword _01inverse_partword [[[I
+	FIELD _2inverse_partword _2inverse_partword [[I
+	METHOD _01inverse _01inverse (Lcom/jcraft/jorbis/Block;Ljava/lang/Object;[[FII)I
+	METHOD _2inverse _2inverse (Lcom/jcraft/jorbis/Block;Ljava/lang/Object;[[FI)I
+	CLASS InfoResidue0 InfoResidue0
+		FIELD begin begin I
+		FIELD booklist booklist [I
+		FIELD end end I
+		FIELD groupbook groupbook I
+		FIELD grouping grouping I
+		FIELD partitions partitions I
+		FIELD secondstages secondstages [I
+	CLASS LookResidue0 LookResidue0
+		FIELD decodemap decodemap [[I
+		FIELD fullbooks fullbooks [Lcom/jcraft/jorbis/CodeBook;
+		FIELD info info Lcom/jcraft/jorbis/Residue0$InfoResidue0;
+		FIELD map map I
+		FIELD partbooks partbooks [[I
+		FIELD parts parts I
+		FIELD partvals partvals I
+		FIELD phrasebook phrasebook Lcom/jcraft/jorbis/CodeBook;
+		FIELD stages stages I
