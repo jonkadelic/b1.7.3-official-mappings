@@ -8,7 +8,7 @@ This project makes use of the following sources, in order of priority:
  - Searge MCP mappings for Beta 1.7.3.
 
 ## Statistics
- - **Classes**: `1250 / 1494 (83.67%)`
- - **Methods**: `1210 / 3317 (36.48%)`
- - **Fields**: `3052 / 6528 (46.75%)`
- - **Parameters**: `1925 / 5510 (34.94%)`
+ - **Classes**: `1254 / 1494 (83.94%)`
+ - **Methods**: `1213 / 3317 (36.57%)`
+ - **Fields**: `3068 / 6528 (47.00%)`
+ - **Parameters**: `2060 / 5510 (37.39%)`
