@@ -1,1 +1,4 @@
 CLASS dy net/minecraft/client/renderer/entity/PaintingRenderer
+	FIELD a random Ljava/util/Random;
+	METHOD a setBrightness (Lqv;FF)V
+	METHOD a renderPainting (Lqv;IIII)V

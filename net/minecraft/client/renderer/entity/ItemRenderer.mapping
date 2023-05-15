@@ -1,4 +1,6 @@
 CLASS bb net/minecraft/client/renderer/entity/ItemRenderer
+	METHOD a blit (IIIIII)V
+	METHOD a fillRect (Lnw;IIIII)V
 	METHOD a renderGuiItem (Lsj;Lji;IIIII)V
 	METHOD a renderGuiItem (Lsj;Lji;Liz;II)V
 	METHOD b renderGuiItemDecorations (Lsj;Lji;Liz;II)V

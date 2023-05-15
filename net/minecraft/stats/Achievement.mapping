@@ -15,4 +15,6 @@ CLASS ny net/minecraft/stats/Achievement
 		ARG 2 translationKey
 		ARG 5 tile
 		ARG 6 parent
+	METHOD a setDisplayNameFormatter (Lgt;)Lny;
+		ARG 1 formatter
 	METHOD e getDisplayName ()Ljava/lang/String;

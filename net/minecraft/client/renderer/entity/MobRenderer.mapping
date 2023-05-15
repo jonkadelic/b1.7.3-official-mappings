@@ -1,1 +1,16 @@
 CLASS gv net/minecraft/client/renderer/entity/MobRenderer
+	FIELD e model Lko;
+	FIELD f armorModel Lko;
+	METHOD <init> (Lko;F)V
+		ARG 1 model
+		ARG 2 scale
+	METHOD a setArmor (Lko;)V
+		ARG 1 armorModel
+	METHOD a getFlipDegrees (Lls;)F
+	METHOD a renderName (Lls;DDD)V
+	METHOD a scale (Lls;F)V
+	METHOD a getOverlayColor (Lls;FF)I
+	METHOD a setupRotations (Lls;FFF)V
+	METHOD a prepareArmor (Lls;IF)Z
+	METHOD a renderNameTag (Lls;Ljava/lang/String;DDDI)V
+	METHOD b setupPosition (Lls;DDD)V

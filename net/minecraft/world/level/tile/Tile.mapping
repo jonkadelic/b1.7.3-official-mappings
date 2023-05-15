@@ -133,7 +133,7 @@ CLASS uu net/minecraft/world/level/tile/Tile
 		ARG 1 id
 		ARG 2 material
 	METHOD a setLightEmission (F)Luu;
-		ARG 1 lightEmission
+		ARG 1 lightEmissionValue
 	METHOD a setShape (FFFFFF)V
 		ARG 1 x0
 		ARG 2 y0
@@ -344,7 +344,7 @@ CLASS uu net/minecraft/world/level/tile/Tile
 		ARG 4 z
 	METHOD g updateDefaultShape ()V
 	METHOD g setLightBlock (I)Luu;
-		ARG 1 lightBlock
+		ARG 1 lightBlockValue
 	METHOD g spawnResources (Lfd;IIII)V
 		ARG 1 level
 		ARG 2 x

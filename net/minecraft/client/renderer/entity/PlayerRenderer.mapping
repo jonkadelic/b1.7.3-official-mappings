@@ -1,1 +1,2 @@
 CLASS ds net/minecraft/client/renderer/entity/PlayerRenderer
+	METHOD b resetHand ()V

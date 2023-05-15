@@ -11,7 +11,7 @@ CLASS lk net/minecraft/world/entity/MobCategory
 		ARG 4 max
 		ARG 5 spawnMaterial
 		ARG 6 isFriendly
-	METHOD a getClass ()Ljava/lang/Class;
+	METHOD a getMobClass ()Ljava/lang/Class;
 	METHOD b getMaxInstancesPerChunk ()I
 	METHOD c getSpawnMaterial ()Lln;
 	METHOD d isFriendly ()Z
