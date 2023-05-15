@@ -1,3 +1,6 @@
 CLASS xi net/minecraft/stats/StatsCounter
+	METHOD a (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
+		ARG 0 name
+		ARG 1 sessionId
 	METHOD a earnedAchievement (Lny;)Z
 		ARG 1 achievement

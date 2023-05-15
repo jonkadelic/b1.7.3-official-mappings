@@ -1,4 +1,1 @@
-CLASS wu net/minecraft/network/protocol/ChunkDataPacket
-	FIELD a x I
-	FIELD b z I
-	FIELD f numBlocks I
+CLASS ef net/minecraft/network/protocol/ChunkDataPacket

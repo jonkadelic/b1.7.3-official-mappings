@@ -1,0 +1,5 @@
+CLASS b net/minecraft/stats/StatHash
+	FIELD a instance Lb;
+	FIELD b achievementMap Ljava/util/Map;
+	METHOD a getHash (I)Ljava/lang/String;
+		ARG 0 id

@@ -89,6 +89,8 @@ CLASS fd net/minecraft/world/level/Level
 		ARG 1 entity
 	METHOD a tickPendingTicks (Z)Z
 		ARG 1 tickImmediately
+	METHOD a (ZLyb;)V
+		ARG 2 progress
 	METHOD b createChunkSource ()Lcl;
 	METHOD b getTimeOfDay (F)F
 		ARG 1 partialTick

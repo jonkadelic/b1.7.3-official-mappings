@@ -1,0 +1,4 @@
+CLASS vi net/minecraft/world/level/MissingTileFixer
+	FIELD a tiles [B
+	METHOD a fix ([B)V
+		ARG 0 tiles

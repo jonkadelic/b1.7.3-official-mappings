@@ -1,0 +1,7 @@
+CLASS md net/minecraft/client/renderer/DirtyChunkSorter
+	FIELD a camera Lls;
+	METHOD <init> (Lls;)V
+		ARG 1 camera
+	METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I
+		ARG 1 a
+		ARG 2 b

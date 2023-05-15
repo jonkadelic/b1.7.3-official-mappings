@@ -5,6 +5,6 @@ CLASS uv net/minecraft/client/multiplayer/MultiplayerChunkCache
 	FIELD d level Lfd;
 	METHOD <init> (Lfd;)V
 		ARG 1 level
-	METHOD d deallocate (II)V
+	METHOD d delete (II)V
 		ARG 1 x
 		ARG 2 z

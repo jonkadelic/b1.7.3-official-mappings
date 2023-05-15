@@ -2,7 +2,7 @@ CLASS ki net/minecraft/network/Packet
 	FIELD a idToClassMap Ljava/util/Map;
 	FIELD b classToIdMap Ljava/util/Map;
 	FIELD c clientboundPacketIds Ljava/util/Set;
-	FIELD d serverboundPacketIds Ljava/util/Set;
+	FIELD d serverBoundPacketIds Ljava/util/Set;
 	FIELD e idSizeTrackerMap Ljava/util/HashMap;
 	FIELD f packetsReceived I
 	FIELD j creationTime J

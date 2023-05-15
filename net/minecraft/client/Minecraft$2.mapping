@@ -1,4 +1,4 @@
-CLASS kh net/minecraft/client/Minecraft$C
+CLASS kh net/minecraft/client/Minecraft$2
 	FIELD a synthetic Lnet/minecraft/client/Minecraft;
 	METHOD <init> synthetic (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 synthetic

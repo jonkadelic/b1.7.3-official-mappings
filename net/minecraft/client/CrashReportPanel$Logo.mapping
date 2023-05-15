@@ -1,0 +1,4 @@
+CLASS fy net/minecraft/client/CrashReportPanel$Logo
+	FIELD a logo Ljava/awt/image/BufferedImage;
+	METHOD paint paint (Ljava/awt/Graphics;)V
+		ARG 1 g

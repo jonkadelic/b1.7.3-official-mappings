@@ -1,0 +1,9 @@
+CLASS hj net/minecraft/client/Screenshot
+	FIELD a dateFormat Ljava/text/DateFormat;
+	FIELD b buffer Ljava/nio/ByteBuffer;
+	FIELD c bytreBuffer [B
+	FIELD d intBuffer [I
+	METHOD a save (Ljava/io/File;II)Ljava/lang/String;
+		ARG 0 baseDir
+		ARG 1 width
+		ARG 2 height

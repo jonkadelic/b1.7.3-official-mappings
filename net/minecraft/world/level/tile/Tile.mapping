@@ -118,6 +118,7 @@ CLASS uu net/minecraft/world/level/tile/Tile
 	FIELD q lightBlock [I
 	FIELD r translucent [Z
 	FIELD s lightEmission [I
+	FIELD t tickOnDataChanged [Z
 	FIELD u rock Luu;
 	FIELD v grass Lwp;
 	FIELD w dirt Luu;
@@ -159,6 +160,13 @@ CLASS uu net/minecraft/world/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 		ARG 5 data
+	METHOD a spawnResources (Lfd;IIIIF)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
+		ARG 6 probability
 	METHOD a triggerEvent (Lfd;IIIII)V
 		ARG 1 level
 		ARG 2 x
@@ -186,6 +194,12 @@ CLASS uu net/minecraft/world/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 		ARG 5 user
+	METHOD a popResource (Lfd;IIILiz;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 itemInstance
 	METHOD a tick (Lfd;IIILjava/util/Random;)V
 		ARG 1 level
 		ARG 2 x
@@ -206,6 +220,8 @@ CLASS uu net/minecraft/world/level/tile/Tile
 		ARG 5 entity
 	METHOD a setDescriptionId (Ljava/lang/String;)Luu;
 		ARG 1 id
+	METHOD a getResourceCount (Ljava/util/Random;)I
+		ARG 1 random
 	METHOD a updateShape (Lxp;III)V
 		ARG 1 levelSource
 		ARG 2 x
@@ -232,12 +248,24 @@ CLASS uu net/minecraft/world/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 		ARG 5 direction
+	METHOD b attack (Lfd;IIILgs;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 attacker
 	METHOD b animateTick (Lfd;IIILjava/util/Random;)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 random
+	METHOD b stepOn (Lfd;IIILsn;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 stepper
 	METHOD b getColor (Lxp;III)I
 		ARG 1 levelSource
 		ARG 2 x
@@ -252,6 +280,8 @@ CLASS uu net/minecraft/world/level/tile/Tile
 	METHOD b setTicking (Z)Luu;
 		ARG 1 ticking
 	METHOD b_ getRenderLayer ()I
+	METHOD b_ getSpawnResourcesAuxValue (I)I
+		ARG 1 auxValue
 	METHOD c isSolidRender ()Z
 	METHOD c setDestroyTime (F)Luu;
 		ARG 1 destroyTime
@@ -260,6 +290,12 @@ CLASS uu net/minecraft/world/level/tile/Tile
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD c destroy (Lfd;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
 	METHOD c getSignal (Lxp;IIII)Z
 		ARG 1 levelSource
 		ARG 2 x
@@ -267,6 +303,11 @@ CLASS uu net/minecraft/world/level/tile/Tile
 		ARG 4 z
 		ARG 5 direction
 	METHOD d isCubeShaped ()Z
+	METHOD d wasExploded (Lfd;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD d getDirectSignal (Lfd;IIII)Z
 		ARG 1 level
 		ARG 2 x
@@ -280,6 +321,9 @@ CLASS uu net/minecraft/world/level/tile/Tile
 		ARG 4 z
 	METHOD d (Lxp;IIII)Z
 		ARG 1 levelSource
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD e getTickDelay ()I
 	METHOD e getAABB (Lfd;III)Leq;
 		ARG 1 level
@@ -301,7 +345,14 @@ CLASS uu net/minecraft/world/level/tile/Tile
 	METHOD g updateDefaultShape ()V
 	METHOD g setLightBlock (I)Luu;
 		ARG 1 lightBlock
+	METHOD g spawnResources (Lfd;IIII)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
 	METHOD h getPushReaction ()I
+	METHOD j setTickOnDataChanged ()Luu;
 	METHOD l setUnbreakable ()Luu;
 	METHOD m getDestroyTime ()F
 	METHOD n getName ()Ljava/lang/String;

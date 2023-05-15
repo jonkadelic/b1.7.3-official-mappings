@@ -1,0 +1,4 @@
+CLASS fp net/minecraft/client/gui/FontMap
+	FIELD a fontMap Ljava/lang/String;
+	FIELD b illegalChars [C
+	METHOD a init ()Ljava/lang/String;

@@ -5,6 +5,7 @@ CLASS vr net/minecraft/stats/Stat
 	FIELD e id I
 	FIELD f name Ljava/lang/String;
 	FIELD g clientOnly Z
+	FIELD h hash Ljava/lang/String;
 	FIELD i defaultFormatter Lwk;
 	FIELD j timeFormatter Lwk;
 	FIELD k distanceFormatter Lwk;

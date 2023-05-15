@@ -1,0 +1,4 @@
+CLASS wu net/minecraft/network/protocol/BlockUpdatesPacket
+	FIELD a x I
+	FIELD b z I
+	FIELD f numBlocks I

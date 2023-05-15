@@ -1,1 +1,3 @@
 CLASS n net/minecraft/client/renderer/LevelRenderer
+	METHOD a (Lls;Z)Z
+		ARG 1 camera

@@ -1,0 +1,6 @@
+CLASS bh net/minecraft/client/sounds/SoundDesc
+	FIELD a path Ljava/lang/String;
+	FIELD b url Ljava/net/URL;
+	METHOD <init> (Ljava/lang/String;Ljava/net/URL;)V
+		ARG 1 path
+		ARG 2 url

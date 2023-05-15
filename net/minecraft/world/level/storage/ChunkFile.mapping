@@ -1,0 +1,11 @@
+CLASS dz net/minecraft/world/level/storage/ChunkFile
+	FIELD a file Ljava/io/File;
+	FIELD b x I
+	FIELD c z I
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 file
+	METHOD a getFile ()Ljava/io/File;
+	METHOD b getX ()I
+	METHOD c getZ ()I
+	METHOD compareTo compareTo (Ljava/lang/Object;)I
+		ARG 1 that

@@ -1,0 +1,3 @@
+CLASS cb net/minecraft/client/CrashReportPanel
+	METHOD <init> (Lmh;)V
+		ARG 1 crashReport

@@ -20,6 +20,10 @@ CLASS xp net/minecraft/world/level/LevelSource
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD g isSolidRenderTile (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD h isSolidTile (III)Z
 		ARG 1 x
 		ARG 2 y

@@ -1,0 +1,4 @@
+CLASS se net/minecraft/network/protocol/ChunkPacket
+	FIELD a x I
+	FIELD b z I
+	FIELD c createChunk Z

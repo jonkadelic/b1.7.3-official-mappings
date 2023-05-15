@@ -10,6 +10,7 @@ CLASS nl net/minecraft/world/level/storage/LevelStorageSource
 		ARG 2 progressListener
 	METHOD a createLevelStorage (Ljava/lang/String;Z)Lwt;
 		ARG 1 path
+		ARG 2 mp
 	METHOD b getLevelList ()Ljava/util/List;
 	METHOD b getDataTagFor (Ljava/lang/String;)Lei;
 		ARG 1 path

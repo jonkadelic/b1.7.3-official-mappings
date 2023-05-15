@@ -1,13 +1,13 @@
 CLASS mm net/minecraft/client/multiplayer/MultiPlayerLevel
 	FIELD D connection Lnb;
-	FIELD E multiPlayerChunkSource Luv;
+	FIELD E mpChunkSource Luv;
 	METHOD <init> (Lnb;JI)V
 		ARG 1 connection
 		ARG 4 dimensionType
 	METHOD a (IIZ)V
 		ARG 1 x
 		ARG 2 z
-		ARG 3 allocate
+		ARG 3 createChunk
 	METHOD a putEntity (ILsn;)V
 		ARG 1 id
 		ARG 2 entity
