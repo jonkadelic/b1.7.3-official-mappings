@@ -1,0 +1,2 @@
+CLASS tu net/minecraft/isom/IsomPreview_OS_Ordinals
+	FIELD a ordinals [I

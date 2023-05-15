@@ -1,4 +1,4 @@
-CLASS ey net/minecraft/world/item/crafting/FurnaceRecipes
+CLASS ey net/minecraft/world/item/crafting/recipes/FurnaceRecipes
 	FIELD a instance Ley;
 	FIELD b recipes Ljava/util/Map;
 	METHOD a getInstance ()Ley;
