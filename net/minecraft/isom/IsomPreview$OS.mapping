@@ -1,1 +1,6 @@
 CLASS jn net/minecraft/isom/IsomPreview$OS
+	FIELD a linux Ljn;
+	FIELD b solaris Ljn;
+	FIELD c windows Ljn;
+	FIELD d macos Ljn;
+	FIELD e unknown Ljn;

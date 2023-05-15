@@ -1,4 +1,6 @@
 CLASS eb net/minecraft/world/level/LightLayer
+	FIELD a Sky Leb;
+	FIELD b Block Leb;
 	FIELD c surrounding I
 	METHOD <init> (Ljava/lang/String;II)V
 		ARG 3 surrounding

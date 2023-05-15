@@ -4,6 +4,31 @@ CLASS iq net/minecraft/world/entity/decoration/Motive
 	FIELD C height I
 	FIELD D x I
 	FIELD E y I
+	FIELD a Kebab Liq;
+	FIELD b Aztec Liq;
+	FIELD c Alban Liq;
+	FIELD d Aztec2 Liq;
+	FIELD e Bomb Liq;
+	FIELD f Plant Liq;
+	FIELD g Wasteland Liq;
+	FIELD h Pool Liq;
+	FIELD i Courbet Liq;
+	FIELD j Sea Liq;
+	FIELD k Sunset Liq;
+	FIELD l Creebet Liq;
+	FIELD m Wanderer Liq;
+	FIELD n Graham Liq;
+	FIELD o Match Liq;
+	FIELD p Bust Liq;
+	FIELD q Stage Liq;
+	FIELD r Void Liq;
+	FIELD s SkullAndRoses Liq;
+	FIELD t Fighters Liq;
+	FIELD u Pointer Liq;
+	FIELD v Pigscene Liq;
+	FIELD w BurningSkull Liq;
+	FIELD x Skeleton Liq;
+	FIELD y DonkeyKong Liq;
 	FIELD z longestName I
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;IIII)V
 		ARG 3 id

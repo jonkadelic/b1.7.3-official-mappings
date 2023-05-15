@@ -1,4 +1,7 @@
 CLASS lk net/minecraft/world/entity/MobCategory
+	FIELD a monster Llk;
+	FIELD b creature Llk;
+	FIELD c waterCreature Llk;
 	FIELD d mobClass Ljava/lang/Class;
 	FIELD e max I
 	FIELD f spawnMaterial Lln;

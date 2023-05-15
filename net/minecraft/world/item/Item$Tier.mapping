@@ -1,4 +1,9 @@
 CLASS bu net/minecraft/world/item/Item$Tier
+	FIELD a WOOD Lbu;
+	FIELD b STONE Lbu;
+	FIELD c IRON Lbu;
+	FIELD d EMERALD Lbu;
+	FIELD e GOLD Lbu;
 	FIELD f harvestLevel I
 	FIELD g maxUses I
 	FIELD h properMaterialEfficiency F
