@@ -1,0 +1,3 @@
+CLASS tp net/minecraft/world/item/crafting/recipes/OreRecipes
+	METHOD a addRecipes (Lhk;)V
+		ARG 1 recipes

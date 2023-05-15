@@ -1,0 +1,2 @@
+CLASS fq net/minecraft/client/Option_Ordinals
+	FIELD a ordinals [I

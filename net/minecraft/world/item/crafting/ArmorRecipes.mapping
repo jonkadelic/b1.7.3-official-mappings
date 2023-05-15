@@ -1,3 +1,0 @@
-CLASS z net/minecraft/world/item/crafting/ArmorRecipes
-	METHOD a addRecipes (Lhk;)V
-		ARG 1 recipes

@@ -1,6 +1,4 @@
-CLASS kg net/minecraft/client/Minecraft$1
-	FIELD a minecraft Lnet/minecraft/client/Minecraft;
-	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V
-		ARG 1 minecraft
-		ARG 2 name
-	METHOD run run ()V
+CLASS kh net/minecraft/client/Minecraft$1
+	FIELD a synthetic Lnet/minecraft/client/Minecraft;
+	METHOD <init> synthetic (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 synthetic

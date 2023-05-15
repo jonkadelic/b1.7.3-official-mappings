@@ -1,0 +1,4 @@
+CLASS pr net/minecraft/client/gui/screens/achievement/StatsScreen$BlockStatisticsList$1
+	FIELD a synthetic0 Ldv;
+	FIELD b synthetic1 Lga;
+	METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I

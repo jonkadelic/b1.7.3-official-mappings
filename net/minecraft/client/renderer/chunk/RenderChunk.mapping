@@ -16,6 +16,9 @@ CLASS dk net/minecraft/client/renderer/chunk/RenderChunk
 	FIELD o isVisible Z
 	FIELD u dirty Z
 	FIELD v bb Leq;
+	FIELD x ___a Z
+	FIELD y ___b Z
+	FIELD z ___c I
 	METHOD <init> (Lfd;Ljava/util/List;IIIII)V
 		ARG 1 level
 		ARG 3 x

@@ -1,4 +1,0 @@
-CLASS com/jcraft/jorbis/Util com/jcraft/jorbis/Util
-	METHOD icount icount (I)I
-	METHOD ilog ilog (I)I
-	METHOD ilog2 ilog2 (I)I

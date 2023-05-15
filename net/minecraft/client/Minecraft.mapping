@@ -1,5 +1,6 @@
 CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	FIELD A applet Lnet/minecraft/client/MinecraftApplet;
+	FIELD B soundSystem Lyo;
 	FIELD C mouseHandler Lvy;
 	FIELD D texturePackSource Lik;
 	FIELD I statsCounter Lxi;
@@ -10,12 +11,17 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	FIELD O windowActive Z
 	FIELD Q fullscreen Z
 	FIELD R crashed Z
+	FIELD S capabilities Lcx;
 	FIELD T timer Lpy;
+	FIELD U resourceThread Lcz;
 	FIELD W missTime I
 	FIELD a instance Lnet/minecraft/client/Minecraft;
 	FIELD aa levelSource Lnl;
+	FIELD ab server Ljava/lang/String;
+	FIELD ac port I
 	FIELD ad waterTex Lvs;
 	FIELD ae lavaTex Lcg;
+	FIELD af workingDir Ljava/io/File;
 	FIELD ag frames I
 	FIELD b reserve [B
 	FIELD c gameMode Lob;
@@ -27,6 +33,7 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	FIELD i cameraEntity Lls;
 	FIELD j particleEngine Ldn;
 	FIELD k user Lgr;
+	FIELD l host Ljava/lang/String;
 	FIELD m parent Ljava/awt/Canvas;
 	FIELD n appletMode Z
 	FIELD o pause Z
@@ -35,6 +42,7 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	FIELD r screen Lda;
 	FIELD s progressScreen Lmk;
 	FIELD t gameRenderer Lpx;
+	FIELD u achievementWidget Lvu;
 	FIELD v gui Luq;
 	FIELD w noRender Z
 	FIELD y hitResult Lvf;
@@ -62,15 +70,18 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 		ARG 1 level
 		ARG 2 loadingString
 		ARG 3 player
+	METHOD a createWorkingDir (Ljava/lang/String;)Ljava/io/File;
+		ARG 0 dirName
 	METHOD a server (Ljava/lang/String;I)V
 		ARG 1 server
 		ARG 2 port
 	METHOD a selectLevel (Ljava/lang/String;Ljava/lang/String;J)V
-	METHOD a crash (Lmh;)V
+	METHOD a handleCrash (Lmh;)V
 		ARG 1 crashReport
 	METHOD a (ZI)V
 		ARG 2 dimension
-	METHOD b (Lmh;)V
+	METHOD b getWorkingDir ()Ljava/io/File;
+	METHOD b crash (Lmh;)V
 		ARG 1 crashReport
 	METHOD c getLevelSource ()Lnl;
 	METHOD c checkGlError (Ljava/lang/String;)V
@@ -89,3 +100,4 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	METHOD u useFancyGraphics ()Z
 	METHOD v useAmbientOcclusion ()Z
 	METHOD x renderLoadingOverlay ()V
+	METHOD y getOS ()Lpd;

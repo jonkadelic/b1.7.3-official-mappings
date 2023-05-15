@@ -1,3 +1,0 @@
-CLASS com/jcraft/jorbis/Lsp com/jcraft/jorbis/Lsp
-	FIELD M_PI M_PI F
-	METHOD lsp_to_curve lsp_to_curve ([F[III[FIFF)V

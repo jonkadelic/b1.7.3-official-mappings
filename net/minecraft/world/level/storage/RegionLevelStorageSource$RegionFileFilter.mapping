@@ -1,0 +1,4 @@
+CLASS cm net/minecraft/world/level/storage/RegionLevelStorageSource$RegionFileFilter
+	FIELD a pattern Ljava/util/regex/Pattern;
+	METHOD accept accept (Ljava/io/File;)Z
+		ARG 1 regionFile

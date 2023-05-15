@@ -1,0 +1,2 @@
+CLASS kn net/minecraft/client/OS_Ordinals
+	FIELD a ordinals [I

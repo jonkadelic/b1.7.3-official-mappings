@@ -1,5 +1,0 @@
-CLASS com/jcraft/jorbis/InfoMode com/jcraft/jorbis/InfoMode
-	FIELD blockflag blockflag I
-	FIELD mapping mapping I
-	FIELD transformtype transformtype I
-	FIELD windowtype windowtype I

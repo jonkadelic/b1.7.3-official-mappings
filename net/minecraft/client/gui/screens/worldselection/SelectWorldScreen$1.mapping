@@ -1,4 +1,0 @@
-CLASS mg net/minecraft/client/gui/screens/worldselection/SelectWorldScreen$1
-	FIELD a selectWorldScreen Lrq;
-	METHOD <init> (Lrq;)V
-		ARG 1 selectWorldScreen

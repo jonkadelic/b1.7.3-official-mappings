@@ -1,5 +1,0 @@
-CLASS paulscode/sound/SoundBuffer paulscode/sound/SoundBuffer
-	FIELD audioData audioData [B
-	FIELD audioFormat audioFormat Ljavax/sound/sampled/AudioFormat;
-	METHOD cleanup cleanup ()V
-	METHOD trimData trimData (I)V

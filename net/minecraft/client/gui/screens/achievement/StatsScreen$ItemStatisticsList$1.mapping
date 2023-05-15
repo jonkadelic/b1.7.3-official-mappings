@@ -1,0 +1,7 @@
+CLASS gf net/minecraft/client/gui/screens/achievement/StatsScreen$ItemStatisticsList$1
+	FIELD a synthetic0 Ldv;
+	FIELD b synthetic1 Lci;
+	METHOD <init> (Lci;Ldv;)V
+		ARG 1 synthetic1
+		ARG 2 synthetic0
+	METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I

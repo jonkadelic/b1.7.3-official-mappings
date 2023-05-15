@@ -1,4 +1,8 @@
 CLASS xi net/minecraft/stats/StatsCounter
+	FIELD d syncher Lcj;
+	METHOD <init> (Lgr;Ljava/io/File;)V
+		ARG 1 user
+		ARG 2 workingDir
 	METHOD a (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
 		ARG 0 name
 		ARG 1 sessionId
