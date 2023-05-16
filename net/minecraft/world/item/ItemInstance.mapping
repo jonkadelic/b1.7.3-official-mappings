@@ -45,6 +45,8 @@ CLASS iz net/minecraft/world/item/ItemInstance
 	METHOD a inventoryTick (Lfd;Lsn;IZ)V
 		ARG 1 level
 		ARG 2 entity
+		ARG 3 slot
+		ARG 4 selected
 	METHOD a snap (Lgs;)V
 		ARG 1 player
 	METHOD a useOn (Lgs;Lfd;IIII)Z

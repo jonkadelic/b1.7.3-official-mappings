@@ -1,18 +1,45 @@
 CLASS da net/minecraft/client/gui/screens/Screen
+	FIELD a lastButtonClicked Lke;
 	FIELD b minecraft Lnet/minecraft/client/Minecraft;
 	FIELD c width I
 	FIELD d height I
 	FIELD e buttons Ljava/util/List;
 	FIELD f passEvents Z
 	FIELD g font Lsj;
-	FIELD h particleEngine Ldu;
+	FIELD h particles Ldu;
+	METHOD a tick ()V
 	METHOD a keyPressed (CI)V
 		ARG 1 character
 		ARG 2 keyCode
+	METHOD a renderBackground (I)V
+		ARG 1 scroll
 	METHOD a render (IIF)V
 		ARG 1 x
 		ARG 2 z
 		ARG 3 partialTicks
+	METHOD a mouseClicked (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 eventButton
+	METHOD a buttonClicked (Lke;)V
+		ARG 1 button
+	METHOD a init (Lnet/minecraft/client/Minecraft;II)V
+		ARG 1 minecraft
+		ARG 2 width
+		ARG 3 height
+	METHOD a confirmResult (ZI)V
 	METHOD b init ()V
 	METHOD b renderDirtBackground (I)V
+		ARG 1 scroll
+	METHOD b mouseReleased (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 eventButton
+	METHOD c isPauseScreen ()Z
+	METHOD d paste ()Ljava/lang/String;
+	METHOD e updateEvents ()V
+	METHOD f mouseEvent ()V
+	METHOD g keyboardEvent ()V
 	METHOD h removed ()V
+	METHOD i renderBackground ()V
+	METHOD j updateTabButtonSelection ()V

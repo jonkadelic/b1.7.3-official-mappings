@@ -142,7 +142,8 @@ CLASS gm net/minecraft/world/item/Item
 		ARG 1 itemInstance
 		ARG 2 level
 		ARG 3 entity
-		ARG 5 bl
+		ARG 4 slot
+		ARG 5 selected
 	METHOD a useOn (Liz;Lgs;Lfd;IIII)Z
 		ARG 1 itemInstance
 		ARG 2 player

@@ -1,1 +1,4 @@
 CLASS de net/minecraft/client/gui/screens/TexturePackScreen$SelectionList
+	FIELD a _s Lft;
+	METHOD <init> (Lft;)V
+		ARG 1 _s

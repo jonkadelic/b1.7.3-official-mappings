@@ -7,6 +7,7 @@ CLASS lg net/minecraft/client/gui/components/BaseSelectionList
 	FIELD h y0 I
 	FIELD i y1 I
 	FIELD j itemHeight I
+	FIELD k yDrag F
 	FIELD p renderSelection Z
 	FIELD q renderHeader Z
 	FIELD r selected I
@@ -18,14 +19,44 @@ CLASS lg net/minecraft/client/gui/components/BaseSelectionList
 		ARG 5 y1
 		ARG 6 itemHeight
 	METHOD a getNumberOfItems ()I
+	METHOD a mouseClicked (II)V
+		ARG 1 x
+		ARG 2 y
 	METHOD a render (IIF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 partialTicks
+	METHOD a renderBackground (IIII)V
+		ARG 1 yTop
+		ARG 2 yBottom
+		ARG 3 aTop
+		ARG 4 aBottom
 	METHOD a renderItem (IIIILnw;)V
+		ARG 1 index
+		ARG 2 x
+		ARG 3 y
+		ARG 4 height
+		ARG 5 tesselator
 	METHOD a renderHeader (IILnw;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 tesselator
 	METHOD a selectItem (IZ)V
+		ARG 1 itemIndex
+		ARG 2 doubleClicked
+	METHOD a (Ljava/util/List;II)V
+		ARG 1 buttonList
+	METHOD a (Lke;)V
+		ARG 1 button
 	METHOD a setRenderSelection (Z)V
-		ARG 1 renderSelection
+		ARG 1 renderSelectionValue
 	METHOD a setRenderHeader (ZI)V
-		ARG 1 renderHeader
+		ARG 1 renderHeaderValue
+		ARG 2 selectedValue
 	METHOD b getMaxPosition ()I
 	METHOD b renderDecorations (II)V
+		ARG 1 x
+		ARG 2 y
+	METHOD c renderBackground ()V
 	METHOD c_ isSelectedItem (I)Z
+		ARG 1 itemIndex
